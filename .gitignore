@@ -1,0 +1,7 @@
+*.egg-info
+/.ruby-version
+/.venv
+/etc
+/tmp
+/var
+__pycache__
