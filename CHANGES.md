@@ -1,4 +1,4 @@
-## 1.0.0a3 (unreleased)
+## 1.0.0a3 (2025-02-04)
 
 
 - Fix link to patternslib
