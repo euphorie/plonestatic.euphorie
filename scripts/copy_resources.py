@@ -72,7 +72,7 @@ def run():
         # which is a dependency of this package
         text = filepath.read_text().replace(
             "assets/oira/script/bundle.min.js",
-            "++plone++patternslib/js/bundle.min.js",
+            "++resource++patternslib/bundle.min.js",
         )
 
         # parse the file for the resources it links
