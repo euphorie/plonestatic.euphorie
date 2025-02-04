@@ -1,7 +1,7 @@
 ## 1.0.0a2 (unreleased)
 
 
-- Nothing changed yet.
+- Add missing resources
 
 
 ## 1.0.0a1 (2025-02-03)
