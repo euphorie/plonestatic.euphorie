@@ -1,4 +1,4 @@
-## 1.0.0a4 (unreleased)
+## 1.0.0a4 (2025-02-20)
 
 
 - Update to the most recent markup
