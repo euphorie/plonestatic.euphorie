@@ -3,6 +3,9 @@
 
 - Add a missing image used by the Euphorie package
 
+- Use gitman if it is available
+  [ale-rt]
+
 
 ## 1.0.0a4 (2025-02-20)
 

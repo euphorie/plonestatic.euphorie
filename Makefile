@@ -11,14 +11,14 @@ all: ## Update proto, compile it and install the resources
 var/prototype: # Get the latest version of the prototype
 	mkdir -p var
 	@if [ ! -d "var/prototype" ]; then \
-		git clone git@github.com:syslabcom/oira.prototype.git var/prototype; \
+		gitman update || (git clone git@github.com:syslabcom/oira.prototype.git var/prototype); \
 	else \
-		cd var/prototype && git pull; \
+		gitman update || (cd var/prototype && git pull); \
 	fi;
 
 .PHONY: update-proto
 update-proto: var/prototype  ## Update the prototype
-	@cd var/prototype && git pull
+	@gitman update || (cd var/prototype && git pull)
 
 .PHONY: jekyll
 jekyll: ## Compile the prototype with Jekyll
