@@ -11,6 +11,8 @@ In order to properly update the package, you will need some development tools to
 - `rsync`
 - `Ruby`
 
+Optionally, you can install [`gitman`](https://gitman.readthedocs.io/en/latest/) to manage the checkouts.
+
 Updating the site is a three-step process.
 
 1. you need to fetch a fresh clone of the Euphorie prototype.

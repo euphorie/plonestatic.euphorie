@@ -1,15 +1,6 @@
-location: var/gitman
+location: var
 sources:
-  - repo: git@github.com:plone/plone.patternslib.git
-    name: plone.patternslib
-    rev: v2
+  - repo: git@github.com:syslabcom/oira.prototype.git
+    name: prototype
+    rev: main
     type: git
-    params:
-    sparse_paths:
-      -
-    links:
-      -
-    scripts:
-      -
-default_group: ''
-groups:
