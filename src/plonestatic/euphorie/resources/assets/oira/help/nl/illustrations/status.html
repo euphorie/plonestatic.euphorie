@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html
 	class="no-js"
-	lang="en">
+	lang="nl">
 	<head>
 		<meta
 			http-equiv="Content-Type"
@@ -115,7 +115,9 @@
 			<a 
 				href="/feedback/help-menu.html#menu-content" 
 			   	id="help-menu" 
-			   	class="iconified pat-tooltip" 
+			   	class="
+					iconified 
+					pat-tooltip" 
 			   	data-pat-tooltip="source: ajax">Help</a>
 			<a 
 				href="/index.html" 
@@ -294,7 +296,7 @@
                     data-pat-tooltip="source: ajax; position-list: tr; trigger: click; source: ajax">Unlocked 
                     <!-- <time 
                             class="pat-display-time" 
-                        data-pat-display-time="from-now: true; locale: en" 
+                        data-pat-display-time="from-now: true; locale: nl" 
                         datetime="2018-03-28T08:00Z">2018-03-28</time> -->
                 </a>
             
@@ -377,7 +379,7 @@
             
             
             <!-- <a 
-                class="default pat-button">Keur risicoanalyse goed</a>  --> 
+                class="default pat-button">Keur RI&E goed</a>  --> 
         </div>
     </div>
 </div>
@@ -641,7 +643,7 @@
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title="Een nieuwe risicoanalyse starten"></a>
+                        title="Nieuwe RI&E starten"></a>
                 </li>
                 <li>
                     <label class="pat-checklist"><input type="checkbox" name="archived" /> </label>
@@ -706,7 +708,7 @@
             <select 
                 name="search-rule.data-field:records">
                 <option 
-                    value="SearchableText"></option>
+                    value="SearchableText">Any text field</option>
                 <optgroup 
                     label="Metadata">
                     <option value="Title">Title</option>
@@ -731,9 +733,9 @@
                 class="pat-select">
                 <select 
                     name="search-rule.lemma-operator:records">
-                <option value="contains"></option>
-                <option value="contains-not"></option>
-                <option value="equals"></option>
+                <option value="contains">Contains</option>
+                <option value="contains-not">Does not contain</option>
+                <option value="equals">Equals</option>
                 </select>
             </label>
             <input 
@@ -816,7 +818,7 @@
         class="pat-button default icon-search">Zoek</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle"></button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle">Add another search rule</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/nl/illustrations/status#listing" 
@@ -837,9 +839,9 @@
         <select 
             name="search-rule.and-or:records">
             <option 
-                value="and"></option>
+                value="and">And…</option>
             <option 
-                value="or"></option>
+                value="or">Or…</option>
         </select>
     </label>
     <label 
@@ -847,7 +849,7 @@
         <select 
             name="search-rule.data-field:records">
             <option 
-                value="SearchableText"></option>
+                value="SearchableText">Any text field</option>
             <optgroup 
                 label="Metadata">
                 <option value="Title">Title</option>
@@ -869,9 +871,9 @@
             class="pat-select">
             <select 
                 name="search-rule.lemma-operator:records">
-                <option value="contains"></option>
-                <option value="contains-not"></option>
-                <option value="equals"></option>
+                <option value="contains">Contains</option>
+                <option value="contains-not">Does not contain</option>
+                <option value="equals">Equals</option>
             </select>
         </label>
         <input 

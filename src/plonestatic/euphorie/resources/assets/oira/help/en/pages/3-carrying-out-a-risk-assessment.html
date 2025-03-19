@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html
 	class="no-js"
-	lang="en">
+	lang="nl">
 	<head>
 		<meta
 			http-equiv="Content-Type"
@@ -110,7 +110,9 @@
 			<a 
 				href="/feedback/help-menu.html#menu-content" 
 			   	id="help-menu" 
-			   	class="iconified pat-tooltip" 
+			   	class="
+					iconified 
+					pat-tooltip" 
 			   	data-pat-tooltip="source: ajax">Help</a>
 			<a 
 				href="/index.html" 
@@ -139,7 +141,11 @@
 	 	class="pat-toolbar">
 		<a 
 			href="../index.html#content"
-		   data-pat-inject="history: record"
+			data-pat-inject="
+				source: #content-pane;
+				target: #content-pane;
+				scroll: top;
+		   		history: record"
 		   class="ueber-back-button pat-inject">Topics</a>
 	</div>
 	<div 
@@ -548,17 +554,27 @@ As mentioned above, the action plan is presented as a separate step in the menu 
 	</div>
 </div>
 
-<a href="#content-pane"
-   class="pat-scroll"
-   data-pat-scroll="selector: #content-pane; trigger: auto; offset: 0"
-   hidden
-   >Scroll to top</a>
+<a 
+	href="#content-pane"
+   	class="pat-scroll"
+   	data-pat-scroll="
+		selector: #content-pane; 
+		trigger: auto; 
+		offset: 0"
+   	hidden>Scroll to top</a>
 
-<a href="/"
-   id="inject-toolbar"
-   hidden
-   class="pat-inject"
-   data-pat-inject="source: #toolbar; target: #toolbar; trigger: autoload &amp;&amp; source: #osc; target: #osc; trigger: autoload">Load toolbar…</a>
+<a 
+	href="/"
+   	id="inject-toolbar"
+   	hidden
+   	class="pat-inject"
+   	data-pat-inject="	
+		source: #toolbar; 
+		target: #toolbar; 
+		trigger: autoload &amp;&amp; 
+		source: #osc; 
+		target: #osc; 
+		trigger: autoload">Load toolbar…</a>
 
     </div>
 </div>
@@ -597,7 +613,7 @@ As mentioned above, the action plan is presented as a separate step in the menu 
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title="Start a new risk assessment">New risk assessment</a>
+                        title="Start new risk assessment">New risk assessment</a>
                 </li>
                 <li>
                     <label class="pat-checklist"><input type="checkbox" name="archived" /> Show archived risk assessments</label>

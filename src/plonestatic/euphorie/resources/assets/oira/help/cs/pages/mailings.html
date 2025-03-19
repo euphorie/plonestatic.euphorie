@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html
 	class="no-js"
-	lang="en">
+	lang="nl">
 	<head>
 		<meta
 			http-equiv="Content-Type"
@@ -110,7 +110,9 @@
 			<a 
 				href="/feedback/help-menu.html#menu-content" 
 			   	id="help-menu" 
-			   	class="iconified pat-tooltip" 
+			   	class="
+					iconified 
+					pat-tooltip" 
 			   	data-pat-tooltip="source: ajax">Help</a>
 			<a 
 				href="/index.html" 
@@ -139,7 +141,11 @@
 	 	class="pat-toolbar">
 		<a 
 			href="../index.html#content"
-		   data-pat-inject="history: record"
+			data-pat-inject="
+				source: #content-pane;
+				target: #content-pane;
+				scroll: top;
+		   		history: record"
 		   class="ueber-back-button pat-inject">Témata</a>
 	</div>
 	<div 
@@ -197,17 +203,27 @@
 	</div>
 </div>
 
-<a href="#content-pane"
-   class="pat-scroll"
-   data-pat-scroll="selector: #content-pane; trigger: auto; offset: 0"
-   hidden
-   >Scroll to top</a>
+<a 
+	href="#content-pane"
+   	class="pat-scroll"
+   	data-pat-scroll="
+		selector: #content-pane; 
+		trigger: auto; 
+		offset: 0"
+   	hidden>Scroll to top</a>
 
-<a href="/"
-   id="inject-toolbar"
-   hidden
-   class="pat-inject"
-   data-pat-inject="source: #toolbar; target: #toolbar; trigger: autoload &amp;&amp; source: #osc; target: #osc; trigger: autoload">Load toolbar…</a>
+<a 
+	href="/"
+   	id="inject-toolbar"
+   	hidden
+   	class="pat-inject"
+   	data-pat-inject="	
+		source: #toolbar; 
+		target: #toolbar; 
+		trigger: autoload &amp;&amp; 
+		source: #osc; 
+		target: #osc; 
+		trigger: autoload">Load toolbar…</a>
 
     </div>
 </div>
@@ -311,7 +327,7 @@
             <select 
                 name="search-rule.data-field:records">
                 <option 
-                    value="SearchableText"></option>
+                    value="SearchableText">Any text field</option>
                 <optgroup 
                     label="Metadata">
                     <option value="Title">Title</option>
@@ -336,9 +352,9 @@
                 class="pat-select">
                 <select 
                     name="search-rule.lemma-operator:records">
-                <option value="contains"></option>
-                <option value="contains-not"></option>
-                <option value="equals"></option>
+                <option value="contains">Contains</option>
+                <option value="contains-not">Does not contain</option>
+                <option value="equals">Equals</option>
                 </select>
             </label>
             <input 
@@ -421,7 +437,7 @@
         class="pat-button default icon-search">Vyhledat</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle"></button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle">Add another search rule</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/cs/pages/mailings#listing" 
@@ -442,9 +458,9 @@
         <select 
             name="search-rule.and-or:records">
             <option 
-                value="and"></option>
+                value="and">And…</option>
             <option 
-                value="or"></option>
+                value="or">Or…</option>
         </select>
     </label>
     <label 
@@ -452,7 +468,7 @@
         <select 
             name="search-rule.data-field:records">
             <option 
-                value="SearchableText"></option>
+                value="SearchableText">Any text field</option>
             <optgroup 
                 label="Metadata">
                 <option value="Title">Title</option>
@@ -474,9 +490,9 @@
             class="pat-select">
             <select 
                 name="search-rule.lemma-operator:records">
-                <option value="contains"></option>
-                <option value="contains-not"></option>
-                <option value="equals"></option>
+                <option value="contains">Contains</option>
+                <option value="contains-not">Does not contain</option>
+                <option value="equals">Equals</option>
             </select>
         </label>
         <input 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html
 	class="no-js"
-	lang="en">
+	lang="nl">
 	<head>
 		<meta
 			http-equiv="Content-Type"
@@ -115,7 +115,9 @@
 			<a 
 				href="/feedback/help-menu.html#menu-content" 
 			   	id="help-menu" 
-			   	class="iconified pat-tooltip" 
+			   	class="
+					iconified 
+					pat-tooltip" 
 			   	data-pat-tooltip="source: ajax">Help</a>
 			<a 
 				href="/index.html" 
@@ -297,7 +299,7 @@
                     
                             <p>
                                 <time class="date-stamp">20 June 2023</time>:
-                                <a href="mailto:michel@moulin.fr">Michel Moulin</a> has reviewed, validated and locked this risk assessment.
+                                <a href="mailto:michel@moulin.fr">Michel Moulin</a> heeft deze risicobeoordeling beoordeeld, gevalideerd en vergrendeld.
                             </p>
                         </div>
                     
@@ -376,7 +378,7 @@
             
             
             <!-- <a 
-                class="default pat-button">Keur risicoanalyse goed</a>  --> 
+                class="default pat-button">Keur RI&E goed</a>  --> 
         </div>
     </div>
 </div>
@@ -388,7 +390,7 @@
 				Advies 
 			</h1>
 			<p>
-				Het is mogelijk om hulp in te roepen bij het invullen van een risicoanalyse of een door u uitgevoerde risicoanalyse te laten valideren door een OSH-adviseur. Een OSH-adviseur kan uw risicobeoordeling een officieel als gevalideerd markeren. Een validatie kan alleen aangevraagd worden door gebruikers met het permissieniveau ‘Beheer’ of hoger.
+				Het is mogelijk om hulp in te roepen bij het invullen van een RI&E of een door u uitgevoerde RI&E te laten valideren door een OSH-adviseur. Een OSH-adviseur kan uw risicobeoordeling een officieel als gevalideerd markeren. Een validatie kan alleen aangevraagd worden door gebruikers met het permissieniveau ‘Beheer’ of hoger.
 			</p>
 		</article>
 
@@ -505,7 +507,7 @@
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title="Een nieuwe risicoanalyse starten"></a>
+                        title="Nieuwe RI&E starten"></a>
                 </li>
                 <li>
                     <label class="pat-checklist"><input type="checkbox" name="archived" /> </label>
@@ -570,7 +572,7 @@
             <select 
                 name="search-rule.data-field:records">
                 <option 
-                    value="SearchableText"></option>
+                    value="SearchableText">Any text field</option>
                 <optgroup 
                     label="Metadata">
                     <option value="Title">Title</option>
@@ -595,9 +597,9 @@
                 class="pat-select">
                 <select 
                     name="search-rule.lemma-operator:records">
-                <option value="contains"></option>
-                <option value="contains-not"></option>
-                <option value="equals"></option>
+                <option value="contains">Contains</option>
+                <option value="contains-not">Does not contain</option>
+                <option value="equals">Equals</option>
                 </select>
             </label>
             <input 
@@ -680,7 +682,7 @@
         class="pat-button default icon-search">Zoek</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle"></button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle">Add another search rule</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/nl/illustrations/consultancy-validated#listing" 
@@ -701,9 +703,9 @@
         <select 
             name="search-rule.and-or:records">
             <option 
-                value="and"></option>
+                value="and">And…</option>
             <option 
-                value="or"></option>
+                value="or">Or…</option>
         </select>
     </label>
     <label 
@@ -711,7 +713,7 @@
         <select 
             name="search-rule.data-field:records">
             <option 
-                value="SearchableText"></option>
+                value="SearchableText">Any text field</option>
             <optgroup 
                 label="Metadata">
                 <option value="Title">Title</option>
@@ -733,9 +735,9 @@
             class="pat-select">
             <select 
                 name="search-rule.lemma-operator:records">
-                <option value="contains"></option>
-                <option value="contains-not"></option>
-                <option value="equals"></option>
+                <option value="contains">Contains</option>
+                <option value="contains-not">Does not contain</option>
+                <option value="equals">Equals</option>
             </select>
         </label>
         <input 
