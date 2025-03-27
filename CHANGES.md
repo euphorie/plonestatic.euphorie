@@ -6,6 +6,9 @@
 - Use gitman if it is available
   [ale-rt]
 
+- major update of help, fixing broken links, missing images and pages, new illustration files
+  [pilz]
+
 
 ## 1.0.0a4 (2025-02-20)
 
