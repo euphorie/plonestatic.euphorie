@@ -1,4 +1,4 @@
-## 1.0.0a5 (unreleased)
+## 1.0.0a5 (2025-03-27)
 
 
 - Add a missing image used by the Euphorie package
