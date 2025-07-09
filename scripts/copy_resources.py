@@ -70,9 +70,11 @@ def run():
     ):
         # We want to use the Plone provided plone.patternslib > 1,
         # which is a dependency of this package
-        text = filepath.read_text().replace(
-            "assets/oira/script/bundle.min.js",
+        #
+        text = re.sub(
+            r"assets/oira/script/.*bundle.min.js",
             "++resource++patternslib/bundle.min.js",
+            filepath.read_text()
         )
 
         # parse the file for the resources it links
