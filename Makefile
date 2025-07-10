@@ -50,6 +50,9 @@ resources-install:  ## Install the resources from the prototype folder to the pl
 		--exclude="/oira/style/photoswipe/" \
 		# end of rsync command
 
+	@# Copy example report images
+	@rsync -a --delete var/prototype/_site/media/example-* src/plonestatic/euphorie/resources/media
+
 	@# The following commands will copy the resources linked from the assets and excluded in the rsync command above
 	@cp var/prototype/_site/assets/oira/style/oira-logo-dp.svg src/plonestatic/euphorie/resources/assets/oira/style/oira-logo-dp.svg
 	@cp var/prototype/_site/assets/oira/style/placeholder-1x1.png src/plonestatic/euphorie/resources/assets/oira/style/placeholder-1x1.png
