@@ -1,2 +1,0 @@
-Add missing example report images (used by `@@register_session`)
-Also extend the Makefile to automatically include these images when building plonestatic.euphorie.

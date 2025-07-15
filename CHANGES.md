@@ -1,3 +1,13 @@
+## 1.0.0 (2025-07-15)
+
+### Bug fixes:
+
+- Add missing example report images (used by `@@register_session`)
+  Also extend the Makefile to automatically include these images when building plonestatic.euphorie. (#3709)
+- Script replacement: Also support version/release-level specific subdirectories of the Patternslib script in prototype like alpha/, beta/, etc.
+  [thet]
+
+
 # Changelog
 
 .. You should *NOT* be adding new change log entries to this file.
