@@ -291,7 +291,7 @@
                     title="Unlock this assessment" 
                     href="#publication-menu" 
                     class="pat-select success locked text-button pat-tooltip"
-                    data-pat-tooltip="source: ajax; position-list: tr; trigger: click; source: ajax">
+                    data-pat-tooltip="source: ajax; position-list: tr; trigger: click; source: ajax">Jóváhagyva
                 </a>
             
 
@@ -320,7 +320,9 @@
                             <!-- <pat-open-modal> -->
     <a 
         tabindex="0"
-        href="/feedback/panel-unlock-validated-risk-assessment"class="
+        href="/feedback/panel-unlock-validated-risk-assessment"
+        
+        class="
             pat-inject 
             icon-lock-open close-panel"
         data-pat-inject="
@@ -328,6 +330,7 @@
             target: #pat-modal-panel-space; 
             url: /feedback/panel-unlock-validated-risk-assessment;"></a>
 <!-- </pat-open-modal> -->
+
                         </li>
                         
                         
@@ -335,6 +338,7 @@
             </div>
 
             <a 
+                id="oira-progress-indicator"
                 href="#status-sentinel"
                 data-pat-inject="history: record"
                 class="icon pat-inject progress pat-tooltip"
@@ -383,6 +387,7 @@
         </div>
     </div>
 </div>
+
 
 	
 		<article 

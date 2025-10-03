@@ -337,6 +337,7 @@
             </div>
 
             <a 
+                id="oira-progress-indicator"
                 href="#status-sentinel"
                 data-pat-inject="history: record"
                 class="icon pat-inject progress pat-tooltip"
@@ -385,6 +386,7 @@
         </div>
     </div>
 </div>
+
 
     <div 
         id="status-report">
@@ -457,123 +459,122 @@
 
         <div 
             class="page-module">
-            <section 
+            <div 
                 class="pat-rich">
                 <h2>
                    Preguntes respostes per mòdul
                 </h2>
-
-                <dl 
-                    class="status">
-                    <dt>
-                        <a 
-                            href="#content"
-                            class="pat-inject">Commercial manned guarding - Abby Road</a>
-                    </dt>
-                    <dd>
-                        <section 
-                            class="graph">
-                            <p class="range answered" style="width: 10%" title="1 question answered without a risk">
-                                <strong class="number">1</strong> <em class="label">question answered without a risk</em>
-                            </p>
-                            <p class="range  risk-measure" style="width: 30%" title="3 answers indicated a risk and have at least one measure defined in the action plan">
-                                <strong class="number">3</strong> <em class="label">answers indicated a risk and have at least one measure defined in the action plan</em>
-                            </p>
-                            <p class="range risk" style="width: 20%" title="2 answers indicated a risk without any measure defined in the action plan">
-                                <strong class="number">2</strong> <em class="label">answers indicated a risk without any measure defined in the action plan</em>
-                            </p>
-                            <p class="range postponed" style="width: 20%" title="2 questions were postponed">
-                                <strong class="number">2</strong> <em class="label">questions were postponed</em>
-                            </p>
-                            <p class="range unanswered" style="width: 20%" title="2 questions aren't answered yet">
-                                <strong class="number">2</strong> <em class="label">questions aren't answered yet</em>
-                            </p>
-                        </section>
-                        <section class="row">
-                            <ul class="six columns legend">
-                                <li class="answered">
-                                    <strong class="number">1</strong> <em class="label">Correcte</em>
+            </div>
+            <dl 
+                class="status">
+                <dt>
+                    <a 
+                        href="#content"
+                        class="pat-inject">Commercial manned guarding - Abby Road</a>
+                </dt>
+                <dd>
+                    <section 
+                        class="graph">
+                        <p class="range answered" style="width: 10%" title="1 question answered without a risk">
+                            <strong class="number">1</strong> <em class="label">question answered without a risk</em>
+                        </p>
+                        <p class="range  risk-measure" style="width: 30%" title="3 answers indicated a risk and have at least one measure defined in the action plan">
+                            <strong class="number">3</strong> <em class="label">answers indicated a risk and have at least one measure defined in the action plan</em>
+                        </p>
+                        <p class="range risk" style="width: 20%" title="2 answers indicated a risk without any measure defined in the action plan">
+                            <strong class="number">2</strong> <em class="label">answers indicated a risk without any measure defined in the action plan</em>
+                        </p>
+                        <p class="range postponed" style="width: 20%" title="2 questions were postponed">
+                            <strong class="number">2</strong> <em class="label">questions were postponed</em>
+                        </p>
+                        <p class="range unanswered" style="width: 20%" title="2 questions aren't answered yet">
+                            <strong class="number">2</strong> <em class="label">questions aren't answered yet</em>
+                        </p>
+                    </section>
+                    <section class="row">
+                        <ul class="six columns legend">
+                            <li class="answered">
+                                <strong class="number">1</strong> <em class="label">Correcte</em>
+                            </li>
+                            <li class="risk-measure">
+                                <strong class="number">3</strong> <em class="label"></em>
+                            </li>
+                            <li class="risk">
+                                <strong class="number">2</strong> <em class="label">Actuar</em>
+                            </li>
+                            <li class="postponed">
+                                <strong class="number">2</strong> <em class="label">Posposat</em>
+                            </li>
+                            <li class="unanswered">
+                                <strong class="number">2</strong> <em class="label">No respost</em>
+                            </li>
+                        </ul>
+                        <div class="six columns high-prio-risks">
+                            <h4>Riscos d'alta prioritat</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Lorem ipsum</a>
                                 </li>
-                                <li class="risk-measure">
-                                    <strong class="number">3</strong> <em class="label"></em>
+                                <li>
+                                    <a href="#">Dolor sit amet</a>
                                 </li>
-                                <li class="risk">
-                                    <strong class="number">2</strong> <em class="label">Actuar</em>
-                                </li>
-                                <li class="postponed">
-                                    <strong class="number">2</strong> <em class="label">Posposat</em>
-                                </li>
-                                <li class="unanswered">
-                                    <strong class="number">2</strong> <em class="label">No respost</em>
+                                <li>
+                                    <a href="#">Consectetuer vadifrimulus automobilis</a>
                                 </li>
                             </ul>
-                            <div class="six columns high-prio-risks">
-                                <h4>Riscos d'alta prioritat</h4>
-                                <ul>
-                                    <li>
-                                        <a href="#">Lorem ipsum</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Dolor sit amet</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Consectetuer vadifrimulus automobilis</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </section>
-                    </dd>
-                    <dt>
-                        <a href="#">Mobile partrolling/intervention after alarm</a>
-                    </dt>
-                    <dd>
-                        <section class="graph">
-                            <p class="range answered" style="width: 70%">
+                        </div>
+                    </section>
+                </dd>
+                <dt>
+                    <a href="#">Mobile partrolling/intervention after alarm</a>
+                </dt>
+                <dd>
+                    <section class="graph">
+                        <p class="range answered" style="width: 70%">
+                            <strong class="number">7</strong> <em class="label">No respost</em>
+                        </p>
+                        <p class="range  risk-measure" style="width: 10%">
+                            <strong class="number">1</strong> <em class="label"></em>
+                        </p>
+                        <p class="range risk" style="width: 10%">
+                            <strong class="number">1</strong> <em class="label">Actuar</em>
+                        </p>
+                        <p class="range postponed" style="width: 10%">
+                            <strong class="number">1</strong> <em class="label">Posposat</em>
+                        </p>
+                    </section>
+                    <section class="row">
+                        <ul class="six columns legend">
+                            <li class="answered">
                                 <strong class="number">7</strong> <em class="label">No respost</em>
-                            </p>
-                            <p class="range  risk-measure" style="width: 10%">
+                            </li>
+                            <li class="risk-measure">
                                 <strong class="number">1</strong> <em class="label"></em>
-                            </p>
-                            <p class="range risk" style="width: 10%">
+                            </li>
+                            <li class="risk">
                                 <strong class="number">1</strong> <em class="label">Actuar</em>
-                            </p>
-                            <p class="range postponed" style="width: 10%">
+                            </li>
+                            <li class="postponed">
                                 <strong class="number">1</strong> <em class="label">Posposat</em>
-                            </p>
-                        </section>
-                        <section class="row">
-                            <ul class="six columns legend">
-                                <li class="answered">
-                                    <strong class="number">7</strong> <em class="label">No respost</em>
+                            </li>
+                        </ul>
+                        <div class="six columns high-prio-risks">
+                            <h4>High priority risks</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Lorem ipsum</a>
                                 </li>
-                                <li class="risk-measure">
-                                    <strong class="number">1</strong> <em class="label"></em>
+                                <li>
+                                    <a href="#">Dolor sit amet</a>
                                 </li>
-                                <li class="risk">
-                                    <strong class="number">1</strong> <em class="label">Actuar</em>
-                                </li>
-                                <li class="postponed">
-                                    <strong class="number">1</strong> <em class="label">Posposat</em>
+                                <li>
+                                    <a href="#">Consectetuer vadifrimulus automobilis</a>
                                 </li>
                             </ul>
-                            <div class="six columns high-prio-risks">
-                                <h4>High priority risks</h4>
-                                <ul>
-                                    <li>
-                                        <a href="#">Lorem ipsum</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Dolor sit amet</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Consectetuer vadifrimulus automobilis</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </section>
-                    </dd>
-                </dl>
-            </section>
+                        </div>
+                    </section>
+                </dd>
+            </dl>
         </div>
 
     </div>

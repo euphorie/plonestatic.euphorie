@@ -139,8 +139,9 @@
 	action="/++resource++euphorie.resources/assets/oira/help/fr/illustrations/preferences-mailings#content"
     class="pat-form pat-inject panel-style pat-validate">
 	<div 
-		class="pat-toolbar sticky">
-		
+		class="
+			pat-toolbar 
+			sticky">
 	    <div 
 	        id="toolbar-functions-area-preferences"
 	        class="toolbar-functions-area">
@@ -162,34 +163,26 @@
 
 
 	
-		<!-- <pat-form root="" source="personal-settings-form"> -->
-		<fieldset 
-			class="
-				
-					pat-collapsible 
-					true
-				 
-					section 
-				
-					horizontal
-				 
-				"
-			data-pat-collapsible="
-				store: local; 
-				scroll-selector: self; 
-				
-					scroll-offset: 100px
-				"
-			id="-first-collapsible">
-	
-		<!-- <pat-form root="" source="personal-settings-form"> -->
+		<!-- <pat-form root="field" source="personal-settings-form"> -->
 			<!-- <slot name="fields"> -->
 				
 				
 					
 						
 	
-			<slot name="fields">
+	<!-- <form-panel> -->
+	<fieldset 
+		class="
+			form-panel 
+			 
+			section 
+			horizontal 
+			open"
+		data-pat-collapsible="
+			store: local; 
+			scroll-selector: self; 
+			"
+		id="patterns-label-language">
 	<h3 
 		class="
 			 
@@ -201,7 +194,8 @@
 	
 
 					
-						<!-- <pat-form-field-checklist> -->
+						
+<!-- <slot name="fields"> --><!-- <pat-form-field-checklist> -->
     <fieldset 
         
         class="
@@ -226,6 +220,7 @@
                 class="pat-checklist">
                 
                     <label>Automatique (basé sur la langue du navigateur)
+                        
                         <input
                             
                                 
@@ -237,11 +232,12 @@
                             
                             
                             tabindex="0"
-                            name="patterns-label-system-language" 
+                            name="system_language" 
                             type="radio">
                     </label>
                 
                     <label>Deutsch
+                        
                         <input
                             
                                 
@@ -251,11 +247,12 @@
                             
                             
                             tabindex="0"
-                            name="patterns-label-system-language" 
+                            name="system_language" 
                             type="radio">
                     </label>
                 
                     <label>English
+                        
                         <input
                             
                                 
@@ -265,11 +262,12 @@
                             
                             
                             tabindex="0"
-                            name="patterns-label-system-language" 
+                            name="system_language" 
                             type="radio">
                     </label>
                 
                     <label>Français
+                        
                         <input
                             
                                 
@@ -279,11 +277,12 @@
                             
                             
                             tabindex="0"
-                            name="patterns-label-system-language" 
+                            name="system_language" 
                             type="radio">
                     </label>
                 
                     <label>Nederlands
+                        
                         <input
                             
                                 
@@ -293,7 +292,7 @@
                             
                             
                             tabindex="0"
-                            name="patterns-label-system-language" 
+                            name="system_language" 
                             type="radio">
                     </label>
                 
@@ -302,9 +301,11 @@
             
     </fieldset>
 <!-- </pat-form-field-checklist> -->
+<!-- </slot> -->
 
 					
-						<!-- <pat-form-field-select> -->
+						
+<!-- <slot name="fields"> --><!-- <pat-form-field-select> -->
 	<label 
 		
 		class="
@@ -375,6 +376,7 @@
 		
 	</label>
 <!-- </pat-form-field-select> -->
+<!-- </slot> -->
 
 					
 						
@@ -382,21 +384,20 @@
 		<!-- </slot> -->
 		</fieldset>
 		<!-- </form-panel> -->
-		<!-- <form-panel> -->
-		<fieldset 
-			class="
-				form-panel 
-				 
-				section 
-				vertical 
-				"
-			data-pat-collapsible="
-				store: local; 
-				scroll-selector: self; 
-				"
-			id="patterns-label-personal-details">
 	
-			<slot name="fields">
+	<!-- <form-panel> -->
+	<fieldset 
+		class="
+			form-panel 
+			 
+			section 
+			horizontal 
+			"
+		data-pat-collapsible="
+			store: local; 
+			scroll-selector: self; 
+			"
+		id="patterns-label-personal-details">
 	<h3 
 		class="
 			 
@@ -408,7 +409,8 @@
 	
 
 					
-						<!-- <pat-form-field-text> -->
+						
+<!-- <slot name="fields"> --><!-- <pat-form-field-text> -->
     <label 
         
         class="
@@ -435,9 +437,11 @@ class=""
         
     </label>
 <!-- </pat-form-field-text> -->
+<!-- </slot> -->
 
 					
-						<!-- <pat-form-field-text> -->
+						
+<!-- <slot name="fields"> --><!-- <pat-form-field-text> -->
     <label 
         
         class="
@@ -468,6 +472,7 @@ class=""
 
     </label>
 <!-- </pat-form-field-text> -->
+<!-- </slot> -->
 
 					
 						
@@ -475,21 +480,20 @@ class=""
 		<!-- </slot> -->
 		</fieldset>
 		<!-- </form-panel> -->
-		<!-- <form-panel> -->
-		<fieldset 
-			class="
-				form-panel 
-				 
-				section 
-				vertical 
-				"
-			data-pat-collapsible="
-				store: local; 
-				scroll-selector: self; 
-				"
-			id="label-mailings">
 	
-			<slot name="fields">
+	<!-- <form-panel> -->
+	<fieldset 
+		class="
+			form-panel 
+			 
+			section 
+			horizontal 
+			"
+		data-pat-collapsible="
+			store: local; 
+			scroll-selector: self; 
+			"
+		id="label-mailings">
 	<h3 
 		class="
 			 
@@ -501,7 +505,8 @@ class=""
 	
 
 					
-						<!-- <pat-form-field-checklist> -->
+						
+<!-- <slot name="fields"> --><!-- <pat-form-field-checklist> -->
     <fieldset 
         
         class="
@@ -526,6 +531,8 @@ class=""
                 class="pat-checklist">
                 
                     <label>
+                            Functional e-mails
+                        
                         <input
                             
                             
@@ -536,6 +543,8 @@ class=""
                     </label>
                 
                     <label>
+                            General OiRA news
+                        
                         <input
                             
                             
@@ -546,6 +555,8 @@ class=""
                     </label>
                 
                     <label>
+                            News for my country
+                        
                         <input
                             
                             
@@ -556,6 +567,8 @@ class=""
                     </label>
                 
                     <label>
+                            News for my sector
+                        
                         <input
                             
                             
@@ -566,6 +579,8 @@ class=""
                     </label>
                 
                     <label>
+                            Private security
+                        
                         <input
                             
                             
@@ -576,6 +591,8 @@ class=""
                     </label>
                 
                     <label>
+                            Wood works
+                        
                         <input
                             
                             
@@ -586,6 +603,8 @@ class=""
                     </label>
                 
                     <label>
+                            Metal works
+                        
                         <input
                             
                             
@@ -600,13 +619,11 @@ class=""
             
     </fieldset>
 <!-- </pat-form-field-checklist> -->
+<!-- </slot> -->
 
 					
 				
 				<!-- </slot> -->
-		<!-- </pat-form> -->
-	
-		</fieldset>
 		<!-- </pat-form> -->
 	
 
