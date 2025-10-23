@@ -278,7 +278,7 @@
         pat-form 
         pat-inject" 
     data-pat-inject="history: record;" 
-    action="items/#main">
+    action="involve">
     <div 
         id="content-pane"
         class="pat-scroll-box">
@@ -343,6 +343,7 @@
             </div>
 
             <a 
+                id="oira-progress-indicator"
                 href="#status-sentinel"
                 data-pat-inject="history: record"
                 class="icon pat-inject progress pat-tooltip"
@@ -391,6 +392,7 @@
         </div>
     </div>
 </div>
+
 
         
 
@@ -479,7 +481,10 @@
                     pat-inject 
                     pat-subform 
                     pat-autosubmit" 
-                data-pat-inject="url: ; source: #osc-header; target: #osc-header">    
+                data-pat-inject="
+                    url: /++resource++euphorie.resources/assets/oira/help/lv/illustrations/portlet-so-and-so; 
+                    source: #oira-progress-indicator; 
+                    target: #oira-progress-indicator">    
 
                 <label>
                     Riska novērtējuma nosaukums
@@ -498,12 +503,11 @@
                             position-list: lt">Once you have started an OiRA tool session, you will be able to stop before the end. You can restart it again at a later date by selecting the title of the OiRA tool session. You can save more than one session, provided you have given them different title names. Please remember your e-mail address, password and the title that you have given the OiRA tool session. By clicking on the Logout button, you are logged out actively. You are also logged out if you close your Browser. For security reasons it is better to actively log out.
                     </dfn>
                 </label>
-
-
-
                 
                 
+
                 
+                    
                     
             </fieldset>
         
