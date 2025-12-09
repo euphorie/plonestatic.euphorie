@@ -9,6 +9,22 @@ https://github.com/plone/plone.releaser/blob/master/ADD-A-NEWS-ITEM.rst
 
 <!-- towncrier release notes start -->
 
+## 1.0.1 (2025-12-09)
+
+### Bug fixes:
+
+- Update Prototype to fix a problem with some previews not shown in help pages.
+
+  Note: This uses the submodule "\_includes/patterns" branch "reverse-sentinel"
+  from https://github.com/Patternslib/patterns-includes/pull/3
+
+  Ref: scrum-3430
+  [thet]
+
+### Internal:
+
+- Fix towncrier config.
+
 
 ## 1.0.0 (2025-07-15)
 
