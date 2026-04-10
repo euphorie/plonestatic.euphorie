@@ -97,9 +97,23 @@
 			<a 
 				href="/feedback/more-menu.html#menu-content" 
 			   	id="user-menu" 
-			   	class="iconified pat-tooltip pat-switch" 
-			   	data-pat-switch="selector: body; remove: osc-s-on; add: osc-s-off;"
-			   	data-pat-tooltip="source: ajax">Menu</a>
+			   	class=" 
+					pat-tooltip 
+					pat-switch" 
+			   	data-pat-switch="
+					selector: body; 
+					remove: osc-s-on; 
+					add: osc-s-off;"
+			   	data-pat-tooltip="
+					source: ajax">
+				
+					<img 
+						class="
+							avatar
+							pat-avatar"
+						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
+						alt="">
+				<!-- i18n: label_menu -->Meni</a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -107,13 +121,19 @@
 	            class="pat-tooltip icon iconified icon-chat pat-push">
 	            Messages <sup id="messages-unread-count" class="counter digit-1">1</sup>
 	        </a> 
+			
 			<a 
-				href="/feedback/help-menu.html#menu-content" 
-			   	id="help-menu" 
-			   	class="
-					iconified 
-					pat-tooltip" 
-			   	data-pat-tooltip="source: ajax">Help</a>
+                href="/++resource++euphorie.resources/assets/oira/help/en-roadmap/index" 
+                data-pat-inject="
+                    history: record;
+                    scroll: top;
+                    source: #content-pane;
+                    target: #content-pane;"
+				id="help-menu"
+                class="
+                    pat-inject 
+                    iconified" 
+                target="Help"><!-- i18n: label_help -->Pomoč</a>
 			<a 
 				href="/index.html" 
 			    data-pat-inject="source: #content; target: #content; history: record" 
@@ -179,7 +199,7 @@ Dvojniki zaklenjenih ocen tveganja so privzeto odklenjeni.</p>
 <h3 id="z-zavihka-s-seznamom-orodij">Z zavihka s seznamom orodij</h3>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/tools.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/tools.html" scrolling="no">
   </object>
   <figcaption>Zavihek s seznamom orodij</figcaption>
 </figure>
@@ -191,7 +211,7 @@ Dvojniki zaklenjenih ocen tveganja so privzeto odklenjeni.</p>
 <p>Ko začnete postopek izvedbe ocene tveganja, jo lahko kadar koli znova odprete v oddelku ,Moje ocene tveganja‘ na strani s pregledom. V tem oddelku lahko tudi začnete novo oceno tveganja.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/dashboard.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/dashboard.html" scrolling="no">
   </object>
   <figcaption>Pregled.</figcaption>
 </figure>
@@ -234,7 +254,7 @@ Dvojniki zaklenjenih ocen tveganja so privzeto odklenjeni.</p>
 </ul>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/profiling.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/profiling.html" scrolling="no">
   </object>
   <figcaption>Zaslon ,Profil‘ v koraku priprava</figcaption>
 </figure>
@@ -256,7 +276,7 @@ Mnogo orodij ne vključuje vprašanj o profilu, saj ne uporabljajo te funkcije z
 Glede na to, kako je partner orodja OiRA konfiguriral orodje, je morda v ta zaslon vključen tudi korak ,Načrt ukrepov‘ (glej spodaj). V tem primeru se celotni korak imenuje ,Ocena‘, elementi, opisani v koraku ,Načrt ukrepov‘, pa so prikazani v identifikaciji in oceni vsakega tveganja.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/2014-01-02-work-environment-site-related.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/2014-01-02-work-environment-site-related.html" scrolling="no">
   </object>
   <figcaption>Identifikacija in ocena.</figcaption>
 </figure>
@@ -296,7 +316,7 @@ Glede na to, kako je partner orodja OiRA konfiguriral orodje, je morda v ta zasl
 <p>V tem koraku ocenite prioriteto tveganja, ki ste ga opredelili.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/2014-01-05-the-electricity-gas-and-water-supplies-are-in-order-and-well-maintained.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/2014-01-05-the-electricity-gas-and-water-supplies-are-in-order-and-well-maintained.html" scrolling="no">
   </object>
   <figcaption>Ocena tveganja.</figcaption>
 </figure>
@@ -309,7 +329,7 @@ V nekaterih orodjih OiRA ocena ni prikazana. To je odvisno od tega, kako je naci
 <p>ocenite prioriteto: nizka, srednja ali visoka.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/2014-01-04-collisions-bumps-and-jamming-are-prevented.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/2014-01-04-collisions-bumps-and-jamming-are-prevented.html" scrolling="no">
   </object>
   <figcaption>Določanje prioritete tveganja.</figcaption>
 </figure>
@@ -321,7 +341,7 @@ V nekaterih orodjih OiRA ocena ni prikazana. To je odvisno od tega, kako je naci
 </ul>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/2014-01-08-exposure-to-biological-substances-is-prevented-or-controlled.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/2014-01-08-exposure-to-biological-substances-is-prevented-or-controlled.html" scrolling="no">
   </object>
   <figcaption>Določanje spremenljivk tveganja.</figcaption>
 </figure>
@@ -331,7 +351,7 @@ V nekaterih orodjih OiRA ocena ni prikazana. To je odvisno od tega, kako je naci
 <p>Nacionalni partner/razvijalec orodja, ki je ustvaril specifično orodje OiRA, je nekatera tveganja obravnaval kot zelo pomembna. Takih ,prednostnih tveganj‘ vam ni treba oceniti, saj se samodejno označijo z ,visoko‘ prednostnostjo.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/2014-01-06-exposure-to-noise-is-prevented-or-controlled.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/2014-01-06-exposure-to-noise-is-prevented-or-controlled.html" scrolling="no">
   </object>
   <figcaption>Prednostna tveganja.</figcaption>
 </figure>
@@ -343,7 +363,7 @@ V nekaterih orodjih OiRA ocena ni prikazana. To je odvisno od tega, kako je naci
 <p>Če v orodju ni tveganj, ki so prisotna na vašem delovnem mestu/v vašem podjetju, jih morate dodati tukaj. Ta tveganja lahko v celoti opredelite/opišete sami.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/other-risks.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/other-risks.html" scrolling="no">
   </object>
   <figcaption>Dodatna tveganja.</figcaption>
 </figure>
@@ -355,7 +375,7 @@ V nekaterih orodjih OiRA ocena ni prikazana. To je odvisno od tega, kako je naci
 <p>Dodate lahko poljubno število tveganj.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/add-risk.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/add-risk.html" scrolling="no">
   </object>
   <figcaption>Dodaj dodatno tveganje.</figcaption>
 </figure>
@@ -372,7 +392,7 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
 <h3 id="vključen-načrt-ukrepov">Vključen načrt ukrepov</h3>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/risk-integrated-action-plan.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/risk-integrated-action-plan.html" scrolling="no">
   </object>
   <figcaption>Vključen načrt ukrepov.</figcaption>
 </figure>
@@ -384,7 +404,7 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
 <h3 id="ločen-načrt-ukrepov">Ločen načrt ukrepov</h3>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/action-plan-landing.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/action-plan-landing.html" scrolling="no">
   </object>
   <figcaption>Kadar je načrt ukrepov ločen korak, bo na voljo prek navigacije na levi strani zaslona.</figcaption>
 </figure>
@@ -396,7 +416,7 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
 <p>Pozvani boste k opredelitvi ukrepov za vsako tveganje, za katero ste se med postopkom ocenjevanja odločili, da ni prisotno, in za vsako prednostno tveganje (ne glede na to, ali ste na izjavo, povezano s tem tveganjem, odgovorili z ,da‘ ali ,ne‘).</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/action-plan-action.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/action-plan-action.html" scrolling="no">
   </object>
   <figcaption>Tveganje v načrtu ukrepov.</figcaption>
 </figure>
@@ -406,7 +426,7 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
 <h4 id="dodajte-svoj-ukrep">Dodajte svoj ukrep</h4>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/action-plan-action-add-extra-measure.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/action-plan-action-add-extra-measure.html" scrolling="no">
   </object>
   <figcaption>Dodajanje ukrepa.</figcaption>
 </figure>
@@ -432,7 +452,7 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
 <p>Ti vnaprej opredeljeni ukrepi so nato prikazani v vašem načrtu ukrepov. Opis, kaj je treba storiti, je že vnesen, druga polja (kdo odgovoren, potrebna sredstva, datumi) pa lahko in morate izpolniti sami.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/action-plan-action-add-standard-measure.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/action-plan-action-add-standard-measure.html" scrolling="no">
   </object>
   <figcaption>Dodajanje standardnih ukrepov.</figcaption>
 </figure>
@@ -473,7 +493,7 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
 <p>V tem koraku lahko vnesete besedilo, če želite v poročilo vključiti morebitne pripombe.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/report.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/report.html" scrolling="no">
   </object>
   <figcaption>Komentiraj poročilo.</figcaption>
 </figure>
@@ -487,7 +507,7 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
 <p>Oddelek s statusom zagotavlja pregled nad tem, koliko tveganj ste opredelili, koliko ste jih obravnavali s sprejetjem ukrepov in na koliko izjav o tveganjih še morate odgovoriti.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/status.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/status.html" scrolling="no">
   </object>
   <figcaption>Stran s statusom.</figcaption>
 </figure>
@@ -555,37 +575,37 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
 				3-carrying-out-a-risk-assessment.md
 			</h2>
 	    
-	    <!-- <a href="/new-session.html#document-content" id="button-new-session-quick" data-pat-modal="class: large" class="no-label pat-modal iconified icon-plus" title="Start a new assessment">New</a> -->
+	    <!-- <a href="/feedback/panel-new-assessment.html#document-content" id="button-new-session-quick" data-pat-modal="class: large" class="no-label pat-modal iconified icon-plus" title="Start a new assessment">New</a> -->
         <div
         	class="pat-collapsible pat-context-menu closed align-right"
         	data-pat-collapsible="close-trigger: *:not(#more-menu)"
         	id="more-menu">
             <strong
-            	class="context-menu-label iconified more-menu-trigger"></strong>
+            	class="context-menu-label iconified more-menu-trigger">Več…</strong>
             <ul
             	class="menu">
             	<li>
                     <a
-                    	href="/new-session.html#document-content"
+                    	href="/feedback/panel-new-assessment.html#document-content"
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title=""></a>
+                        title="Začni novo oceno tveganja">Nova ocena tveganja</a>
                 </li>
                 <li>
-                    <label class="pat-checklist"><input type="checkbox" name="archived" /> </label>
+                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Pokaži arhivirane ocene tveganja</label>
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
-                        <label><input type="radio" value="all" name="ass-type" checked /> </label>
-                        <label><input type="radio" value="regular" name="ass-type" /> </label>
-                        <label><input type="radio" value="contractor" name="ass-type" /> </label>
+                        <label><input type="radio" value="all" name="ass-type" checked /> Vse vrste ocen tveganja</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Samo redne ocene tveganja</label>
+                        <label><input type="radio" value="contractor" name="ass-type" /> Samo ocene tveganja izvajalcev</label>
                 	</fieldset>
                 </li>
             </ul>
         </div>
 	
-    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title=""></button>
+    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title="Razširi stransko vrstico">Razširi stransko vrstico</button>
 </form>
 
 		<a href="/feedback/osh.html#osh-ra-browser" id="osh-target-ra-browser" class="onscreen-help pat-tooltip" data-pat-tooltip="trigger: click; source: ajax; class: rich info;">Help</a>
@@ -611,7 +631,7 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
 				type="search" 
 				value="" 
 				class="quick-search pat-autofocus" 
-				placeholder="" />
+				placeholder="Iskanje" />
             <button type="submit" name="standard" value="main" class="search-button-main assistive">Išči</button>
         </label>
 
@@ -635,7 +655,7 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
             <select 
                 name="search-rule.data-field:records">
                 <option 
-                    value="SearchableText"></option>
+                    value="SearchableText"><!-- i18n: label_any_text_field -->Katerokoli besedilno polje</option>
                 <optgroup 
                     label="Metadata">
                     <option value="Title">Title</option>
@@ -660,9 +680,9 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
                 class="pat-select">
                 <select 
                     name="search-rule.lemma-operator:records">
-                <option value="contains"></option>
-                <option value="contains-not"></option>
-                <option value="equals"></option>
+                <option value="contains"><!-- i18n: label_contains -->Vsebuje</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Ne vsebuje</option>
+                <option value="equals"><!-- i18n: label_equals -->Enako</option>
                 </select>
             </label>
             <input 
@@ -694,8 +714,8 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals"></option>
-                    <option value="equals-not"></option>
+                    <option value="equals">Enako</option>
+                    <option value="equals-not">Ni enako</option>
                 </select>
             </label>
             <select 
@@ -715,8 +735,8 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals"></option>
-                    <option value="equals-not"></option>
+                    <option value="equals">Enako</option>
+                    <option value="equals-not">Ni enako</option>
                 </select>
             </label>
             <select 
@@ -742,10 +762,10 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
     class="button-bar">
     <button 
         type="submit" 
-        class="pat-button default icon-search">Išči</button>
+        class="pat-button default icon-search"><!-- i18n: action_search -->Išči</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle"></button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Dodaj drugo iskalno pravilo</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/sl/pages/3-carrying-out-a-risk-assessment#listing" 
@@ -766,9 +786,9 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
         <select 
             name="search-rule.and-or:records">
             <option 
-                value="and"></option>
+                value="and"><!-- i18n: label_and -->In…</option>
             <option 
-                value="or"></option>
+                value="or"><!-- i18n: label_or -->Ali…</option>
         </select>
     </label>
     <label 
@@ -776,7 +796,7 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
         <select 
             name="search-rule.data-field:records">
             <option 
-                value="SearchableText"></option>
+                value="SearchableText"><!-- i18n: label_any_text_field -->Katerokoli besedilno polje</option>
             <optgroup 
                 label="Metadata">
                 <option value="Title">Title</option>
@@ -798,9 +818,9 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
             class="pat-select">
             <select 
                 name="search-rule.lemma-operator:records">
-                <option value="contains"></option>
-                <option value="contains-not"></option>
-                <option value="equals"></option>
+                <option value="contains"><!-- i18n: label_contains -->Vsebuje</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Ne vsebuje</option>
+                <option value="equals"><!-- i18n: label_equals -->Enako</option>
             </select>
         </label>
         <input 
@@ -833,9 +853,9 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals"></option>
+                    value="equals">Enako</option>
                 <option 
-                value="equals-not"></option>
+                value="equals-not">Ni enako</option>
             </select>
         </label>
         <select 
@@ -856,9 +876,9 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals"></option>
+                    value="equals">Enako</option>
                 <option 
-                    value="equals-not"></option>
+                    value="equals-not">Ni enako</option>
             </select>
         </label>
         <select 
@@ -879,7 +899,7 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
     </span>
     <button 
         type="button" 
-        class="remove-clone">Odstrani</button>
+        class="remove-clone"><!-- i18n: remove -->Odstrani</button>
   </p>
 </template>
 
@@ -893,7 +913,7 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
 			        	type="radio" 
 			        	name="search-mode" 
 			        	value="standard" 
-			        	checked> 
+			        	checked> Standardno iskanje
 			    </label>
 			    <label 
 			    	class="pat-switch toggle-advanced"
@@ -901,7 +921,7 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
 			        <input 
 			        	type="radio" 
 			        	name="search-mode" 
-			        	value="advanced"> 
+			        	value="advanced"> Napredno iskanje
 			    </label>
 			</fieldset>
 	    </fieldset>

@@ -102,9 +102,23 @@
 			<a 
 				href="/feedback/more-menu.html#menu-content" 
 			   	id="user-menu" 
-			   	class="iconified pat-tooltip pat-switch" 
-			   	data-pat-switch="selector: body; remove: osc-s-on; add: osc-s-off;"
-			   	data-pat-tooltip="source: ajax">Menu</a>
+			   	class=" 
+					pat-tooltip 
+					pat-switch" 
+			   	data-pat-switch="
+					selector: body; 
+					remove: osc-s-on; 
+					add: osc-s-off;"
+			   	data-pat-tooltip="
+					source: ajax">
+				
+					<img 
+						class="
+							avatar
+							pat-avatar"
+						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
+						alt="">
+				<!-- i18n: label_menu -->Izbornik</a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -112,13 +126,19 @@
 	            class="pat-tooltip icon iconified icon-chat pat-push">
 	            Messages <sup id="messages-unread-count" class="counter digit-1">1</sup>
 	        </a> 
+			
 			<a 
-				href="/feedback/help-menu.html#menu-content" 
-			   	id="help-menu" 
-			   	class="
-					iconified 
-					pat-tooltip" 
-			   	data-pat-tooltip="source: ajax">Help</a>
+                href="/++resource++euphorie.resources/assets/oira/help/en-roadmap/index" 
+                data-pat-inject="
+                    history: record;
+                    scroll: top;
+                    source: #content-pane;
+                    target: #content-pane;"
+				id="help-menu"
+                class="
+                    pat-inject 
+                    iconified" 
+                target="Help"><!-- i18n: label_help -->Pomoć</a>
 			<a 
 				href="/index.html" 
 			    data-pat-inject="source: #content; target: #content; history: record" 
@@ -149,46 +169,91 @@
 
 <ol 
     id="steps" 
-    class="navigation pat-navigation">
+    class="
+      navigation 
+      pat-navigation">
     
-        <li 
-            id="step-1"
-            class="complete ">
-        <a 
-            href="/ass-commercial-guarding-leicester/index#content"
-            data-pat-inject="history: record"
-            class="preparation pat-switch pat-inject"
-            data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off">Priprema</a>
-        </li>
-        <li 
-            id="step-involve"
-            class="">
-            <a 
-                href="/ass-commercial-guarding-leicester/involve#content"
-                class="involve pat-inject pat-switch"
-                data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off"
-                data-pat-inject="history: record">Uključite</a>
-        </li>
+        
+<li 
+    id="step-preparation"
+    class="
+      complete 
+      ">
+  <a 
+    href="/ass-commercial-guarding-leicester/index"
+    data-pat-inject="
+      history: record;
+      source: #main-content;
+      target: #main-content;
+        &&
+      source: #steps;
+      target: #steps;"
+    class="
+      step
+      preparation 
+      pat-switch 
+      pat-inject"
+    data-pat-switch="
+      selector: #main; 
+      remove: sidebar-*; 
+      add: sidebar-off"><span class="label"><!-- i18n: label_preparation -->Priprema</span></a>
+</li>
+        
+<li 
+    id="step-involve"
+    class="
+      complete 
+      ">
+  <a 
+    href="/ass-commercial-guarding-leicester/involve"
+    data-pat-inject="
+      history: record;
+      source: #main-content;
+      target: #main-content;
+        &&
+      source: #steps;
+      target: #steps;"
+    class="
+      step
+      involve 
+      pat-switch 
+      pat-inject"
+    data-pat-switch="
+      selector: #main; 
+      remove: sidebar-*; 
+      add: sidebar-off"><span class="label"><!-- i18n: label_involve -->Uključite</span></a>
+</li>
+
     <li 
-        class="active " 
-        id="step-2">
+        class="
+          active 
+          " 
+        id="step-analysis">
 
         
 
-        <a href="/ass-commercial-guarding-leicester/items/2014-01-01-commercial-manned-guarding#content"
-            data-pat-inject="history: record"
+        <a href="/ass-commercial-guarding-leicester/items/2014-01-01-commercial-manned-guarding"
+            data-pat-inject="
+              history: record;
+              source: #main-content;
+              target: #main-content;
+                &&
+              source: #steps;
+              target: #steps;"
             class="
+                step
                 identification 
                 pat-switch 
                 pat-inject"
             data-pat-switch="
                 selector: #main; 
                 remove: sidebar-*; 
-                add: sidebar-off">Prepoznavanje + procjena</a>
-
+                add: sidebar-off">
+              <span class="label"><!-- i18n: label_identification -->Prepoznavanje + <!-- i18n: label_evaluation -->procjena</span></a>
       
-
-        <div class="topics" id="step-2-topics">
+        <div 
+          class="topics" 
+          id="step-analysis-topics">
 
           
             
@@ -215,7 +280,7 @@
                   
                   
                   <li class="">
-                    <a href="/ass-commercial-guarding-leicester/items/2014-01-01-commercial-manned-guarding" class="pat-switch pat-inject" data-pat-inject="history: record; source: #step-2; target: #step-2 && source: #main-content; target: #main-content" data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off"><strong class="counter">1</strong> Commercial manned guarding</a>
+                    <a href="/ass-commercial-guarding-leicester/items/2014-01-01-commercial-manned-guarding" class="pat-switch pat-inject" data-pat-inject="history: record; source: #step-analysis; target: #step-analysis && source: #main-content; target: #main-content" data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off"><strong class="counter">1</strong> Commercial manned guarding</a>
                     
                     
                       
@@ -235,7 +300,7 @@
                               
                               
                               <li class="submodule current">
-                                <a href="/ass-commercial-guarding-leicester/items/2014-01-02-work-environment-site-related" class="pat-switch pat-inject" data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off"  data-pat-inject="history: record; source: #step-2; target: #step-2 && source: #main-content; target: #main-content"><strong class="counter">1.1</strong> Work environment (site related)</a>
+                                <a href="/ass-commercial-guarding-leicester/items/2014-01-02-work-environment-site-related" class="pat-switch pat-inject" data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off"  data-pat-inject="history: record; source: #step-analysis; target: #step-analysis && source: #main-content; target: #main-content"><strong class="counter">1.1</strong> Work environment (site related)</a>
                                 
                                 
                                   <ol class="questions">
@@ -522,7 +587,7 @@
                               
                               
                               <li class="submodule ">
-                                <a href="/ass-commercial-guarding-leicester/items/2014-01-12-fire-prevention-and-emergency-procedures" class="pat-switch pat-inject" data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off"  data-pat-inject="history: record; source: #step-2; target: #step-2 && source: #main-content; target: #main-content"><strong class="counter">1.2</strong> Fire prevention and emergency procedures</a>
+                                <a href="/ass-commercial-guarding-leicester/items/2014-01-12-fire-prevention-and-emergency-procedures" class="pat-switch pat-inject" data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off"  data-pat-inject="history: record; source: #step-analysis; target: #step-analysis && source: #main-content; target: #main-content"><strong class="counter">1.2</strong> Fire prevention and emergency procedures</a>
                                 
                                 
                               </li>
@@ -655,7 +720,7 @@
               <li id="other-risks" class="">
                 <a href="/ass-commercial-guarding-leicester/items/other-risks"
                     class="pat-switch pat-inject"
-                    data-pat-inject="history: record; source: #step-2; target: #step-2 && source: #main-content; target: #main-content"
+                    data-pat-inject="history: record; source: #step-analysis; target: #step-analysis && source: #main-content; target: #main-content"
                     data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off"><strong class="counter">Ω</strong> Ostali izvori opasnosti, štetnosti i napora</a>
                 
               </li>
@@ -672,80 +737,176 @@
           </ul>
 
         </div>
-
       
 
     </li>
 
     
-      <li id="step-4" class=" ">
+      <li 
+        id="step-action-plan" 
+        class="
+           ">
         <!-- The tree for the action section uses the same structure as the identification tree, with the only differences that only risks and their parent modules are shown and that the entire tree is expanded. -->
-        <a href="/ass-commercial-guarding-leicester/action-plan#content"
-            data-pat-inject="history: record"
-            class="action-plan pat-switch pat-inject"
-            data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off">Plan mjera</a>
+        <a href="/ass-commercial-guarding-leicester/action-plan"
+            data-pat-inject="
+              history: record;
+              source: #main-content;
+              target: #main-content;
+                &&
+              source: #steps;
+              target: #steps;"
+            class="
+              step
+              action-plan 
+              pat-switch 
+              pat-inject"
+            data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off"><!-- i18n: label_action_plan -->Plan mjera</a>
         
       </li>
     
 
-    <li 
-        id="step-consultancy" 
-        >
-        <a 
-            class="consultancy pat-switch pat-inject"
-            data-pat-inject="history: record"
-            data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off"
-            href="/ass-commercial-guarding-leicester/consultancy#content"></a>
-    </li>
-
-    <li id="step-5" >
-      
-        <a class="report pat-switch pat-inject"
-            data-pat-inject="history: record"
-            data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off"
-            href="/ass-commercial-guarding-leicester/report#content">Izvješće</a>
-      
-    </li>
-
     
-      <li id="step-6" class="">
-        <a href="/ass-commercial-guarding-leicester/training#content"
-            class="training pat-inject pat-switch"
-            data-pat-inject="history: record"
-            data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off">Osposobljavanje</a>
-      </li>
+<li 
+    id="step-consultancy"
+    class="
+      complete 
+      ">
+  <a 
+    href="/ass-commercial-guarding-leicester/consultancy"
+    data-pat-inject="
+      history: record;
+      source: #main-content;
+      target: #main-content;
+        &&
+      source: #steps;
+      target: #steps;"
+    class="
+      step
+      consultancy 
+      pat-switch 
+      pat-inject"
+    data-pat-switch="
+      selector: #main; 
+      remove: sidebar-*; 
+      add: sidebar-off"><span class="label"><!-- i18n: label_consultancy -->Konzultacije</span></a>
+</li>
     
+<li 
+    id="step-report"
+    class="
+      complete 
+      ">
+  <a 
+    href="/ass-commercial-guarding-leicester/report"
+    data-pat-inject="
+      history: record;
+      source: #main-content;
+      target: #main-content;
+        &&
+      source: #steps;
+      target: #steps;"
+    class="
+      step
+      report 
+      pat-switch 
+      pat-inject"
+    data-pat-switch="
+      selector: #main; 
+      remove: sidebar-*; 
+      add: sidebar-off"><span class="label"><!-- i18n: label_report -->Izvješće</span></a>
+</li>
+    
+<li 
+    id="step-training"
+    class="
+      complete 
+      ">
+  <a 
+    href="/ass-commercial-guarding-leicester/training"
+    data-pat-inject="
+      history: record;
+      source: #main-content;
+      target: #main-content;
+        &&
+      source: #steps;
+      target: #steps;"
+    class="
+      step
+      training 
+      pat-switch 
+      pat-inject"
+    data-pat-switch="
+      selector: #main; 
+      remove: sidebar-*; 
+      add: sidebar-off"><span class="label"><!-- i18n: label_training -->Osposobljavanje</span></a>
+</li>
+
   
 
-  
-    <li id="status" class="">
-      <a href="/ass-commercial-guarding-leicester/status#content"
-          data-pat-inject="history: record"
-          class="status pat-switch pat-inject"
-          data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off">Status<!-- <strong class="pie-graph pat-tooltip"
-            data-pat-tooltip="trigger: hover; position-list: lm"
-            data-percentage="0"
-            title="0% Complete">0%</strong> --></a>
-      
-    </li>
     
-    <li 
-        class="" 
-        id="settings">
-        <a
-            href="/ass-commercial-guarding-leicester/settings#content"
-            data-pat-inject="history: record"
-            class="settings pat-switch pat-inject"
-            data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off"></a>
-    </li>
+      
+<li 
+    id="status"
+    class="
+      complete 
+      ">
+  <a 
+    href="/ass-commercial-guarding-leicester/status"
+    data-pat-inject="
+      history: record;
+      source: #main-content;
+      target: #main-content;
+        &&
+      source: #steps;
+      target: #steps;"
+    class="
+      
+      status 
+      pat-switch 
+      pat-inject"
+    data-pat-switch="
+      selector: #main; 
+      remove: sidebar-*; 
+      add: sidebar-off"><span class="label"><!-- i18n: label_status -->Status</span></a>
+</li>
+    
+
+    
+<li 
+    id="settings"
+    class="
+      complete 
+      ">
+  <a 
+    href="/ass-commercial-guarding-leicester/settings"
+    data-pat-inject="
+      history: record;
+      source: #main-content;
+      target: #main-content;
+        &&
+      source: #steps;
+      target: #steps;"
+    class="
+      
+      settings 
+      pat-switch 
+      pat-inject"
+    data-pat-switch="
+      selector: #main; 
+      remove: sidebar-*; 
+      add: sidebar-off"><span class="label"><!-- i18n: label_settings -->Postavke</span></a>
+</li>
+
     <li 
         id="home">
         <a
-            href="/assessments#content"
+            href="/assessments"
             data-pat-inject="history: record"
             class="home pat-switch pat-inject"
-            data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off"></a>
+            data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off">
+            <span class="label"><!-- i18n: label_exit -->Izlaz</span></a>
     </li>
+
     
 </ol>
 
@@ -765,82 +926,95 @@
 		class="pat-scroll-box" 
 		id="content-pane">
 
-		<div
-    class="pat-toolbar sticky auto-hide"
-    id="assessment-toolbar">   
+		<!-- <pat-toolbar id="assessment-toolbar" type="sticky" auto-hide="true"> -->
     <div
-        class="toolbar-functions-area">  
-        
-            <div 
-                class="toolbar-section">
-                <a 
-                    href="#tree" 
-                    id="toggle-tree" 
-                    class="icon menu pat-toggle" 
-                    data-pat-toggle="selector: #main; value: sidebar-off sidebar-on;">Toggle tree</a> 
-            </div>
-        
-        <div 
-            class="toolbar-section quick-functions"
-            id="assessment-toolbar-quick-functions"> 
-
+        class="
+            pat-toolbar 
+            sticky 
+            auto-hide"
+        id="assessment-toolbar">   
+        <div
+            class="toolbar-functions-area">  
             
-                <a 
-                    title="Lock this assessment" 
-                    href="#publication-menu" 
-                    class="icon-lock-open icon pat-tooltip " 
-                    data-pat-tooltip="source: ajax; position-list: tr; trigger: click; source: ajax">Unlocked 
-                    <!-- <time 
-                            class="pat-display-time" 
-                        data-pat-display-time="from-now: true; locale: en" 
-                        datetime="2018-03-28T08:00Z">2018-03-28</time> -->
-                </a>
+                <div 
+                    class="toolbar-section">
+                    <a 
+                        href="#tree" 
+                        id="toggle-tree" 
+                        class="icon menu pat-toggle" 
+                        data-pat-toggle="selector: #main; value: sidebar-off sidebar-on;">Toggle tree</a> 
+                </div>
             
-
             <div 
-                id="publication-menu" 
-                hidden>
+                class="
+                    toolbar-section 
+                    quick-functions"
+                id="assessment-toolbar-quick-functions"> 
+
                 
-                    <div 
-                        class="pat-message notice">
-                        <p>
-                            Last edited by <a href="mailto:hans@mittelmaier.de">Michel Moulin</a> on 8 December 2022.
-                        </p>
-                    </div>
-                
-                    <ul 
-                        class="menu">
+                    <a 
+                        title="Lock this assessment" 
+                        href="#publication-menu" 
+                        class="
+                            icon-lock-open 
+                            icon 
+                            pat-tooltip 
+                            " 
+                        data-pat-tooltip="
+                            source: ajax; 
+                            position-list: tr; 
+                            trigger: click; 
+                            source: ajax">Unlocked 
                         
-                        <li>
-                            <form 
-                                action="/preparation-read-only.html#content" 
-                                class="pat-inject close-panel">
-                                <button 
-                                    type="submit" 
-                                    class="icon-lock">Lock Risk Assessment</button>
-                            </form>
-                        </li>
-                    
-                </ul>
-            </div>
-
-            <a 
-                id="oira-progress-indicator"
-                href="#status-sentinel"
-                data-pat-inject="history: record"
-                class="icon pat-inject progress pat-tooltip"
-                data-pat-tooltip="class: rich info; trigger: click; source: ajax; position-list: tr">
-               <strong 
-                    class="pie-graph"
-                    data-percentage="0"
-                    title="0% Complete">0%</strong>
-            </a>
-
-            <div
-                hidden
-                id="status-sentinel">
+                    </a>
                 
+
+                <div 
+                    id="publication-menu" 
+                    hidden>
                     
+                        <div 
+                            class="
+                                pat-message 
+                                notice">
+                            <p>
+                                Last edited by <a href="mailto:hans@mittelmaier.de">Michel Moulin</a> on 8 December 2022.
+                            </p>
+                        </div>
+                    
+                        <ul 
+                            class="menu">
+                            
+                            <li>
+                                <form 
+                                    action="/preparation-read-only.html#content" 
+                                    class="pat-inject close-panel">
+                                    <button 
+                                        type="submit" 
+                                        class="icon-lock">Lock Risk Assessment</button>
+                                </form>
+                            </li>
+                        
+                    </ul>
+                </div>
+
+                <a 
+                    id="oira-progress-indicator"
+                    href="#status-sentinel"
+                    data-pat-inject="history: record"
+                    class="icon pat-inject progress pat-tooltip"
+                    data-pat-tooltip="class: rich info; trigger: click; source: ajax; position-list: tr">
+                <strong 
+                        class="pie-graph"
+                        data-percentage="0"
+                        title="0% Complete">0%</strong>
+                </a>
+
+                <div
+                    hidden
+                    id="status-sentinel">
+                    
+                        
 
 <p>
     You've completed <strong>0%</strong> of the risk assessment. When you've completed 85% of the risk assessment, you will be eligible for a certificate.
@@ -856,25 +1030,25 @@
 
     <a href="#">Learn more about the benefits…</a>
 </p>
+                    
+                    
+                    <p>
+                        View the <a href="/ass-commercial-guarding-leicester/status#content" class="pat-inject close-panel">Status screen</a> for more details.
+                    </p>
+                </div>
+                
+                    <a 
+                        href="/feedback/ass-menu#more-menu" 
+                        class="icon more pat-tooltip" 
+                        data-pat-tooltip="source: ajax; position-list: tr">More</a>
                 
                 
-                <p>
-                    View the <a href="/ass-commercial-guarding-leicester/status#content" class="pat-inject close-panel">Status screen</a> for more details.
-                </p>
+                <!-- <a 
+                    class="default pat-button"><!-- i18n: label_approve_risk_assessment --></a>  --> 
             </div>
-            
-                <a 
-                    href="/feedback/ass-menu#more-menu" 
-                    class="icon more pat-tooltip" 
-                    data-pat-tooltip="source: ajax; position-list: tr">More</a>
-            
-            
-            <!-- <a 
-                class="default pat-button"></a>  --> 
         </div>
     </div>
-</div>
-
+<!-- </pat-toolbar> -->
 		
 		<article 
 			class="pat-rich">
@@ -1006,7 +1180,7 @@ this site.</em></p>
 				2014-01-02-work-environment-site-related.md
 			</h2>
 	    
-	    <!-- <a href="/new-session.html#document-content" id="button-new-session-quick" data-pat-modal="class: large" class="no-label pat-modal iconified icon-plus" title="Start a new assessment">New</a> -->
+	    <!-- <a href="/feedback/panel-new-assessment.html#document-content" id="button-new-session-quick" data-pat-modal="class: large" class="no-label pat-modal iconified icon-plus" title="Start a new assessment">New</a> -->
         <div
         	class="pat-collapsible pat-context-menu closed align-right"
         	data-pat-collapsible="close-trigger: *:not(#more-menu)"
@@ -1017,26 +1191,26 @@ this site.</em></p>
             	class="menu">
             	<li>
                     <a
-                    	href="/new-session.html#document-content"
+                    	href="/feedback/panel-new-assessment.html#document-content"
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title=""></a>
+                        title="Pokreni novu procjenu rizika">Nova procjena rizika</a>
                 </li>
                 <li>
-                    <label class="pat-checklist"><input type="checkbox" name="archived" /> </label>
+                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Prikaži arhivirane procjene rizika</label>
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
-                        <label><input type="radio" value="all" name="ass-type" checked /> </label>
-                        <label><input type="radio" value="regular" name="ass-type" /> </label>
-                        <label><input type="radio" value="contractor" name="ass-type" /> </label>
+                        <label><input type="radio" value="all" name="ass-type" checked /> Sve vrste procjena rizika</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Samo redovite procjene rizika</label>
+                        <label><input type="radio" value="contractor" name="ass-type" /> Samo procjene rizika izvođača</label>
                 	</fieldset>
                 </li>
             </ul>
         </div>
 	
-    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title=""></button>
+    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title="Proširi bočnu traku">Proširi bočnu traku</button>
 </form>
 
 		<a href="/feedback/osh.html#osh-ra-browser" id="osh-target-ra-browser" class="onscreen-help pat-tooltip" data-pat-tooltip="trigger: click; source: ajax; class: rich info;">Help</a>
@@ -1062,7 +1236,7 @@ this site.</em></p>
 				type="search" 
 				value="" 
 				class="quick-search pat-autofocus" 
-				placeholder="" />
+				placeholder="Pretraži" />
             <button type="submit" name="standard" value="main" class="search-button-main assistive">Traži</button>
         </label>
 
@@ -1086,7 +1260,7 @@ this site.</em></p>
             <select 
                 name="search-rule.data-field:records">
                 <option 
-                    value="SearchableText"></option>
+                    value="SearchableText"><!-- i18n: label_any_text_field -->Bilo koje tekstno polje</option>
                 <optgroup 
                     label="Metadata">
                     <option value="Title">Title</option>
@@ -1111,9 +1285,9 @@ this site.</em></p>
                 class="pat-select">
                 <select 
                     name="search-rule.lemma-operator:records">
-                <option value="contains"></option>
-                <option value="contains-not"></option>
-                <option value="equals"></option>
+                <option value="contains"><!-- i18n: label_contains -->Sadrži</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Ne sadrži</option>
+                <option value="equals"><!-- i18n: label_equals -->Jednako je</option>
                 </select>
             </label>
             <input 
@@ -1145,8 +1319,8 @@ this site.</em></p>
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals"></option>
-                    <option value="equals-not"></option>
+                    <option value="equals">Jednako je</option>
+                    <option value="equals-not">Nije jednako</option>
                 </select>
             </label>
             <select 
@@ -1166,8 +1340,8 @@ this site.</em></p>
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals"></option>
-                    <option value="equals-not"></option>
+                    <option value="equals">Jednako je</option>
+                    <option value="equals-not">Nije jednako</option>
                 </select>
             </label>
             <select 
@@ -1193,10 +1367,10 @@ this site.</em></p>
     class="button-bar">
     <button 
         type="submit" 
-        class="pat-button default icon-search">Traži</button>
+        class="pat-button default icon-search"><!-- i18n: action_search -->Traži</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle"></button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Dodaj još jedno pravilo pretrage</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/hr/illustrations/2014-01-02-work-environment-site-related#listing" 
@@ -1217,9 +1391,9 @@ this site.</em></p>
         <select 
             name="search-rule.and-or:records">
             <option 
-                value="and"></option>
+                value="and"><!-- i18n: label_and -->I…</option>
             <option 
-                value="or"></option>
+                value="or"><!-- i18n: label_or -->Ili…</option>
         </select>
     </label>
     <label 
@@ -1227,7 +1401,7 @@ this site.</em></p>
         <select 
             name="search-rule.data-field:records">
             <option 
-                value="SearchableText"></option>
+                value="SearchableText"><!-- i18n: label_any_text_field -->Bilo koje tekstno polje</option>
             <optgroup 
                 label="Metadata">
                 <option value="Title">Title</option>
@@ -1249,9 +1423,9 @@ this site.</em></p>
             class="pat-select">
             <select 
                 name="search-rule.lemma-operator:records">
-                <option value="contains"></option>
-                <option value="contains-not"></option>
-                <option value="equals"></option>
+                <option value="contains"><!-- i18n: label_contains -->Sadrži</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Ne sadrži</option>
+                <option value="equals"><!-- i18n: label_equals -->Jednako je</option>
             </select>
         </label>
         <input 
@@ -1284,9 +1458,9 @@ this site.</em></p>
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals"></option>
+                    value="equals">Jednako je</option>
                 <option 
-                value="equals-not"></option>
+                value="equals-not">Nije jednako</option>
             </select>
         </label>
         <select 
@@ -1307,9 +1481,9 @@ this site.</em></p>
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals"></option>
+                    value="equals">Jednako je</option>
                 <option 
-                    value="equals-not"></option>
+                    value="equals-not">Nije jednako</option>
             </select>
         </label>
         <select 
@@ -1330,7 +1504,7 @@ this site.</em></p>
     </span>
     <button 
         type="button" 
-        class="remove-clone">Ukloni</button>
+        class="remove-clone"><!-- i18n: remove -->Ukloni</button>
   </p>
 </template>
 
@@ -1344,7 +1518,7 @@ this site.</em></p>
 			        	type="radio" 
 			        	name="search-mode" 
 			        	value="standard" 
-			        	checked> 
+			        	checked> Standardna pretraga
 			    </label>
 			    <label 
 			    	class="pat-switch toggle-advanced"
@@ -1352,7 +1526,7 @@ this site.</em></p>
 			        <input 
 			        	type="radio" 
 			        	name="search-mode" 
-			        	value="advanced"> 
+			        	value="advanced"> Napredna pretraga
 			    </label>
 			</fieldset>
 	    </fieldset>

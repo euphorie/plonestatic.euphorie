@@ -226,7 +226,7 @@
 				new-session.html
 			</h2>
 	    
-	    <!-- <a href="/new-session.html#document-content" id="button-new-session-quick" data-pat-modal="class: large" class="no-label pat-modal iconified icon-plus" title="Start a new assessment">New</a> -->
+	    <!-- <a href="/feedback/panel-new-assessment.html#document-content" id="button-new-session-quick" data-pat-modal="class: large" class="no-label pat-modal iconified icon-plus" title="Start a new assessment">New</a> -->
         <div
         	class="pat-collapsible pat-context-menu closed align-right"
         	data-pat-collapsible="close-trigger: *:not(#more-menu)"
@@ -237,7 +237,7 @@
             	class="menu">
             	<li>
                     <a
-                    	href="/new-session.html#document-content"
+                    	href="/feedback/panel-new-assessment.html#document-content"
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
@@ -306,7 +306,7 @@
             <select 
                 name="search-rule.data-field:records">
                 <option 
-                    value="SearchableText">Any text field</option>
+                    value="SearchableText"><!-- i18n: label_any_text_field -->Any text field</option>
                 <optgroup 
                     label="Metadata">
                     <option value="Title">Title</option>
@@ -331,9 +331,9 @@
                 class="pat-select">
                 <select 
                     name="search-rule.lemma-operator:records">
-                <option value="contains">Contains</option>
-                <option value="contains-not">Does not contain</option>
-                <option value="equals">Equals</option>
+                <option value="contains"><!-- i18n: label_contains -->Contains</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Does not contain</option>
+                <option value="equals"><!-- i18n: label_equals -->Equals</option>
                 </select>
             </label>
             <input 
@@ -348,9 +348,9 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is">Is</option>
-                    <option value="is-before">Is before</option>
-                    <option value="is-after">Is after</option>
+                    <option value="is"></option>
+                    <option value="is-before"></option>
+                    <option value="is-after"></option>
                 </select>
             </label>
             <input 
@@ -413,10 +413,10 @@
     class="button-bar">
     <button 
         type="submit" 
-        class="pat-button default icon-search">Search</button>
+        class="pat-button default icon-search"><!-- i18n: action_search -->Search</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle">Add another search rule</button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Add another search rule</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/en/illustrations/new-session#listing" 
@@ -437,9 +437,9 @@
         <select 
             name="search-rule.and-or:records">
             <option 
-                value="and">And…</option>
+                value="and"><!-- i18n: label_and -->And…</option>
             <option 
-                value="or">Or…</option>
+                value="or"><!-- i18n: label_or -->Or…</option>
         </select>
     </label>
     <label 
@@ -447,7 +447,7 @@
         <select 
             name="search-rule.data-field:records">
             <option 
-                value="SearchableText">Any text field</option>
+                value="SearchableText"><!-- i18n: label_any_text_field -->Any text field</option>
             <optgroup 
                 label="Metadata">
                 <option value="Title">Title</option>
@@ -469,9 +469,9 @@
             class="pat-select">
             <select 
                 name="search-rule.lemma-operator:records">
-                <option value="contains">Contains</option>
-                <option value="contains-not">Does not contain</option>
-                <option value="equals">Equals</option>
+                <option value="contains"><!-- i18n: label_contains -->Contains</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Does not contain</option>
+                <option value="equals"><!-- i18n: label_equals -->Equals</option>
             </select>
         </label>
         <input 
@@ -486,9 +486,9 @@
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is">Is</option>
-                <option value="is-before">Is before</option>
-                <option value="is-after">Is after</option>
+                <option value="is"></option>
+                <option value="is-before"></option>
+                <option value="is-after"></option>
             </select>
         </label>
         <input 
@@ -550,7 +550,7 @@
     </span>
     <button 
         type="button" 
-        class="remove-clone">Remove</button>
+        class="remove-clone"><!-- i18n: remove -->Remove</button>
   </p>
 </template>
 

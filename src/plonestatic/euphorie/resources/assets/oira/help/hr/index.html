@@ -97,9 +97,23 @@
 			<a 
 				href="/feedback/more-menu.html#menu-content" 
 			   	id="user-menu" 
-			   	class="iconified pat-tooltip pat-switch" 
-			   	data-pat-switch="selector: body; remove: osc-s-on; add: osc-s-off;"
-			   	data-pat-tooltip="source: ajax">Menu</a>
+			   	class=" 
+					pat-tooltip 
+					pat-switch" 
+			   	data-pat-switch="
+					selector: body; 
+					remove: osc-s-on; 
+					add: osc-s-off;"
+			   	data-pat-tooltip="
+					source: ajax">
+				
+					<img 
+						class="
+							avatar
+							pat-avatar"
+						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
+						alt="">
+				<!-- i18n: label_menu -->Izbornik</a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -107,13 +121,19 @@
 	            class="pat-tooltip icon iconified icon-chat pat-push">
 	            Messages <sup id="messages-unread-count" class="counter digit-1">1</sup>
 	        </a> 
+			
 			<a 
-				href="/feedback/help-menu.html#menu-content" 
-			   	id="help-menu" 
-			   	class="
-					iconified 
-					pat-tooltip" 
-			   	data-pat-tooltip="source: ajax">Help</a>
+                href="/++resource++euphorie.resources/assets/oira/help/en-roadmap/index" 
+                data-pat-inject="
+                    history: record;
+                    scroll: top;
+                    source: #content-pane;
+                    target: #content-pane;"
+				id="help-menu"
+                class="
+                    pat-inject 
+                    iconified" 
+                target="Help"><!-- i18n: label_help -->Pomoć</a>
 			<a 
 				href="/index.html" 
 			    data-pat-inject="source: #content; target: #content; history: record" 
@@ -165,24 +185,12 @@
         <article class="pat-rich">
             <h1>Pomozite</h1>
             <p 
-                class="summary">Odaberite jednu od dolje navedenih tema kako biste se upoznali s radom OiRA-e.</p>
+                class="summary"><!-- i18n: message_help_intro -->Odaberite jednu od dolje navedenih tema kako biste se upoznali s radom OiRA-e.</p>
         </article>
         <nav 
             class="
                 pat-nav-tiles 
                 pat-navigation">
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
             
                 
             
@@ -1099,6 +1107,10 @@
                 
             
                 
+            
+                
+            
+                
                     <a 
                         href="/++resource++euphorie.resources/assets/oira/help/hr/pages/certificates.html"
                         class="item icon-award pat-inject"
@@ -1164,6 +1176,20 @@
                             history: record">
                         Konfiguriranje alata OiRA
                     </a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
                 
             
                 
@@ -2385,6 +2411,28 @@
             
                 
             
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         </nav>
     </div>
 </div>
@@ -2417,7 +2465,7 @@
 				index.md
 			</h2>
 	    
-	    <!-- <a href="/new-session.html#document-content" id="button-new-session-quick" data-pat-modal="class: large" class="no-label pat-modal iconified icon-plus" title="Start a new assessment">New</a> -->
+	    <!-- <a href="/feedback/panel-new-assessment.html#document-content" id="button-new-session-quick" data-pat-modal="class: large" class="no-label pat-modal iconified icon-plus" title="Start a new assessment">New</a> -->
         <div
         	class="pat-collapsible pat-context-menu closed align-right"
         	data-pat-collapsible="close-trigger: *:not(#more-menu)"
@@ -2428,26 +2476,26 @@
             	class="menu">
             	<li>
                     <a
-                    	href="/new-session.html#document-content"
+                    	href="/feedback/panel-new-assessment.html#document-content"
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title=""></a>
+                        title="Pokreni novu procjenu rizika">Nova procjena rizika</a>
                 </li>
                 <li>
-                    <label class="pat-checklist"><input type="checkbox" name="archived" /> </label>
+                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Prikaži arhivirane procjene rizika</label>
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
-                        <label><input type="radio" value="all" name="ass-type" checked /> </label>
-                        <label><input type="radio" value="regular" name="ass-type" /> </label>
-                        <label><input type="radio" value="contractor" name="ass-type" /> </label>
+                        <label><input type="radio" value="all" name="ass-type" checked /> Sve vrste procjena rizika</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Samo redovite procjene rizika</label>
+                        <label><input type="radio" value="contractor" name="ass-type" /> Samo procjene rizika izvođača</label>
                 	</fieldset>
                 </li>
             </ul>
         </div>
 	
-    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title=""></button>
+    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title="Proširi bočnu traku">Proširi bočnu traku</button>
 </form>
 
 		<a href="/feedback/osh.html#osh-ra-browser" id="osh-target-ra-browser" class="onscreen-help pat-tooltip" data-pat-tooltip="trigger: click; source: ajax; class: rich info;">Help</a>
@@ -2473,7 +2521,7 @@
 				type="search" 
 				value="" 
 				class="quick-search pat-autofocus" 
-				placeholder="" />
+				placeholder="Pretraži" />
             <button type="submit" name="standard" value="main" class="search-button-main assistive">Traži</button>
         </label>
 
@@ -2497,7 +2545,7 @@
             <select 
                 name="search-rule.data-field:records">
                 <option 
-                    value="SearchableText"></option>
+                    value="SearchableText"><!-- i18n: label_any_text_field -->Bilo koje tekstno polje</option>
                 <optgroup 
                     label="Metadata">
                     <option value="Title">Title</option>
@@ -2522,9 +2570,9 @@
                 class="pat-select">
                 <select 
                     name="search-rule.lemma-operator:records">
-                <option value="contains"></option>
-                <option value="contains-not"></option>
-                <option value="equals"></option>
+                <option value="contains"><!-- i18n: label_contains -->Sadrži</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Ne sadrži</option>
+                <option value="equals"><!-- i18n: label_equals -->Jednako je</option>
                 </select>
             </label>
             <input 
@@ -2556,8 +2604,8 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals"></option>
-                    <option value="equals-not"></option>
+                    <option value="equals">Jednako je</option>
+                    <option value="equals-not">Nije jednako</option>
                 </select>
             </label>
             <select 
@@ -2577,8 +2625,8 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals"></option>
-                    <option value="equals-not"></option>
+                    <option value="equals">Jednako je</option>
+                    <option value="equals-not">Nije jednako</option>
                 </select>
             </label>
             <select 
@@ -2604,10 +2652,10 @@
     class="button-bar">
     <button 
         type="submit" 
-        class="pat-button default icon-search">Traži</button>
+        class="pat-button default icon-search"><!-- i18n: action_search -->Traži</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle"></button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Dodaj još jedno pravilo pretrage</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/hr/#listing" 
@@ -2628,9 +2676,9 @@
         <select 
             name="search-rule.and-or:records">
             <option 
-                value="and"></option>
+                value="and"><!-- i18n: label_and -->I…</option>
             <option 
-                value="or"></option>
+                value="or"><!-- i18n: label_or -->Ili…</option>
         </select>
     </label>
     <label 
@@ -2638,7 +2686,7 @@
         <select 
             name="search-rule.data-field:records">
             <option 
-                value="SearchableText"></option>
+                value="SearchableText"><!-- i18n: label_any_text_field -->Bilo koje tekstno polje</option>
             <optgroup 
                 label="Metadata">
                 <option value="Title">Title</option>
@@ -2660,9 +2708,9 @@
             class="pat-select">
             <select 
                 name="search-rule.lemma-operator:records">
-                <option value="contains"></option>
-                <option value="contains-not"></option>
-                <option value="equals"></option>
+                <option value="contains"><!-- i18n: label_contains -->Sadrži</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Ne sadrži</option>
+                <option value="equals"><!-- i18n: label_equals -->Jednako je</option>
             </select>
         </label>
         <input 
@@ -2695,9 +2743,9 @@
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals"></option>
+                    value="equals">Jednako je</option>
                 <option 
-                value="equals-not"></option>
+                value="equals-not">Nije jednako</option>
             </select>
         </label>
         <select 
@@ -2718,9 +2766,9 @@
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals"></option>
+                    value="equals">Jednako je</option>
                 <option 
-                    value="equals-not"></option>
+                    value="equals-not">Nije jednako</option>
             </select>
         </label>
         <select 
@@ -2741,7 +2789,7 @@
     </span>
     <button 
         type="button" 
-        class="remove-clone">Ukloni</button>
+        class="remove-clone"><!-- i18n: remove -->Ukloni</button>
   </p>
 </template>
 
@@ -2755,7 +2803,7 @@
 			        	type="radio" 
 			        	name="search-mode" 
 			        	value="standard" 
-			        	checked> 
+			        	checked> Standardna pretraga
 			    </label>
 			    <label 
 			    	class="pat-switch toggle-advanced"
@@ -2763,7 +2811,7 @@
 			        <input 
 			        	type="radio" 
 			        	name="search-mode" 
-			        	value="advanced"> 
+			        	value="advanced"> Napredna pretraga
 			    </label>
 			</fieldset>
 	    </fieldset>

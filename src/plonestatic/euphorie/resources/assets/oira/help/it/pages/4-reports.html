@@ -97,9 +97,23 @@
 			<a 
 				href="/feedback/more-menu.html#menu-content" 
 			   	id="user-menu" 
-			   	class="iconified pat-tooltip pat-switch" 
-			   	data-pat-switch="selector: body; remove: osc-s-on; add: osc-s-off;"
-			   	data-pat-tooltip="source: ajax">Menu</a>
+			   	class=" 
+					pat-tooltip 
+					pat-switch" 
+			   	data-pat-switch="
+					selector: body; 
+					remove: osc-s-on; 
+					add: osc-s-off;"
+			   	data-pat-tooltip="
+					source: ajax">
+				
+					<img 
+						class="
+							avatar
+							pat-avatar"
+						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
+						alt="">
+				<!-- i18n: label_menu -->Menù</a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -107,13 +121,19 @@
 	            class="pat-tooltip icon iconified icon-chat pat-push">
 	            Messages <sup id="messages-unread-count" class="counter digit-1">1</sup>
 	        </a> 
+			
 			<a 
-				href="/feedback/help-menu.html#menu-content" 
-			   	id="help-menu" 
-			   	class="
-					iconified 
-					pat-tooltip" 
-			   	data-pat-tooltip="source: ajax">Help</a>
+                href="/++resource++euphorie.resources/assets/oira/help/en-roadmap/index" 
+                data-pat-inject="
+                    history: record;
+                    scroll: top;
+                    source: #content-pane;
+                    target: #content-pane;"
+				id="help-menu"
+                class="
+                    pat-inject 
+                    iconified" 
+                target="Help"><!-- i18n: label_help -->Aiuto</a>
 			<a 
 				href="/index.html" 
 			    data-pat-inject="source: #content; target: #content; history: record" 
@@ -175,7 +195,7 @@
 <p>Sono disponibili vari tipi di relazioni, a seconda delle differenti finalità. I tipi di relazioni disponibili per i vari strumenti specifici dipendono dalle decisioni adottate dal partner OiRA/dallo sviluppatore dello strumento nazionale.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/it/illustrations/report-download.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/it/illustrations/report-download.html" scrolling="no">
   </object>
   <figcaption>Le relazioni disponibili.</figcaption>
 </figure>
@@ -277,37 +297,37 @@ fornire alle autorità di vigilanza (ad esempio l’ispettorato del lavoro) prov
 				4-reports.md
 			</h2>
 	    
-	    <!-- <a href="/new-session.html#document-content" id="button-new-session-quick" data-pat-modal="class: large" class="no-label pat-modal iconified icon-plus" title="Start a new assessment">New</a> -->
+	    <!-- <a href="/feedback/panel-new-assessment.html#document-content" id="button-new-session-quick" data-pat-modal="class: large" class="no-label pat-modal iconified icon-plus" title="Start a new assessment">New</a> -->
         <div
         	class="pat-collapsible pat-context-menu closed align-right"
         	data-pat-collapsible="close-trigger: *:not(#more-menu)"
         	id="more-menu">
             <strong
-            	class="context-menu-label iconified more-menu-trigger"></strong>
+            	class="context-menu-label iconified more-menu-trigger">Altro…</strong>
             <ul
             	class="menu">
             	<li>
                     <a
-                    	href="/new-session.html#document-content"
+                    	href="/feedback/panel-new-assessment.html#document-content"
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title=""></a>
+                        title="Inizia nuova valutazione del rischio">Nuova valutazione del rischio</a>
                 </li>
                 <li>
-                    <label class="pat-checklist"><input type="checkbox" name="archived" /> </label>
+                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Mostra valutazioni del rischio archiviate</label>
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
-                        <label><input type="radio" value="all" name="ass-type" checked /> </label>
-                        <label><input type="radio" value="regular" name="ass-type" /> </label>
-                        <label><input type="radio" value="contractor" name="ass-type" /> </label>
+                        <label><input type="radio" value="all" name="ass-type" checked /> Tutti i tipi di valutazioni del rischio</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Solo valutazioni del rischio regolari</label>
+                        <label><input type="radio" value="contractor" name="ass-type" /> Solo valutazioni del rischio degli appaltatori</label>
                 	</fieldset>
                 </li>
             </ul>
         </div>
 	
-    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title=""></button>
+    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title="Espandi barra laterale">Espandi barra laterale</button>
 </form>
 
 		<a href="/feedback/osh.html#osh-ra-browser" id="osh-target-ra-browser" class="onscreen-help pat-tooltip" data-pat-tooltip="trigger: click; source: ajax; class: rich info;">Help</a>
@@ -333,7 +353,7 @@ fornire alle autorità di vigilanza (ad esempio l’ispettorato del lavoro) prov
 				type="search" 
 				value="" 
 				class="quick-search pat-autofocus" 
-				placeholder="" />
+				placeholder="Cerca" />
             <button type="submit" name="standard" value="main" class="search-button-main assistive">Cercare</button>
         </label>
 
@@ -357,7 +377,7 @@ fornire alle autorità di vigilanza (ad esempio l’ispettorato del lavoro) prov
             <select 
                 name="search-rule.data-field:records">
                 <option 
-                    value="SearchableText"></option>
+                    value="SearchableText"><!-- i18n: label_any_text_field -->Qualsiasi campo di testo</option>
                 <optgroup 
                     label="Metadata">
                     <option value="Title">Title</option>
@@ -382,9 +402,9 @@ fornire alle autorità di vigilanza (ad esempio l’ispettorato del lavoro) prov
                 class="pat-select">
                 <select 
                     name="search-rule.lemma-operator:records">
-                <option value="contains"></option>
-                <option value="contains-not"></option>
-                <option value="equals"></option>
+                <option value="contains"><!-- i18n: label_contains -->Contiene</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Non contiene</option>
+                <option value="equals"><!-- i18n: label_equals -->È uguale a</option>
                 </select>
             </label>
             <input 
@@ -416,8 +436,8 @@ fornire alle autorità di vigilanza (ad esempio l’ispettorato del lavoro) prov
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals"></option>
-                    <option value="equals-not"></option>
+                    <option value="equals">È uguale a</option>
+                    <option value="equals-not">Non è uguale a</option>
                 </select>
             </label>
             <select 
@@ -437,8 +457,8 @@ fornire alle autorità di vigilanza (ad esempio l’ispettorato del lavoro) prov
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals"></option>
-                    <option value="equals-not"></option>
+                    <option value="equals">È uguale a</option>
+                    <option value="equals-not">Non è uguale a</option>
                 </select>
             </label>
             <select 
@@ -464,10 +484,10 @@ fornire alle autorità di vigilanza (ad esempio l’ispettorato del lavoro) prov
     class="button-bar">
     <button 
         type="submit" 
-        class="pat-button default icon-search">Cercare</button>
+        class="pat-button default icon-search"><!-- i18n: action_search -->Cercare</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle"></button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Aggiungi un'altra regola di ricerca</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/it/pages/4-reports#listing" 
@@ -488,9 +508,9 @@ fornire alle autorità di vigilanza (ad esempio l’ispettorato del lavoro) prov
         <select 
             name="search-rule.and-or:records">
             <option 
-                value="and"></option>
+                value="and"><!-- i18n: label_and -->E…</option>
             <option 
-                value="or"></option>
+                value="or"><!-- i18n: label_or -->O…</option>
         </select>
     </label>
     <label 
@@ -498,7 +518,7 @@ fornire alle autorità di vigilanza (ad esempio l’ispettorato del lavoro) prov
         <select 
             name="search-rule.data-field:records">
             <option 
-                value="SearchableText"></option>
+                value="SearchableText"><!-- i18n: label_any_text_field -->Qualsiasi campo di testo</option>
             <optgroup 
                 label="Metadata">
                 <option value="Title">Title</option>
@@ -520,9 +540,9 @@ fornire alle autorità di vigilanza (ad esempio l’ispettorato del lavoro) prov
             class="pat-select">
             <select 
                 name="search-rule.lemma-operator:records">
-                <option value="contains"></option>
-                <option value="contains-not"></option>
-                <option value="equals"></option>
+                <option value="contains"><!-- i18n: label_contains -->Contiene</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Non contiene</option>
+                <option value="equals"><!-- i18n: label_equals -->È uguale a</option>
             </select>
         </label>
         <input 
@@ -555,9 +575,9 @@ fornire alle autorità di vigilanza (ad esempio l’ispettorato del lavoro) prov
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals"></option>
+                    value="equals">È uguale a</option>
                 <option 
-                value="equals-not"></option>
+                value="equals-not">Non è uguale a</option>
             </select>
         </label>
         <select 
@@ -578,9 +598,9 @@ fornire alle autorità di vigilanza (ad esempio l’ispettorato del lavoro) prov
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals"></option>
+                    value="equals">È uguale a</option>
                 <option 
-                    value="equals-not"></option>
+                    value="equals-not">Non è uguale a</option>
             </select>
         </label>
         <select 
@@ -601,7 +621,7 @@ fornire alle autorità di vigilanza (ad esempio l’ispettorato del lavoro) prov
     </span>
     <button 
         type="button" 
-        class="remove-clone">Rimuovi</button>
+        class="remove-clone"><!-- i18n: remove -->Rimuovi</button>
   </p>
 </template>
 
@@ -615,7 +635,7 @@ fornire alle autorità di vigilanza (ad esempio l’ispettorato del lavoro) prov
 			        	type="radio" 
 			        	name="search-mode" 
 			        	value="standard" 
-			        	checked> 
+			        	checked> Ricerca standard
 			    </label>
 			    <label 
 			    	class="pat-switch toggle-advanced"
@@ -623,7 +643,7 @@ fornire alle autorità di vigilanza (ad esempio l’ispettorato del lavoro) prov
 			        <input 
 			        	type="radio" 
 			        	name="search-mode" 
-			        	value="advanced"> 
+			        	value="advanced"> Ricerca avanzata
 			    </label>
 			</fieldset>
 	    </fieldset>

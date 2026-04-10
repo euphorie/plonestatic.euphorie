@@ -97,9 +97,23 @@
 			<a 
 				href="/feedback/more-menu.html#menu-content" 
 			   	id="user-menu" 
-			   	class="iconified pat-tooltip pat-switch" 
-			   	data-pat-switch="selector: body; remove: osc-s-on; add: osc-s-off;"
-			   	data-pat-tooltip="source: ajax">Menu</a>
+			   	class=" 
+					pat-tooltip 
+					pat-switch" 
+			   	data-pat-switch="
+					selector: body; 
+					remove: osc-s-on; 
+					add: osc-s-off;"
+			   	data-pat-tooltip="
+					source: ajax">
+				
+					<img 
+						class="
+							avatar
+							pat-avatar"
+						src="/media/avatars/yvette-lefevre.jpg" 
+						alt="">
+				<!-- i18n: label_menu -->Menu</a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -107,13 +121,19 @@
 	            class="pat-tooltip icon iconified icon-chat pat-push">
 	            Messages <sup id="messages-unread-count" class="counter digit-1">1</sup>
 	        </a> 
+			
 			<a 
-				href="/feedback/help-menu.html#menu-content" 
-			   	id="help-menu" 
-			   	class="
-					iconified 
-					pat-tooltip" 
-			   	data-pat-tooltip="source: ajax">Help</a>
+                href="/assets/oira/help/en-roadmap/index" 
+                data-pat-inject="
+                    history: record;
+                    scroll: top;
+                    source: #content-pane;
+                    target: #content-pane;"
+				id="help-menu"
+                class="
+                    pat-inject 
+                    iconified" 
+                target="Help"><!-- i18n: label_help -->Help</a>
 			<a 
 				href="/index.html" 
 			    data-pat-inject="source: #content; target: #content; history: record" 
@@ -136,10 +156,19 @@
             pat-message
             notice
             identity-sentinel">
-        Logged in as {0}
+        <!-- i18n: message_logged_in_as_friendly_name -->Logged in as {0}
     </p>
     <ul 
         class="menu">
+        <li>
+            <a 
+                data-pat-inject="
+                    history: record; 
+                    source: #content; 
+                    target: #content;"
+                class="icon-user" 
+                href="/users/yvette-lefèvre"><!-- i18n: label_my_profile -->My profile</a>
+        </li>
         <li 
             class="menu-item-sidebar">
             <a 
@@ -147,45 +176,73 @@
                 class="icon-menu pat-switch close-panel"
                 data-pat-switch="selector: body; remove: osc-s-off; add: osc-s-on"
                 id="burger"
-                title="Show/hide menu">Browse risk assessments</a>
+                title="Show/hide menu"><!-- i18n: label_browse_risk_assessments_imp -->Browse risk assessments</a>
         </li>
         <li
-            class="menu-item-preferences pat-inject close-panel">
+            class="
+                menu-item-preferences 
+                pat-inject 
+                close-panel">
             <a 
                 class="icon-cog" 
-                href="/preferences#content">Preferences</a>
+                href="/preferences#content"><!-- i18n: label_preferences -->Preferences</a>
         </li>
         <li 
             class="menu-item-rating">
             <a 
                 href="#" 
-                class="icon-star close-panel" 
-                target="Rate OiRA">OiRA bewerten</a>
+                class="
+                    icon-star 
+                    close-panel" 
+                target="Rate OiRA"><!-- i18n: label_rate_oira_imp -->Rate OiRA</a>
         </li>
         <li 
             class="menu-item-change-password">
             <a 
-                class="icon-key close-panel" 
-                href="/change-password.html">Change password</a>
+                class="
+                    pat-inject
+                    icon-key 
+                    close-panel" 
+                data-pat-inject="
+                    history: record; 
+                    source: #main-content; 
+                    target: #main-content;"
+                href="/feedback/change-password.html"><!-- i18n: label_change_password_imp -->Change password</a>
         </li>
         <li 
             class="menu-item-change-email-address">
             <a 
-                class="icon-mail close-panel" 
-                href="/change-email.html">Change email address</a>
+                class="
+                    pat-inject
+                    icon-mail 
+                    close-panel" 
+                data-pat-inject="
+                    history: record; 
+                    source: #main-content; 
+                    target: #main-content;"
+                href="/feedback/change-email.html"><!-- i18n: label_change_email_address_imp -->Change email address</a>
         </li>
         <li 
             class="menu-item-delete-account">
             <a 
-                class="icon-cancel-circle close-panel" 
-                href="/delete-account.html">Delete account</a>
+                class="
+                    pat-inject
+                    icon-cancel-circle 
+                    close-panel" 
+                data-pat-inject="
+                    history: record; 
+                    source: #main-content; 
+                    target: #main-content;"
+                href="/delete-account.html"><!-- i18n: label_delete_account_imp -->Delete account</a>
         </li>
         
             <li 
                 class="menu-item-logout">
                 <a 
-                    class="icon-exit close-panel" 
-                    href="/login">Logout</a>
+                    class="
+                        icon-exit 
+                        close-panel" 
+                    href="/login"><!-- i18n: label_log_out_imp -->Log out</a>
             </li>
         
     </ul>
@@ -226,7 +283,7 @@
 				more-menu.html
 			</h2>
 	    
-	    <!-- <a href="/new-session.html#document-content" id="button-new-session-quick" data-pat-modal="class: large" class="no-label pat-modal iconified icon-plus" title="Start a new assessment">New</a> -->
+	    <!-- <a href="/feedback/panel-new-assessment.html#document-content" id="button-new-session-quick" data-pat-modal="class: large" class="no-label pat-modal iconified icon-plus" title="Start a new assessment">New</a> -->
         <div
         	class="pat-collapsible pat-context-menu closed align-right"
         	data-pat-collapsible="close-trigger: *:not(#more-menu)"
@@ -237,7 +294,7 @@
             	class="menu">
             	<li>
                     <a
-                    	href="/new-session.html#document-content"
+                    	href="/feedback/panel-new-assessment.html#document-content"
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
@@ -306,7 +363,7 @@
             <select 
                 name="search-rule.data-field:records">
                 <option 
-                    value="SearchableText">Any text field</option>
+                    value="SearchableText"><!-- i18n: label_any_text_field -->Any text field</option>
                 <optgroup 
                     label="Metadata">
                     <option value="Title">Title</option>
@@ -331,9 +388,9 @@
                 class="pat-select">
                 <select 
                     name="search-rule.lemma-operator:records">
-                <option value="contains">Contains</option>
-                <option value="contains-not">Does not contain</option>
-                <option value="equals">Equals</option>
+                <option value="contains"><!-- i18n: label_contains -->Contains</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Does not contain</option>
+                <option value="equals"><!-- i18n: label_equals -->Equals</option>
                 </select>
             </label>
             <input 
@@ -348,9 +405,9 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is">Is</option>
-                    <option value="is-before">Is before</option>
-                    <option value="is-after">Is after</option>
+                    <option value="is"></option>
+                    <option value="is-before"></option>
+                    <option value="is-after"></option>
                 </select>
             </label>
             <input 
@@ -413,10 +470,10 @@
     class="button-bar">
     <button 
         type="submit" 
-        class="pat-button default icon-search">Search</button>
+        class="pat-button default icon-search"><!-- i18n: action_search -->Search</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle">Add another search rule</button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Add another search rule</button>
 
     <a 
         href="/feedback/more-menu#listing" 
@@ -437,9 +494,9 @@
         <select 
             name="search-rule.and-or:records">
             <option 
-                value="and">And…</option>
+                value="and"><!-- i18n: label_and -->And…</option>
             <option 
-                value="or">Or…</option>
+                value="or"><!-- i18n: label_or -->Or…</option>
         </select>
     </label>
     <label 
@@ -447,7 +504,7 @@
         <select 
             name="search-rule.data-field:records">
             <option 
-                value="SearchableText">Any text field</option>
+                value="SearchableText"><!-- i18n: label_any_text_field -->Any text field</option>
             <optgroup 
                 label="Metadata">
                 <option value="Title">Title</option>
@@ -469,9 +526,9 @@
             class="pat-select">
             <select 
                 name="search-rule.lemma-operator:records">
-                <option value="contains">Contains</option>
-                <option value="contains-not">Does not contain</option>
-                <option value="equals">Equals</option>
+                <option value="contains"><!-- i18n: label_contains -->Contains</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Does not contain</option>
+                <option value="equals"><!-- i18n: label_equals -->Equals</option>
             </select>
         </label>
         <input 
@@ -486,9 +543,9 @@
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is">Is</option>
-                <option value="is-before">Is before</option>
-                <option value="is-after">Is after</option>
+                <option value="is"></option>
+                <option value="is-before"></option>
+                <option value="is-after"></option>
             </select>
         </label>
         <input 
@@ -550,7 +607,7 @@
     </span>
     <button 
         type="button" 
-        class="remove-clone">Remove</button>
+        class="remove-clone"><!-- i18n: remove -->Remove</button>
   </p>
 </template>
 

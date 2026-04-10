@@ -102,9 +102,23 @@
 			<a 
 				href="/feedback/more-menu.html#menu-content" 
 			   	id="user-menu" 
-			   	class="iconified pat-tooltip pat-switch" 
-			   	data-pat-switch="selector: body; remove: osc-s-on; add: osc-s-off;"
-			   	data-pat-tooltip="source: ajax">Menu</a>
+			   	class=" 
+					pat-tooltip 
+					pat-switch" 
+			   	data-pat-switch="
+					selector: body; 
+					remove: osc-s-on; 
+					add: osc-s-off;"
+			   	data-pat-tooltip="
+					source: ajax">
+				
+					<img 
+						class="
+							avatar
+							pat-avatar"
+						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
+						alt="">
+				<!-- i18n: label_menu --></a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -112,13 +126,19 @@
 	            class="pat-tooltip icon iconified icon-chat pat-push">
 	            Messages <sup id="messages-unread-count" class="counter digit-1">1</sup>
 	        </a> 
+			
 			<a 
-				href="/feedback/help-menu.html#menu-content" 
-			   	id="help-menu" 
-			   	class="
-					iconified 
-					pat-tooltip" 
-			   	data-pat-tooltip="source: ajax">Help</a>
+                href="/++resource++euphorie.resources/assets/oira/help/en-roadmap/index" 
+                data-pat-inject="
+                    history: record;
+                    scroll: top;
+                    source: #content-pane;
+                    target: #content-pane;"
+				id="help-menu"
+                class="
+                    pat-inject 
+                    iconified" 
+                target="Help"><!-- i18n: label_help -->Ajuda</a>
 			<a 
 				href="/index.html" 
 			    data-pat-inject="source: #content; target: #content; history: record" 
@@ -149,116 +169,257 @@
 
 <ol 
     id="steps" 
-    class="navigation pat-navigation">
+    class="
+      navigation 
+      pat-navigation">
     
-        <li 
-            id="step-1"
-            class="complete active">
-        <a 
-            href="//index#content"
-            data-pat-inject="history: record"
-            class="preparation pat-switch pat-inject"
-            data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off">Preparació</a>
-        </li>
-        <li 
-            id="step-involve"
-            class="">
-            <a 
-                href="//involve#content"
-                class="involve pat-inject pat-switch"
-                data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off"
-                data-pat-inject="history: record">Implicació</a>
-        </li>
+        
+<li 
+    id="step-preparation"
+    class="
+      complete 
+      active">
+  <a 
+    href="//index"
+    data-pat-inject="
+      history: record;
+      source: #main-content;
+      target: #main-content;
+        &&
+      source: #steps;
+      target: #steps;"
+    class="
+      step
+      preparation 
+      pat-switch 
+      pat-inject"
+    data-pat-switch="
+      selector: #main; 
+      remove: sidebar-*; 
+      add: sidebar-off"><span class="label"><!-- i18n: label_preparation -->Preparació</span></a>
+</li>
+        
+<li 
+    id="step-involve"
+    class="
+      complete 
+      ">
+  <a 
+    href="//involve"
+    data-pat-inject="
+      history: record;
+      source: #main-content;
+      target: #main-content;
+        &&
+      source: #steps;
+      target: #steps;"
+    class="
+      step
+      involve 
+      pat-switch 
+      pat-inject"
+    data-pat-switch="
+      selector: #main; 
+      remove: sidebar-*; 
+      add: sidebar-off"><span class="label"><!-- i18n: label_involve -->Implicació</span></a>
+</li>
+
     <li 
-        class=" " 
-        id="step-2">
+        class="
+           
+          " 
+        id="step-analysis">
 
         
 
-        <a href="#content"
-            data-pat-inject="history: record"
+        <a href=""
+            data-pat-inject="
+              history: record;
+              source: #main-content;
+              target: #main-content;
+                &&
+              source: #steps;
+              target: #steps;"
             class="
+                step
                 identification 
                 pat-switch 
                 pat-inject"
             data-pat-switch="
                 selector: #main; 
                 remove: sidebar-*; 
-                add: sidebar-off">Identificació + Avaluació</a>
-
+                add: sidebar-off">
+              <span class="label"><!-- i18n: label_identification -->Identificació + <!-- i18n: label_evaluation -->Avaluació</span></a>
       
 
     </li>
 
     
-      <li id="step-4" class=" ">
+      <li 
+        id="step-action-plan" 
+        class="
+           ">
         <!-- The tree for the action section uses the same structure as the identification tree, with the only differences that only risks and their parent modules are shown and that the entire tree is expanded. -->
-        <a href="//action-plan#content"
-            data-pat-inject="history: record"
-            class="action-plan pat-switch pat-inject"
-            data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off">Pla d'acció</a>
+        <a href="//action-plan"
+            data-pat-inject="
+              history: record;
+              source: #main-content;
+              target: #main-content;
+                &&
+              source: #steps;
+              target: #steps;"
+            class="
+              step
+              action-plan 
+              pat-switch 
+              pat-inject"
+            data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off"><!-- i18n: label_action_plan -->Pla d'acció</a>
         
       </li>
     
 
-    <li 
-        id="step-consultancy" 
-        >
-        <a 
-            class="consultancy pat-switch pat-inject"
-            data-pat-inject="history: record"
-            data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off"
-            href="//consultancy#content"></a>
-    </li>
-
-    <li id="step-5" >
-      
-        <a class="report pat-switch pat-inject"
-            data-pat-inject="history: record"
-            data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off"
-            href="//report#content">Informe</a>
-      
-    </li>
-
     
-      <li id="step-6" class="">
-        <a href="//training#content"
-            class="training pat-inject pat-switch"
-            data-pat-inject="history: record"
-            data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off"></a>
-      </li>
+<li 
+    id="step-consultancy"
+    class="
+      complete 
+      ">
+  <a 
+    href="//consultancy"
+    data-pat-inject="
+      history: record;
+      source: #main-content;
+      target: #main-content;
+        &&
+      source: #steps;
+      target: #steps;"
+    class="
+      step
+      consultancy 
+      pat-switch 
+      pat-inject"
+    data-pat-switch="
+      selector: #main; 
+      remove: sidebar-*; 
+      add: sidebar-off"><span class="label"><!-- i18n: label_consultancy -->Consultoria</span></a>
+</li>
     
+<li 
+    id="step-report"
+    class="
+      complete 
+      ">
+  <a 
+    href="//report"
+    data-pat-inject="
+      history: record;
+      source: #main-content;
+      target: #main-content;
+        &&
+      source: #steps;
+      target: #steps;"
+    class="
+      step
+      report 
+      pat-switch 
+      pat-inject"
+    data-pat-switch="
+      selector: #main; 
+      remove: sidebar-*; 
+      add: sidebar-off"><span class="label"><!-- i18n: label_report -->Informe</span></a>
+</li>
+    
+<li 
+    id="step-training"
+    class="
+      complete 
+      ">
+  <a 
+    href="//training"
+    data-pat-inject="
+      history: record;
+      source: #main-content;
+      target: #main-content;
+        &&
+      source: #steps;
+      target: #steps;"
+    class="
+      step
+      training 
+      pat-switch 
+      pat-inject"
+    data-pat-switch="
+      selector: #main; 
+      remove: sidebar-*; 
+      add: sidebar-off"><span class="label"><!-- i18n: label_training -->Formació</span></a>
+</li>
+
   
 
-  
-    <li id="status" class="">
-      <a href="//status#content"
-          data-pat-inject="history: record"
-          class="status pat-switch pat-inject"
-          data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off">Grau d’emplenament<!-- <strong class="pie-graph pat-tooltip"
-            data-pat-tooltip="trigger: hover; position-list: lm"
-            data-percentage="0"
-            title="0% Complete">0%</strong> --></a>
-      
-    </li>
     
-    <li 
-        class="" 
-        id="settings">
-        <a
-            href="//settings#content"
-            data-pat-inject="history: record"
-            class="settings pat-switch pat-inject"
-            data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off"></a>
-    </li>
+      
+<li 
+    id="status"
+    class="
+      complete 
+      ">
+  <a 
+    href="//status"
+    data-pat-inject="
+      history: record;
+      source: #main-content;
+      target: #main-content;
+        &&
+      source: #steps;
+      target: #steps;"
+    class="
+      
+      status 
+      pat-switch 
+      pat-inject"
+    data-pat-switch="
+      selector: #main; 
+      remove: sidebar-*; 
+      add: sidebar-off"><span class="label"><!-- i18n: label_status -->Grau d’emplenament</span></a>
+</li>
+    
+
+    
+<li 
+    id="settings"
+    class="
+      complete 
+      ">
+  <a 
+    href="//settings"
+    data-pat-inject="
+      history: record;
+      source: #main-content;
+      target: #main-content;
+        &&
+      source: #steps;
+      target: #steps;"
+    class="
+      
+      settings 
+      pat-switch 
+      pat-inject"
+    data-pat-switch="
+      selector: #main; 
+      remove: sidebar-*; 
+      add: sidebar-off"><span class="label"><!-- i18n: label_settings -->Configuració</span></a>
+</li>
+
     <li 
         id="home">
         <a
-            href="/assessments#content"
+            href="/assessments"
             data-pat-inject="history: record"
             class="home pat-switch pat-inject"
-            data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off"></a>
+            data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off">
+            <span class="label"><!-- i18n: label_exit -->Sortir</span></a>
     </li>
+
     
 </ol>
 
@@ -273,92 +434,99 @@
 
 
 
-<form 
-    class="
-        pat-form 
-        pat-inject" 
-    data-pat-inject="history: record;" 
-    action="involve">
-    <div 
-        id="content-pane"
-        class="pat-scroll-box">
+<div 
+    id="content-pane"
+    class="pat-scroll-box">
 
-        <div
-    class="pat-toolbar sticky auto-hide"
-    id="assessment-toolbar">   
+    <!-- <pat-toolbar id="assessment-toolbar" type="sticky" auto-hide="true"> -->
     <div
-        class="toolbar-functions-area">  
-        
-            <div 
-                class="toolbar-section">
-                <a 
-                    href="#tree" 
-                    id="toggle-tree" 
-                    class="icon menu pat-toggle" 
-                    data-pat-toggle="selector: #main; value: sidebar-off sidebar-on;">Toggle tree</a> 
-            </div>
-        
-        <div 
-            class="toolbar-section quick-functions"
-            id="assessment-toolbar-quick-functions"> 
-
+        class="
+            pat-toolbar 
+            sticky 
+            auto-hide"
+        id="assessment-toolbar">   
+        <div
+            class="toolbar-functions-area">  
             
-                <a 
-                    title="Lock this assessment" 
-                    href="#publication-menu" 
-                    class="icon-lock-open icon pat-tooltip " 
-                    data-pat-tooltip="source: ajax; position-list: tr; trigger: click; source: ajax">Unlocked 
-                    <!-- <time 
-                            class="pat-display-time" 
-                        data-pat-display-time="from-now: true; locale: en" 
-                        datetime="2018-03-28T08:00Z">2018-03-28</time> -->
-                </a>
+                <div 
+                    class="toolbar-section">
+                    <a 
+                        href="#tree" 
+                        id="toggle-tree" 
+                        class="icon menu pat-toggle" 
+                        data-pat-toggle="selector: #main; value: sidebar-off sidebar-on;">Toggle tree</a> 
+                </div>
             
-
             <div 
-                id="publication-menu" 
-                hidden>
+                class="
+                    toolbar-section 
+                    quick-functions"
+                id="assessment-toolbar-quick-functions"> 
+
                 
-                    <div 
-                        class="pat-message notice">
-                        <p>
-                            Last edited by <a href="mailto:hans@mittelmaier.de">Michel Moulin</a> on 8 December 2022.
-                        </p>
-                    </div>
-                
-                    <ul 
-                        class="menu">
+                    <a 
+                        title="Lock this assessment" 
+                        href="#publication-menu" 
+                        class="
+                            icon-lock-open 
+                            icon 
+                            pat-tooltip 
+                            " 
+                        data-pat-tooltip="
+                            source: ajax; 
+                            position-list: tr; 
+                            trigger: click; 
+                            source: ajax">Unlocked 
                         
-                        <li>
-                            <form 
-                                action="/preparation-read-only.html#content" 
-                                class="pat-inject close-panel">
-                                <button 
-                                    type="submit" 
-                                    class="icon-lock">Lock Risk Assessment</button>
-                            </form>
-                        </li>
-                    
-                </ul>
-            </div>
-
-            <a 
-                id="oira-progress-indicator"
-                href="#status-sentinel"
-                data-pat-inject="history: record"
-                class="icon pat-inject progress pat-tooltip"
-                data-pat-tooltip="class: rich info; trigger: click; source: ajax; position-list: tr">
-               <strong 
-                    class="pie-graph"
-                    data-percentage="0"
-                    title="0% Complete">0%</strong>
-            </a>
-
-            <div
-                hidden
-                id="status-sentinel">
+                    </a>
                 
+
+                <div 
+                    id="publication-menu" 
+                    hidden>
                     
+                        <div 
+                            class="
+                                pat-message 
+                                notice">
+                            <p>
+                                Last edited by <a href="mailto:hans@mittelmaier.de">Michel Moulin</a> on 8 December 2022.
+                            </p>
+                        </div>
+                    
+                        <ul 
+                            class="menu">
+                            
+                            <li>
+                                <form 
+                                    action="/preparation-read-only.html#content" 
+                                    class="pat-inject close-panel">
+                                    <button 
+                                        type="submit" 
+                                        class="icon-lock">Lock Risk Assessment</button>
+                                </form>
+                            </li>
+                        
+                    </ul>
+                </div>
+
+                <a 
+                    id="oira-progress-indicator"
+                    href="#status-sentinel"
+                    data-pat-inject="history: record"
+                    class="icon pat-inject progress pat-tooltip"
+                    data-pat-tooltip="class: rich info; trigger: click; source: ajax; position-list: tr">
+                <strong 
+                        class="pie-graph"
+                        data-percentage="0"
+                        title="0% Complete">0%</strong>
+                </a>
+
+                <div
+                    hidden
+                    id="status-sentinel">
+                    
+                        
 
 <p>
     You've completed <strong>0%</strong> of the risk assessment. When you've completed 85% of the risk assessment, you will be eligible for a certificate.
@@ -374,106 +542,107 @@
 
     <a href="#">Learn more about the benefits…</a>
 </p>
+                    
+                    
+                    <p>
+                        View the <a href="//status#content" class="pat-inject close-panel">Status screen</a> for more details.
+                    </p>
+                </div>
+                
+                    <a 
+                        href="/feedback/ass-menu#more-menu" 
+                        class="icon more pat-tooltip" 
+                        data-pat-tooltip="source: ajax; position-list: tr">More</a>
                 
                 
-                <p>
-                    View the <a href="//status#content" class="pat-inject close-panel">Status screen</a> for more details.
-                </p>
+                <!-- <a 
+                    class="default pat-button"><!-- i18n: label_approve_risk_assessment --></a>  --> 
             </div>
-            
-                <a 
-                    href="/feedback/ass-menu#more-menu" 
-                    class="icon more pat-tooltip" 
-                    data-pat-tooltip="source: ajax; position-list: tr">More</a>
-            
-            
-            <!-- <a 
-                class="default pat-button"></a>  --> 
         </div>
     </div>
-</div>
+<!-- </pat-toolbar> -->
 
+    
 
-        
+    <div 
+        id="tool-overview">
 
-        
-
-        
-            <fieldset 
+        <div 
+            class="tool-tile">
+            <a 
                 class="
-                    vertical 
-                    pat-inject 
-                    pat-subform 
-                    pat-autosubmit" 
-                data-pat-inject="
-                    url: ; 
-                    source: #osc-header; 
-                    target: #osc-header">
-     
+                    pat-modal" 
+                data-pat-modal="
+                    class: sheet"
+                href="/feedback/preparation-more-info#document-content">
+                <figure
+                    class="tool-icon">
+                    <img 
+                        alt=""
+                        src=""">
+                </figure>
+            </a>
+            <div
+                class="tool-info">
+                <h2
+                    class="tool-title">
+                    
+                </h2>
+                
+                
                 <div 
-                    class="tool-tile">
+                    class="
+                        pat-button-bar">
                     <a 
                         class="
-                            pat-modal" 
-                        data-pat-modal="
-                            class: sheet"
-                        href="/feedback/preparation-more-info#document-content">
-                        <figure
-                            class="tool-icon">
-                            <img 
-                                alt=""
-                                src=""">
-                        </figure>
-                    </a>
-                    <div
-                        class="tool-info">
-                        <h2
-                            class="tool-title">
-                            Tools
-                        </h2>
-                        
-                            <p 
-                                class="
-                                    tool-tags 
-                                    tag-cloud">
-                                
-                            </p>
-                        
-                        
-                        <form 
-                            class="
-                                button-bar 
-                                pat-inject"
-                            action="/preparation#main"
-                            data-pat-inject="history: record">
-                            <a 
-                                class="
-                                    pat-button
-                                    show-more 
-                                    pat-modal"
-                                href="/feedback/preparation-more-info#document-content"
-                                data-pat-modal="class: sheet">Informació</a>
-                        </form>
-                    </div>
+                            pat-button
+                            show-more 
+                            pat-modal"
+                        href="/feedback/preparation-more-info#document-content"
+                        data-pat-modal="class: sheet"><!-- i18n: information -->Informació</a>
                 </div>
-
-                <fieldset
-                    class="pat-checklist">
-                    <label>
-                        Send me occasional e-mails with news about the tool 'Tools'
-                        <input 
-                            type="checkbox" 
-                            checked="checked"
-                            name="">
-                    </label>
-                </fieldset>
-
+            </div>
+        </div>
+        <form 
+            class="
+                pat-form 
+                pat-inject
+                pat-autosubmit" 
+            data-pat-inject="
+                source: #notification;
+                target: #tool-overview::after" 
+            action="/feedback/banner-newsletter-signup-successful">
+            <fieldset
+                class="pat-checklist">
+                <label>
+                    Send me occasional e-mails with news about the tool ''
+                    <input 
+                        type="checkbox" 
+                        checked="checked"
+                        name="">
+                </label>
             </fieldset>
+        </form>
+    </div>
 
-            <article
-                class="pat-rich">
-                <h1>Preparació</h1>
-            </article>
+    <article
+        class="pat-rich">
+        <h1><!-- i18n: label_preparation -->Preparació</h1>
+    </article>
+
+        
+        <form 
+            class="
+                pat-form 
+                pat-inject" 
+            data-pat-inject="
+              history: record;
+              source: #main-content;
+              target: #main-content;
+                &&
+              source: #steps;
+              target: #steps;"
+            action="involve">
 
             <fieldset 
                 class="
@@ -487,11 +656,11 @@
                     target: #oira-progress-indicator">    
 
                 <label>
-                    
+                    <!-- i18n: label_ra_title -->
 
                     <input 
                         type="text" 
-                        value="" 
+                        value="Private Security EU" 
                         class="pat-autofocus"
                         name="session-title">
                     <dfn 
@@ -510,12 +679,10 @@
                     
                     
             </fieldset>
-        
 
-        
             <div 
                 class="
-                    button-bar 
+                    pat-button-bar 
                     pat-bumper" 
                 id="nav-bar">
                 <button 
@@ -523,19 +690,16 @@
                     class="
                         pat-button 
                         start 
-                        default">Start</button>
+                        default"><!-- i18n: label_start_imp --></button>
             </div>
-        
-
-    </div>
-</form>
+        </form>
+    
+</div>
 
 <div 
     id="upload-modal">
-    <!-- Modal contents goes here. Yes it's ugly.         -->
+    <!-- Modal contents goes here. Yes it's hideous.         -->
 </div>
-
-
 
 <template 
     id="publication-menu">
@@ -563,150 +727,6 @@
     </ul>
 </template>
 
-<template 
-    id="object-history" >
-    <div 
-        class="container">
-        <article 
-            class="pat-rich">
-            <h1>
-                
-            </h1>
-        </article>
-
-        <a 
-            href="#final-item" 
-            class="pat-scroll assistive" 
-            data-pat-scroll="selector: #object-history-timeline:last-child; trigger: auto">Scroll towards the end.</a>
-
-        <ul 
-            class="object-history user-centric" 
-            id="object-history-timeline">
-            
-                <li 
-                    class="object  ">
-                    <a 
-                        class="meta" href="mailto:user@company.com">
-                        <img 
-                            src="/++resource++euphorie.resources/assets/oira/style/defaultUser-168.png" 
-                            alt="" 
-                            class="pat-avatar">
-                        <h4 
-                            class="user-name" 
-                            >
-                            Liz Baker
-                        </h4>
-                    </a>
-                    <p 
-                        class="byline">
-                        <em 
-                            class="action"
-                            title="">started assessment</em> | <time class="modification-date pat-display-time" data-pat-display-time="from-now: true" datetime="2018-10-03T09:20Z" title="20 February 2016 — 12:15">20 February 2016 — 12:15</time>
-                        
-                        
-                    </p>
-                </li>
-            
-                <li 
-                    class="object  ">
-                    <a 
-                        class="meta" href="mailto:user@company.com">
-                        <img 
-                            src="/++resource++euphorie.resources/assets/oira/style/defaultUser-168.png" 
-                            alt="" 
-                            class="pat-avatar">
-                        <h4 
-                            class="user-name" 
-                            >
-                            Liz Baker
-                        </h4>
-                    </a>
-                    <p 
-                        class="byline">
-                        <em 
-                            class="action"
-                            title="">locked</em> | <time class="modification-date pat-display-time" data-pat-display-time="from-now: true" datetime="2018-10-03T09:20Z" title="1 March 2016 — 16:40">1 March 2016 — 16:40</time>
-                        
-                        
-                    </p>
-                </li>
-            
-                <li 
-                    class="object  ">
-                    <a 
-                        class="meta" href="mailto:user@company.com">
-                        <img 
-                            src="/++resource++euphorie.resources/assets/oira/style/defaultUser-168.png" 
-                            alt="" 
-                            class="pat-avatar">
-                        <h4 
-                            class="user-name" 
-                            >
-                            Liz Baker
-                        </h4>
-                    </a>
-                    <p 
-                        class="byline">
-                        <em 
-                            class="action"
-                            title="">unlocked</em> | <time class="modification-date pat-display-time" data-pat-display-time="from-now: true" datetime="2018-10-03T09:20Z" title="1 March 2016 — 16:40">1 March 2016 — 16:40</time>
-                        
-                        
-                    </p>
-                </li>
-            
-                <li 
-                    class="object  ">
-                    <a 
-                        class="meta" href="mailto:user@company.com">
-                        <img 
-                            src="/++resource++euphorie.resources/assets/oira/style/defaultUser-168.png" 
-                            alt="" 
-                            class="pat-avatar">
-                        <h4 
-                            class="user-name" 
-                            >
-                            Liz Baker
-                        </h4>
-                    </a>
-                    <p 
-                        class="byline">
-                        <em 
-                            class="action"
-                            title="">sent <a href="#">documents</a> to <a href="mailto:daniel@cornae.com">daniel@cornae.com</a></em> | <time class="modification-date pat-display-time" data-pat-display-time="from-now: true" datetime="2018-10-03T09:20Z" title="1 March 2016 — 16:40">1 March 2016 — 16:40</time>
-                        
-                        
-                    </p>
-                </li>
-            
-                <li 
-                    class="object  ">
-                    <a 
-                        class="meta" href="mailto:user@company.com">
-                        <img 
-                            src="/++resource++euphorie.resources/assets/oira/style/defaultUser-168.png" 
-                            alt="" 
-                            class="pat-avatar">
-                        <h4 
-                            class="user-name" 
-                            >
-                            Mario Minstreel
-                        </h4>
-                    </a>
-                    <p 
-                        class="byline">
-                        <em 
-                            class="action"
-                            title="">archived</em> | <time class="modification-date pat-display-time" data-pat-display-time="from-now: true" datetime="2018-10-03T09:20Z" title="3 March 2016 — 10:12">3 March 2016 — 10:12</time>
-                        
-                        
-                    </p>
-                </li>
-            
-        </ul>
-
-    </div>
-</template>
 
 
     
@@ -759,37 +779,37 @@
 				portlet-so-and-so.html
 			</h2>
 	    
-	    <!-- <a href="/new-session.html#document-content" id="button-new-session-quick" data-pat-modal="class: large" class="no-label pat-modal iconified icon-plus" title="Start a new assessment">New</a> -->
+	    <!-- <a href="/feedback/panel-new-assessment.html#document-content" id="button-new-session-quick" data-pat-modal="class: large" class="no-label pat-modal iconified icon-plus" title="Start a new assessment">New</a> -->
         <div
         	class="pat-collapsible pat-context-menu closed align-right"
         	data-pat-collapsible="close-trigger: *:not(#more-menu)"
         	id="more-menu">
             <strong
-            	class="context-menu-label iconified more-menu-trigger"></strong>
+            	class="context-menu-label iconified more-menu-trigger">Més…</strong>
             <ul
             	class="menu">
             	<li>
                     <a
-                    	href="/new-session.html#document-content"
+                    	href="/feedback/panel-new-assessment.html#document-content"
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title=""></a>
+                        title="Iniciar nova avaluació de riscos">Nova avaluació de riscos</a>
                 </li>
                 <li>
-                    <label class="pat-checklist"><input type="checkbox" name="archived" /> </label>
+                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Mostra avaluacions de riscos arxivades</label>
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
-                        <label><input type="radio" value="all" name="ass-type" checked /> </label>
-                        <label><input type="radio" value="regular" name="ass-type" /> </label>
-                        <label><input type="radio" value="contractor" name="ass-type" /> </label>
+                        <label><input type="radio" value="all" name="ass-type" checked /> Tots els tipus d'avaluacions de risc</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Només avaluacions regulars de riscos</label>
+                        <label><input type="radio" value="contractor" name="ass-type" /> Només avaluacions de riscos de contractistes</label>
                 	</fieldset>
                 </li>
             </ul>
         </div>
 	
-    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title=""></button>
+    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title="Expandir barra lateral">Expandir barra lateral</button>
 </form>
 
 		<a href="/feedback/osh.html#osh-ra-browser" id="osh-target-ra-browser" class="onscreen-help pat-tooltip" data-pat-tooltip="trigger: click; source: ajax; class: rich info;">Help</a>
@@ -815,7 +835,7 @@
 				type="search" 
 				value="" 
 				class="quick-search pat-autofocus" 
-				placeholder="" />
+				placeholder="Cercar" />
             <button type="submit" name="standard" value="main" class="search-button-main assistive">Cercar</button>
         </label>
 
@@ -839,7 +859,7 @@
             <select 
                 name="search-rule.data-field:records">
                 <option 
-                    value="SearchableText"></option>
+                    value="SearchableText"><!-- i18n: label_any_text_field -->Qualsevol camp de text</option>
                 <optgroup 
                     label="Metadata">
                     <option value="Title">Title</option>
@@ -864,9 +884,9 @@
                 class="pat-select">
                 <select 
                     name="search-rule.lemma-operator:records">
-                <option value="contains"></option>
-                <option value="contains-not"></option>
-                <option value="equals"></option>
+                <option value="contains"><!-- i18n: label_contains -->Conté</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->No conté</option>
+                <option value="equals"><!-- i18n: label_equals -->És igual a</option>
                 </select>
             </label>
             <input 
@@ -898,8 +918,8 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals"></option>
-                    <option value="equals-not"></option>
+                    <option value="equals">És igual a</option>
+                    <option value="equals-not">No és igual a</option>
                 </select>
             </label>
             <select 
@@ -919,8 +939,8 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals"></option>
-                    <option value="equals-not"></option>
+                    <option value="equals">És igual a</option>
+                    <option value="equals-not">No és igual a</option>
                 </select>
             </label>
             <select 
@@ -946,10 +966,10 @@
     class="button-bar">
     <button 
         type="submit" 
-        class="pat-button default icon-search">Cercar</button>
+        class="pat-button default icon-search"><!-- i18n: action_search -->Cercar</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle"></button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Afegir una altra regla de cerca</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/portlet-so-and-so#listing" 
@@ -970,9 +990,9 @@
         <select 
             name="search-rule.and-or:records">
             <option 
-                value="and"></option>
+                value="and"><!-- i18n: label_and -->I…</option>
             <option 
-                value="or"></option>
+                value="or"><!-- i18n: label_or -->O…</option>
         </select>
     </label>
     <label 
@@ -980,7 +1000,7 @@
         <select 
             name="search-rule.data-field:records">
             <option 
-                value="SearchableText"></option>
+                value="SearchableText"><!-- i18n: label_any_text_field -->Qualsevol camp de text</option>
             <optgroup 
                 label="Metadata">
                 <option value="Title">Title</option>
@@ -1002,9 +1022,9 @@
             class="pat-select">
             <select 
                 name="search-rule.lemma-operator:records">
-                <option value="contains"></option>
-                <option value="contains-not"></option>
-                <option value="equals"></option>
+                <option value="contains"><!-- i18n: label_contains -->Conté</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->No conté</option>
+                <option value="equals"><!-- i18n: label_equals -->És igual a</option>
             </select>
         </label>
         <input 
@@ -1037,9 +1057,9 @@
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals"></option>
+                    value="equals">És igual a</option>
                 <option 
-                value="equals-not"></option>
+                value="equals-not">No és igual a</option>
             </select>
         </label>
         <select 
@@ -1060,9 +1080,9 @@
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals"></option>
+                    value="equals">És igual a</option>
                 <option 
-                    value="equals-not"></option>
+                    value="equals-not">No és igual a</option>
             </select>
         </label>
         <select 
@@ -1083,7 +1103,7 @@
     </span>
     <button 
         type="button" 
-        class="remove-clone">Eliminar</button>
+        class="remove-clone"><!-- i18n: remove -->Eliminar</button>
   </p>
 </template>
 
@@ -1097,7 +1117,7 @@
 			        	type="radio" 
 			        	name="search-mode" 
 			        	value="standard" 
-			        	checked> 
+			        	checked> Cerca estàndard
 			    </label>
 			    <label 
 			    	class="pat-switch toggle-advanced"
@@ -1105,7 +1125,7 @@
 			        <input 
 			        	type="radio" 
 			        	name="search-mode" 
-			        	value="advanced"> 
+			        	value="advanced"> Cerca avançada
 			    </label>
 			</fieldset>
 	    </fieldset>

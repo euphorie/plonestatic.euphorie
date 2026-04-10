@@ -97,9 +97,23 @@
 			<a 
 				href="/feedback/more-menu.html#menu-content" 
 			   	id="user-menu" 
-			   	class="iconified pat-tooltip pat-switch" 
-			   	data-pat-switch="selector: body; remove: osc-s-on; add: osc-s-off;"
-			   	data-pat-tooltip="source: ajax">Menu</a>
+			   	class=" 
+					pat-tooltip 
+					pat-switch" 
+			   	data-pat-switch="
+					selector: body; 
+					remove: osc-s-on; 
+					add: osc-s-off;"
+			   	data-pat-tooltip="
+					source: ajax">
+				
+					<img 
+						class="
+							avatar
+							pat-avatar"
+						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
+						alt="">
+				<!-- i18n: label_menu -->Valikko</a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -107,13 +121,19 @@
 	            class="pat-tooltip icon iconified icon-chat pat-push">
 	            Messages <sup id="messages-unread-count" class="counter digit-1">1</sup>
 	        </a> 
+			
 			<a 
-				href="/feedback/help-menu.html#menu-content" 
-			   	id="help-menu" 
-			   	class="
-					iconified 
-					pat-tooltip" 
-			   	data-pat-tooltip="source: ajax">Help</a>
+                href="/++resource++euphorie.resources/assets/oira/help/en-roadmap/index" 
+                data-pat-inject="
+                    history: record;
+                    scroll: top;
+                    source: #content-pane;
+                    target: #content-pane;"
+				id="help-menu"
+                class="
+                    pat-inject 
+                    iconified" 
+                target="Help"><!-- i18n: label_help -->Ohjeet</a>
 			<a 
 				href="/index.html" 
 			    data-pat-inject="source: #content; target: #content; history: record" 
@@ -179,7 +199,7 @@ Lukittujen riskinarviointien kaksoiskappaleet ovat oletusarvoisesti lukitsematto
 <h3 id="työkalut-sivu">Työkalut-sivu</h3>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/tools.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/tools.html" scrolling="no">
   </object>
   <figcaption>Työkalut-sivu.</figcaption>
 </figure>
@@ -191,7 +211,7 @@ Lukittujen riskinarviointien kaksoiskappaleet ovat oletusarvoisesti lukitsematto
 <p>Kun olet aloittanut riskinarvioinnin, voit hakea sen milloin tahansa koontinäytöltä otsikon „Omat riskiarvioinnit“ alta. Sieltä voit myös aloittaa uuden riskinarvioinnin.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/dashboard.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/dashboard.html" scrolling="no">
   </object>
   <figcaption>Koontinäyttö</figcaption>
 </figure>
@@ -234,7 +254,7 @@ Lukittujen riskinarviointien kaksoiskappaleet ovat oletusarvoisesti lukitsematto
 </ul>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/profiling.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/profiling.html" scrolling="no">
   </object>
   <figcaption>Profiili-näkymä suunnitteluvaiheessa</figcaption>
 </figure>
@@ -256,7 +276,7 @@ Monissa työkaluissa ei ole profiiliin liittyviä kysymyksiä, koska niissä ei 
 Tähän näkymään on voitu yhdistää vaihe „Toimintasuunnitelma“ (ks. jäljempänä), mikäli OiRA-kumppani on määrittänyt työkalun niin. Siinä tapauksessa vaihe on nimeltään „Arviointi“, ja kohdassa „Toimintasuunnitelma“ kuvatut osat näytetään kunkin riskitekijän määrittämisen ja arvioinnin kohdalla.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/2014-01-02-work-environment-site-related.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/2014-01-02-work-environment-site-related.html" scrolling="no">
   </object>
   <figcaption>Tunnistaminen ja arviointi</figcaption>
 </figure>
@@ -296,7 +316,7 @@ Tähän näkymään on voitu yhdistää vaihe „Toimintasuunnitelma“ (ks. jä
 <p>Tässä vaiheessa arvioidaan tunnistettujen riskitekijöiden tärkeysjärjestys.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/2014-01-05-the-electricity-gas-and-water-supplies-are-in-order-and-well-maintained.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/2014-01-05-the-electricity-gas-and-water-supplies-are-in-order-and-well-maintained.html" scrolling="no">
   </object>
   <figcaption>Riskin arviointi</figcaption>
 </figure>
@@ -311,7 +331,7 @@ Joissakin OiRA-työkaluissa arviointia ei näytetä. Tämä riippuu siitä, mite
 </ul>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/2014-01-04-collisions-bumps-and-jamming-are-prevented.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/2014-01-04-collisions-bumps-and-jamming-are-prevented.html" scrolling="no">
   </object>
   <figcaption>Riskien tärkeysjärjestyksen määrittäminen</figcaption>
 </figure>
@@ -323,7 +343,7 @@ Joissakin OiRA-työkaluissa arviointia ei näytetä. Tämä riippuu siitä, mite
 </ul>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/2014-01-08-exposure-to-biological-substances-is-prevented-or-controlled.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/2014-01-08-exposure-to-biological-substances-is-prevented-or-controlled.html" scrolling="no">
   </object>
   <figcaption>Riskejä koskevien muuttujien määrittäminen</figcaption>
 </figure>
@@ -333,7 +353,7 @@ Joissakin OiRA-työkaluissa arviointia ei näytetä. Tämä riippuu siitä, mite
 <p>OiRA-työkalun luonut kansallinen kumppani / OiRA-työkalun kehittäjä katsoo jotkin työkalukohtaiset riskit erittäin tärkeiksi. Sinua ei pyydetä arvioimaan tällaisia tärkeäksi määritettyjä riskejä, koska niiden tärkeydeksi asetetaan automaattisesti „korkea“.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/2014-01-06-exposure-to-noise-is-prevented-or-controlled.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/2014-01-06-exposure-to-noise-is-prevented-or-controlled.html" scrolling="no">
   </object>
   <figcaption>Tärkeimmät riskit</figcaption>
 </figure>
@@ -345,7 +365,7 @@ Joissakin OiRA-työkaluissa arviointia ei näytetä. Tämä riippuu siitä, mite
 <p>Jos työkalussa ei ole mainittu riskejä, joita työpaikallasi/yrityksessäsi esiintyy, ne on lisättävä tähän kohtaan. Voit määrittää/muotoilla nämä riskit kokonaan itse.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/other-risks.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/other-risks.html" scrolling="no">
   </object>
   <figcaption>Omat riskitekijät</figcaption>
 </figure>
@@ -357,7 +377,7 @@ Joissakin OiRA-työkaluissa arviointia ei näytetä. Tämä riippuu siitä, mite
 <p>Voit lisätä niin monta riskitekijää kuin on tarpeen.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/add-risk.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/add-risk.html" scrolling="no">
   </object>
   <figcaption>Lisää oma riskitekijä</figcaption>
 </figure>
@@ -374,7 +394,7 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
 <h3 id="integroitu-toimintasuunnitelma">Integroitu toimintasuunnitelma</h3>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/risk-integrated-action-plan.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/risk-integrated-action-plan.html" scrolling="no">
   </object>
   <figcaption>Integroitu toimintasuunnitelma</figcaption>
 </figure>
@@ -386,7 +406,7 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
 <h3 id="erillinen-toimintasuunnitelma">Erillinen toimintasuunnitelma</h3>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/action-plan-landing.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/action-plan-landing.html" scrolling="no">
   </object>
   <figcaption>Kun toimintasuunnitelma näytetään erillisenä vaiheena, siihen pääsee vasemmalla puolella olevasta navigointipalkista.</figcaption>
 </figure>
@@ -398,7 +418,7 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
 <p>Sinua pyydetään määrittämään toimenpiteet kaikille riskeille, joiden osalta vastasit „ei“ arviointiprosessissa, ja tärkeäksi määritetyille riskeille (riippumatta siitä, vastasitko niiden osalta myönteisesti vai kielteisesti).</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/action-plan-action.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/action-plan-action.html" scrolling="no">
   </object>
   <figcaption>Riskitekijät toimintasuunnitelmassa</figcaption>
 </figure>
@@ -408,7 +428,7 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
 <h4 id="lisää-oma-toimenpide">Lisää oma toimenpide</h4>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/action-plan-action-add-extra-measure.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/action-plan-action-add-extra-measure.html" scrolling="no">
   </object>
   <figcaption>Lisätoimenpiteen lisääminen</figcaption>
 </figure>
@@ -434,7 +454,7 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
 <p>Tämän jälkeen nämä ennalta määritetyt toimenpiteet luetellaan toimintasuunnitelmassasi. Kuvaus tehtävästä on vakionmuotoinen, mutta voit täyttää muita kenttiä (vastuuhenkilö, budjetti, päivämäärät), ja niiden täyttämistä myös suositellaan.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/action-plan-action-add-standard-measure.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/action-plan-action-add-standard-measure.html" scrolling="no">
   </object>
   <figcaption>Tunnettujen yleisten toimenpiteiden lisääminen</figcaption>
 </figure>
@@ -475,7 +495,7 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
 <p>Jos haluat lisätä huomautuksen liitettäväksi raporttiin, kirjoita teksti sille tarkoitettuun laatikkoon ja tallenna se.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/report.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/report.html" scrolling="no">
   </object>
   <figcaption>Kommenttien lisääminen raporttiin</figcaption>
 </figure>
@@ -489,7 +509,7 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
 <p>Tilaa koskevasta osiosta saa yleisnäkymän siitä, miten monta riskitekijää olet määrittänyt, miten monta niistä olet käsitellyt valitsemalla toimenpiteitä ja miten moneen riski-/väittämäkohtaan et ole vielä vastannut.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/status.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/status.html" scrolling="no">
   </object>
   <figcaption>Tilasivu</figcaption>
 </figure>
@@ -557,37 +577,37 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
 				3-carrying-out-a-risk-assessment.md
 			</h2>
 	    
-	    <!-- <a href="/new-session.html#document-content" id="button-new-session-quick" data-pat-modal="class: large" class="no-label pat-modal iconified icon-plus" title="Start a new assessment">New</a> -->
+	    <!-- <a href="/feedback/panel-new-assessment.html#document-content" id="button-new-session-quick" data-pat-modal="class: large" class="no-label pat-modal iconified icon-plus" title="Start a new assessment">New</a> -->
         <div
         	class="pat-collapsible pat-context-menu closed align-right"
         	data-pat-collapsible="close-trigger: *:not(#more-menu)"
         	id="more-menu">
             <strong
-            	class="context-menu-label iconified more-menu-trigger"></strong>
+            	class="context-menu-label iconified more-menu-trigger">Lisää…</strong>
             <ul
             	class="menu">
             	<li>
                     <a
-                    	href="/new-session.html#document-content"
+                    	href="/feedback/panel-new-assessment.html#document-content"
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title=""></a>
+                        title="Aloita uusi riskinarviointi">Uusi riskiarviointi</a>
                 </li>
                 <li>
-                    <label class="pat-checklist"><input type="checkbox" name="archived" /> </label>
+                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Näytä arkistoidut riskinarviointeja</label>
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
-                        <label><input type="radio" value="all" name="ass-type" checked /> </label>
-                        <label><input type="radio" value="regular" name="ass-type" /> </label>
-                        <label><input type="radio" value="contractor" name="ass-type" /> </label>
+                        <label><input type="radio" value="all" name="ass-type" checked /> Kaikki riskinarviointityypit</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Vain säännölliset riskinarviointeja</label>
+                        <label><input type="radio" value="contractor" name="ass-type" /> Vain urakoitsijoiden riskinarviointeja</label>
                 	</fieldset>
                 </li>
             </ul>
         </div>
 	
-    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title=""></button>
+    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title="Laajenna sivupalkki">Laajenna sivupalkki</button>
 </form>
 
 		<a href="/feedback/osh.html#osh-ra-browser" id="osh-target-ra-browser" class="onscreen-help pat-tooltip" data-pat-tooltip="trigger: click; source: ajax; class: rich info;">Help</a>
@@ -613,7 +633,7 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
 				type="search" 
 				value="" 
 				class="quick-search pat-autofocus" 
-				placeholder="" />
+				placeholder="Haku" />
             <button type="submit" name="standard" value="main" class="search-button-main assistive">Haku</button>
         </label>
 
@@ -637,7 +657,7 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
             <select 
                 name="search-rule.data-field:records">
                 <option 
-                    value="SearchableText"></option>
+                    value="SearchableText"><!-- i18n: label_any_text_field -->Mikä tahansa tekstikenttä</option>
                 <optgroup 
                     label="Metadata">
                     <option value="Title">Title</option>
@@ -662,9 +682,9 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
                 class="pat-select">
                 <select 
                     name="search-rule.lemma-operator:records">
-                <option value="contains"></option>
-                <option value="contains-not"></option>
-                <option value="equals"></option>
+                <option value="contains"><!-- i18n: label_contains -->Sisältää</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Ei sisällä</option>
+                <option value="equals"><!-- i18n: label_equals -->On yhtä suuri kuin</option>
                 </select>
             </label>
             <input 
@@ -696,8 +716,8 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals"></option>
-                    <option value="equals-not"></option>
+                    <option value="equals">On yhtä suuri kuin</option>
+                    <option value="equals-not">Ei ole yhtä suuri kuin</option>
                 </select>
             </label>
             <select 
@@ -717,8 +737,8 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals"></option>
-                    <option value="equals-not"></option>
+                    <option value="equals">On yhtä suuri kuin</option>
+                    <option value="equals-not">Ei ole yhtä suuri kuin</option>
                 </select>
             </label>
             <select 
@@ -744,10 +764,10 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
     class="button-bar">
     <button 
         type="submit" 
-        class="pat-button default icon-search">Haku</button>
+        class="pat-button default icon-search"><!-- i18n: action_search -->Haku</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle"></button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Lisää toinen hakusääntö</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/fi/pages/3-carrying-out-a-risk-assessment#listing" 
@@ -768,9 +788,9 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
         <select 
             name="search-rule.and-or:records">
             <option 
-                value="and"></option>
+                value="and"><!-- i18n: label_and -->Ja…</option>
             <option 
-                value="or"></option>
+                value="or"><!-- i18n: label_or -->Tai…</option>
         </select>
     </label>
     <label 
@@ -778,7 +798,7 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
         <select 
             name="search-rule.data-field:records">
             <option 
-                value="SearchableText"></option>
+                value="SearchableText"><!-- i18n: label_any_text_field -->Mikä tahansa tekstikenttä</option>
             <optgroup 
                 label="Metadata">
                 <option value="Title">Title</option>
@@ -800,9 +820,9 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
             class="pat-select">
             <select 
                 name="search-rule.lemma-operator:records">
-                <option value="contains"></option>
-                <option value="contains-not"></option>
-                <option value="equals"></option>
+                <option value="contains"><!-- i18n: label_contains -->Sisältää</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Ei sisällä</option>
+                <option value="equals"><!-- i18n: label_equals -->On yhtä suuri kuin</option>
             </select>
         </label>
         <input 
@@ -835,9 +855,9 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals"></option>
+                    value="equals">On yhtä suuri kuin</option>
                 <option 
-                value="equals-not"></option>
+                value="equals-not">Ei ole yhtä suuri kuin</option>
             </select>
         </label>
         <select 
@@ -858,9 +878,9 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals"></option>
+                    value="equals">On yhtä suuri kuin</option>
                 <option 
-                    value="equals-not"></option>
+                    value="equals-not">Ei ole yhtä suuri kuin</option>
             </select>
         </label>
         <select 
@@ -881,7 +901,7 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
     </span>
     <button 
         type="button" 
-        class="remove-clone">Poista</button>
+        class="remove-clone"><!-- i18n: remove -->Poista</button>
   </p>
 </template>
 
@@ -895,7 +915,7 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
 			        	type="radio" 
 			        	name="search-mode" 
 			        	value="standard" 
-			        	checked> 
+			        	checked> Tavallinen haku
 			    </label>
 			    <label 
 			    	class="pat-switch toggle-advanced"
@@ -903,7 +923,7 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
 			        <input 
 			        	type="radio" 
 			        	name="search-mode" 
-			        	value="advanced"> 
+			        	value="advanced"> Tarkennettu haku
 			    </label>
 			</fieldset>
 	    </fieldset>

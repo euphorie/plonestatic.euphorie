@@ -97,9 +97,23 @@
 			<a 
 				href="/feedback/more-menu.html#menu-content" 
 			   	id="user-menu" 
-			   	class="iconified pat-tooltip pat-switch" 
-			   	data-pat-switch="selector: body; remove: osc-s-on; add: osc-s-off;"
-			   	data-pat-tooltip="source: ajax">Menu</a>
+			   	class=" 
+					pat-tooltip 
+					pat-switch" 
+			   	data-pat-switch="
+					selector: body; 
+					remove: osc-s-on; 
+					add: osc-s-off;"
+			   	data-pat-tooltip="
+					source: ajax">
+				
+					<img 
+						class="
+							avatar
+							pat-avatar"
+						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
+						alt="">
+				<!-- i18n: label_menu --></a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -107,13 +121,19 @@
 	            class="pat-tooltip icon iconified icon-chat pat-push">
 	            Messages <sup id="messages-unread-count" class="counter digit-1">1</sup>
 	        </a> 
+			
 			<a 
-				href="/feedback/help-menu.html#menu-content" 
-			   	id="help-menu" 
-			   	class="
-					iconified 
-					pat-tooltip" 
-			   	data-pat-tooltip="source: ajax">Help</a>
+                href="/++resource++euphorie.resources/assets/oira/help/en-roadmap/index" 
+                data-pat-inject="
+                    history: record;
+                    scroll: top;
+                    source: #content-pane;
+                    target: #content-pane;"
+				id="help-menu"
+                class="
+                    pat-inject 
+                    iconified" 
+                target="Help"><!-- i18n: label_help -->Ajuda</a>
 			<a 
 				href="/index.html" 
 			    data-pat-inject="source: #content; target: #content; history: record" 
@@ -179,7 +199,7 @@ Per defecte, es desbloquegen els duplicats de les avaluacions de risc bloquejade
 <h3 id="des-de-la-pàgina-deines">Des de la pàgina d’eines</h3>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/tools.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/tools.html" scrolling="no">
   </object>
   <figcaption>La pàgina d'eines.</figcaption>
 </figure>
@@ -191,7 +211,7 @@ Per defecte, es desbloquegen els duplicats de les avaluacions de risc bloquejade
 <p>Un cop hàgiu iniciat una avaluació de riscos, podreu recuperar-la en qualsevol moment mitjançant el tauler de control „Les meves avaluacions de riscos“. Des d’aquest mateix lloc, podreu iniciar una avaluació nova.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/dashboard.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/dashboard.html" scrolling="no">
   </object>
   <figcaption>Tauler de control</figcaption>
 </figure>
@@ -231,7 +251,7 @@ Aquí podeu:</p>
 </ul>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/profiling.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/profiling.html" scrolling="no">
   </object>
   <figcaption>La pantalla „Perfil“ en el pas de preparació</figcaption>
 </figure>
@@ -253,7 +273,7 @@ Moltes eines no inclouen preguntes de perfil, ja que no utilitzen aquesta funci�
 Segons com el soci de l’OiRA hagi configurat l’eina, el pas „Pla d’acció“ (vegeu més endavant) ja pot integrar-se en aquesta pantalla. En aquest cas, tot el pas es denomina „Avaluació“ i els elements que es descriuen a continuació a l’apartat „Pla d’acció“ apareixeran amb la identificació i l’avaluació de cada risc.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/2014-01-02-work-environment-site-related.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/2014-01-02-work-environment-site-related.html" scrolling="no">
   </object>
   <figcaption>Identificació + Avaluació</figcaption>
 </figure>
@@ -287,7 +307,7 @@ Segons com el soci de l’OiRA hagi configurat l’eina, el pas „Pla d’acci�
 <p>En aquest pas, haureu d’avaluar la prioritat d’un risc que hàgiu identificat.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/2014-01-05-the-electricity-gas-and-water-supplies-are-in-order-and-well-maintained.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/2014-01-05-the-electricity-gas-and-water-supplies-are-in-order-and-well-maintained.html" scrolling="no">
   </object>
   <figcaption>Avalueu un risc</figcaption>
 </figure>
@@ -301,7 +321,7 @@ En alguna eina OiRA pot ser que no es mostri l’avaluació. Això depèn de com
 </ul>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/2014-01-04-collisions-bumps-and-jamming-are-prevented.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/2014-01-04-collisions-bumps-and-jamming-are-prevented.html" scrolling="no">
   </object>
   <figcaption>Establiu la prioritat d’un risc</figcaption>
 </figure>
@@ -313,7 +333,7 @@ En alguna eina OiRA pot ser que no es mostri l’avaluació. Això depèn de com
 </ul>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/2014-01-08-exposure-to-biological-substances-is-prevented-or-controlled.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/2014-01-08-exposure-to-biological-substances-is-prevented-or-controlled.html" scrolling="no">
   </object>
   <figcaption>Establiu variables per a un risc</figcaption>
 </figure>
@@ -323,7 +343,7 @@ En alguna eina OiRA pot ser que no es mostri l’avaluació. Això depèn de com
 <p>Alguns riscos són considerats d’alta importància pel soci o el desenvolupador que va crear l’eina específica. No és necessari calcular aquests „riscos prioritaris“, ja que la prioritat s’estableix automàticament com a „alta“.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/2014-01-06-exposure-to-noise-is-prevented-or-controlled.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/2014-01-06-exposure-to-noise-is-prevented-or-controlled.html" scrolling="no">
   </object>
   <figcaption>Riscos prioritaris</figcaption>
 </figure>
@@ -335,7 +355,7 @@ En alguna eina OiRA pot ser que no es mostri l’avaluació. Això depèn de com
 <p>En cas que observeu que determinats riscos detectats en el vostre lloc de treball o en la vostra empresa no apareixen a l’eina, haureu d’afegir-hi els riscos personalitzats; podreu definir o formular íntegrament aquests riscos.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/other-risks.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/other-risks.html" scrolling="no">
   </object>
   <figcaption>Riscos personalitzats</figcaption>
 </figure>
@@ -347,7 +367,7 @@ En alguna eina OiRA pot ser que no es mostri l’avaluació. Això depèn de com
 <p>Podeu afegir-hi tants riscos personalitzats com us sigui necessari.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/add-risk.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/add-risk.html" scrolling="no">
   </object>
   <figcaption>Afegiu un risc personalitzat</figcaption>
 </figure>
@@ -364,7 +384,7 @@ Com s’ha esmentat abans, el pla d’acció es presenta com un pas separat ress
 <h3 id="pla-dacció-integrat">Pla d’acció integrat</h3>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/risk-integrated-action-plan.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/risk-integrated-action-plan.html" scrolling="no">
   </object>
   <figcaption>Pla d’acció integrat</figcaption>
 </figure>
@@ -376,7 +396,7 @@ Com s’ha esmentat abans, el pla d’acció es presenta com un pas separat ress
 <h3 id="pla-dacció-separat">Pla d’acció separat</h3>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/action-plan-landing.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/action-plan-landing.html" scrolling="no">
   </object>
   <figcaption>Quan el pla d’acció és un pas separat, es podrà accedir mitjançant el panell de navegació de l’esquerra.</figcaption>
 </figure>
@@ -388,7 +408,7 @@ Com s’ha esmentat abans, el pla d’acció es presenta com un pas separat ress
 <p>Per a cada risc en què hàgiu respost amb un no durant el procés d’avaluació i per als riscos prioritaris (independentment que s’hagin respost positivament o negativament), haureu de definir mesures.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/action-plan.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/action-plan.html" scrolling="no">
   </object>
   <figcaption>Pla d'acció</figcaption>
 </figure>
@@ -398,7 +418,7 @@ Com s’ha esmentat abans, el pla d’acció es presenta com un pas separat ress
 <h4 id="afegir-la-vostra-mesura">Afegir la vostra mesura</h4>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/action-plan-action-add-extra-measure.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/action-plan-action-add-extra-measure.html" scrolling="no">
   </object>
   <figcaption>Afegiu la vostra mesura</figcaption>
 </figure>
@@ -423,7 +443,7 @@ Com s’ha esmentat abans, el pla d’acció es presenta com un pas separat ress
 <p>Les mesures preestablertes s’inclouen a continuació en el vostre pla d’acció. La descripció del que s’ha de fer és fixa, però haureu d’emplenar els altres camps (responsabilitat, pressupost i dates).</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/action-plan-action-add-standard-measure.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/action-plan-action-add-standard-measure.html" scrolling="no">
   </object>
   <figcaption>Afegiu una mesura preestablerta.</figcaption>
 </figure>
@@ -464,7 +484,7 @@ Com s’ha esmentat abans, el pla d’acció es presenta com un pas separat ress
 <p>Si desitgeu deixar un comentari perquè s’inclogui a l’informe, escriviu el text en aquest camp i guardeu-lo.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/report.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/report.html" scrolling="no">
   </object>
   <figcaption>Comenteu l'informe</figcaption>
 </figure>
@@ -478,7 +498,7 @@ Com s’ha esmentat abans, el pla d’acció es presenta com un pas separat ress
 <p>La secció de grau d’emplenament ofereix una visió general del nombre de riscos que heu identificat, quants n’heu abordat mitjançant la decisió de mesures i quants riscos o declaracions no heu respost encara.</p>
 
 <figure class="screenshot">
-  <object class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/status.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/status.html" scrolling="no">
   </object>
   <figcaption>Pàgina de grau d’emplenament.</figcaption>
 </figure>
@@ -546,37 +566,37 @@ Com s’ha esmentat abans, el pla d’acció es presenta com un pas separat ress
 				3-carrying-out-a-risk-assessment.md
 			</h2>
 	    
-	    <!-- <a href="/new-session.html#document-content" id="button-new-session-quick" data-pat-modal="class: large" class="no-label pat-modal iconified icon-plus" title="Start a new assessment">New</a> -->
+	    <!-- <a href="/feedback/panel-new-assessment.html#document-content" id="button-new-session-quick" data-pat-modal="class: large" class="no-label pat-modal iconified icon-plus" title="Start a new assessment">New</a> -->
         <div
         	class="pat-collapsible pat-context-menu closed align-right"
         	data-pat-collapsible="close-trigger: *:not(#more-menu)"
         	id="more-menu">
             <strong
-            	class="context-menu-label iconified more-menu-trigger"></strong>
+            	class="context-menu-label iconified more-menu-trigger">Més…</strong>
             <ul
             	class="menu">
             	<li>
                     <a
-                    	href="/new-session.html#document-content"
+                    	href="/feedback/panel-new-assessment.html#document-content"
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title=""></a>
+                        title="Iniciar nova avaluació de riscos">Nova avaluació de riscos</a>
                 </li>
                 <li>
-                    <label class="pat-checklist"><input type="checkbox" name="archived" /> </label>
+                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Mostra avaluacions de riscos arxivades</label>
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
-                        <label><input type="radio" value="all" name="ass-type" checked /> </label>
-                        <label><input type="radio" value="regular" name="ass-type" /> </label>
-                        <label><input type="radio" value="contractor" name="ass-type" /> </label>
+                        <label><input type="radio" value="all" name="ass-type" checked /> Tots els tipus d'avaluacions de risc</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Només avaluacions regulars de riscos</label>
+                        <label><input type="radio" value="contractor" name="ass-type" /> Només avaluacions de riscos de contractistes</label>
                 	</fieldset>
                 </li>
             </ul>
         </div>
 	
-    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title=""></button>
+    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title="Expandir barra lateral">Expandir barra lateral</button>
 </form>
 
 		<a href="/feedback/osh.html#osh-ra-browser" id="osh-target-ra-browser" class="onscreen-help pat-tooltip" data-pat-tooltip="trigger: click; source: ajax; class: rich info;">Help</a>
@@ -602,7 +622,7 @@ Com s’ha esmentat abans, el pla d’acció es presenta com un pas separat ress
 				type="search" 
 				value="" 
 				class="quick-search pat-autofocus" 
-				placeholder="" />
+				placeholder="Cercar" />
             <button type="submit" name="standard" value="main" class="search-button-main assistive">Cercar</button>
         </label>
 
@@ -626,7 +646,7 @@ Com s’ha esmentat abans, el pla d’acció es presenta com un pas separat ress
             <select 
                 name="search-rule.data-field:records">
                 <option 
-                    value="SearchableText"></option>
+                    value="SearchableText"><!-- i18n: label_any_text_field -->Qualsevol camp de text</option>
                 <optgroup 
                     label="Metadata">
                     <option value="Title">Title</option>
@@ -651,9 +671,9 @@ Com s’ha esmentat abans, el pla d’acció es presenta com un pas separat ress
                 class="pat-select">
                 <select 
                     name="search-rule.lemma-operator:records">
-                <option value="contains"></option>
-                <option value="contains-not"></option>
-                <option value="equals"></option>
+                <option value="contains"><!-- i18n: label_contains -->Conté</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->No conté</option>
+                <option value="equals"><!-- i18n: label_equals -->És igual a</option>
                 </select>
             </label>
             <input 
@@ -685,8 +705,8 @@ Com s’ha esmentat abans, el pla d’acció es presenta com un pas separat ress
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals"></option>
-                    <option value="equals-not"></option>
+                    <option value="equals">És igual a</option>
+                    <option value="equals-not">No és igual a</option>
                 </select>
             </label>
             <select 
@@ -706,8 +726,8 @@ Com s’ha esmentat abans, el pla d’acció es presenta com un pas separat ress
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals"></option>
-                    <option value="equals-not"></option>
+                    <option value="equals">És igual a</option>
+                    <option value="equals-not">No és igual a</option>
                 </select>
             </label>
             <select 
@@ -733,10 +753,10 @@ Com s’ha esmentat abans, el pla d’acció es presenta com un pas separat ress
     class="button-bar">
     <button 
         type="submit" 
-        class="pat-button default icon-search">Cercar</button>
+        class="pat-button default icon-search"><!-- i18n: action_search -->Cercar</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle"></button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Afegir una altra regla de cerca</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/ca/pages/3-carrying-out-a-risk-assessment#listing" 
@@ -757,9 +777,9 @@ Com s’ha esmentat abans, el pla d’acció es presenta com un pas separat ress
         <select 
             name="search-rule.and-or:records">
             <option 
-                value="and"></option>
+                value="and"><!-- i18n: label_and -->I…</option>
             <option 
-                value="or"></option>
+                value="or"><!-- i18n: label_or -->O…</option>
         </select>
     </label>
     <label 
@@ -767,7 +787,7 @@ Com s’ha esmentat abans, el pla d’acció es presenta com un pas separat ress
         <select 
             name="search-rule.data-field:records">
             <option 
-                value="SearchableText"></option>
+                value="SearchableText"><!-- i18n: label_any_text_field -->Qualsevol camp de text</option>
             <optgroup 
                 label="Metadata">
                 <option value="Title">Title</option>
@@ -789,9 +809,9 @@ Com s’ha esmentat abans, el pla d’acció es presenta com un pas separat ress
             class="pat-select">
             <select 
                 name="search-rule.lemma-operator:records">
-                <option value="contains"></option>
-                <option value="contains-not"></option>
-                <option value="equals"></option>
+                <option value="contains"><!-- i18n: label_contains -->Conté</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->No conté</option>
+                <option value="equals"><!-- i18n: label_equals -->És igual a</option>
             </select>
         </label>
         <input 
@@ -824,9 +844,9 @@ Com s’ha esmentat abans, el pla d’acció es presenta com un pas separat ress
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals"></option>
+                    value="equals">És igual a</option>
                 <option 
-                value="equals-not"></option>
+                value="equals-not">No és igual a</option>
             </select>
         </label>
         <select 
@@ -847,9 +867,9 @@ Com s’ha esmentat abans, el pla d’acció es presenta com un pas separat ress
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals"></option>
+                    value="equals">És igual a</option>
                 <option 
-                    value="equals-not"></option>
+                    value="equals-not">No és igual a</option>
             </select>
         </label>
         <select 
@@ -870,7 +890,7 @@ Com s’ha esmentat abans, el pla d’acció es presenta com un pas separat ress
     </span>
     <button 
         type="button" 
-        class="remove-clone">Eliminar</button>
+        class="remove-clone"><!-- i18n: remove -->Eliminar</button>
   </p>
 </template>
 
@@ -884,7 +904,7 @@ Com s’ha esmentat abans, el pla d’acció es presenta com un pas separat ress
 			        	type="radio" 
 			        	name="search-mode" 
 			        	value="standard" 
-			        	checked> 
+			        	checked> Cerca estàndard
 			    </label>
 			    <label 
 			    	class="pat-switch toggle-advanced"
@@ -892,7 +912,7 @@ Com s’ha esmentat abans, el pla d’acció es presenta com un pas separat ress
 			        <input 
 			        	type="radio" 
 			        	name="search-mode" 
-			        	value="advanced"> 
+			        	value="advanced"> Cerca avançada
 			    </label>
 			</fieldset>
 	    </fieldset>

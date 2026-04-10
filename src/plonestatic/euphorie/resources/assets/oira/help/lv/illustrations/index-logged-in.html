@@ -97,9 +97,23 @@
 			<a 
 				href="/feedback/more-menu.html#menu-content" 
 			   	id="user-menu" 
-			   	class="iconified pat-tooltip pat-switch" 
-			   	data-pat-switch="selector: body; remove: osc-s-on; add: osc-s-off;"
-			   	data-pat-tooltip="source: ajax">Menu</a>
+			   	class=" 
+					pat-tooltip 
+					pat-switch" 
+			   	data-pat-switch="
+					selector: body; 
+					remove: osc-s-on; 
+					add: osc-s-off;"
+			   	data-pat-tooltip="
+					source: ajax">
+				
+					<img 
+						class="
+							avatar
+							pat-avatar"
+						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
+						alt="">
+				<!-- i18n: label_menu -->Izvēlne</a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -107,13 +121,19 @@
 	            class="pat-tooltip icon iconified icon-chat pat-push">
 	            Messages <sup id="messages-unread-count" class="counter digit-1">1</sup>
 	        </a> 
+			
 			<a 
-				href="/feedback/help-menu.html#menu-content" 
-			   	id="help-menu" 
-			   	class="
-					iconified 
-					pat-tooltip" 
-			   	data-pat-tooltip="source: ajax">Help</a>
+                href="/++resource++euphorie.resources/assets/oira/help/en-roadmap/index" 
+                data-pat-inject="
+                    history: record;
+                    scroll: top;
+                    source: #content-pane;
+                    target: #content-pane;"
+				id="help-menu"
+                class="
+                    pat-inject 
+                    iconified" 
+                target="Help"><!-- i18n: label_help -->Palīdzība</a>
 			<a 
 				href="/index.html" 
 			    data-pat-inject="source: #content; target: #content; history: record" 
@@ -136,28 +156,12 @@
         id="content-pane"
         class="pat-scroll-box">
         
-<!-- <article id="screen-intro">
-	<header class="title-group">
-		<h1>
-			OiRA@Daimler
-		</h1>
-		<p class="byline">
-			
-				OiRA - riska interaktīvā novērtēšana tiešsaistē
-			
-		</p>
-	</header>
-	
-		<form action="index-logged-in-var-third-party.html#dashboard" data-pat-inject="history: record" class="tool-group pat-autosubmit pat-inject">
-			<label class="pat-select bare">
-				<select name="dashboard-view">
-					<option>Default view</option>
-					<option >Fremdfirmenkoordination</option>
-				</select>
-			</label>
-		</form>
-	
-</article> -->
+
+
+
+
+
+
 
 
 
@@ -179,40 +183,40 @@
             current 
             icon 
             icon-gauge 
-            pat-inject"></a>
+            pat-inject"><!-- i18n: patterns.label_homescreen --></a>
     <a 
         href="/tools/"
         data-pat-inject="history: record; source: #application-content; target: #application-content && source: #toolbar-functions-area::element; target: #toolbar-functions-area::element"
-        class=" pat-inject"></a>
+        class=" pat-inject"><!-- i18n: label_tools -->Rīki</a>
     <a 
         href="/assessments/"
         data-pat-inject="history: record; source: #application-content; target: #application-content && source: #toolbar-functions-area::element; target: #toolbar-functions-area::element"
         class="
              
-            pat-inject">Riska novērtējumi</a>
+            pat-inject"><!-- i18n: label_risk_assessments -->Riska novērtējumi</a>
     <a 
         href="/trainings/"
         data-pat-inject="history: record; source: #application-content; target: #application-content && source: #toolbar-functions-area::element; target: #toolbar-functions-area::element"
         class="
              
-            pat-inject"></a>
+            pat-inject"><!-- i18n: label_training -->Apmācība</a>
     <a 
         href="/certificates/"
         data-pat-inject="history: record; source: #application-content; target: #application-content && source: #toolbar-functions-area::element; target: #toolbar-functions-area::element"
         class="
              
-            pat-inject">Sertifikāti</a>
+            pat-inject"><!-- i18n: label_certificates -->Sertifikāti</a>
+    <a 
+        href="/users/"
+        data-pat-inject="history: record; source: #application-content; target: #application-content && source: #toolbar-functions-area::element; target: #toolbar-functions-area::element"
+        class="
+            pat-inject"><!-- i18n: label_organisation -->Organizācija</a>
     <a 
         href="/third-parties/"
         data-pat-inject="history: record; source: #application-content; target: #application-content && source: #toolbar-functions-area::element; target: #toolbar-functions-area::element"
         class="
              
-            pat-inject"></a>
-    <a 
-        href="/users/"
-        data-pat-inject="history: record; source: #application-content; target: #application-content && source: #toolbar-functions-area::element; target: #toolbar-functions-area::element"
-        class="
-            pat-inject"></a>
+            pat-inject"><!-- i18n: label_external_companies -->Ārējie uzņēmumi</a>
 </nav>
 
         </div>
@@ -223,7 +227,9 @@
         action="/index-logged-in-var-third-party.html#dashboard"
         data-pat-inject="history: record">
         <div
-            class="toolbar-section view-options"
+            class="
+                toolbar-section 
+                view-options"
             id="assessments-toolbar-view-options">
 
             <a 
@@ -234,10 +240,9 @@
                 "
                 class="
                     pat-select 
-                    pat-tooltip">Noklusējuma skats</a>
+                    pat-tooltip"><!-- i18n: label_default_view -->Noklusējuma skats</a>
 
-            <div 
-                hidden
+            <template
                 id="dashboard-menu">
                 <ul 
                     class="menu pat-navigation">
@@ -257,7 +262,7 @@
                                     current
                                 
                                 pat-inject 
-                                icon-gauge">Noklusējuma skats</a>
+                                icon-gauge"><!-- i18n: label_default_view -->Noklusējuma skats</a>
                     </li>
                     <li>
                         <a 
@@ -276,16 +281,9 @@
                                 icon-gauge">Fremdfirmenkoordination</a>
                     </li>
                 </ul>
-            </div>
+            </template>
 
-            <!-- <label
-                class="pat-select">
-                <select
-                    name="dashboard-view">
-                    <option>Noklusējuma skats</option>
-                    <option >Fremdfirmenkoordination</option>
-                </select>
-            </label> -->
+            
         </div>
         <div
             class="toolbar-section quick-functions"
@@ -304,6 +302,8 @@
 			class="pat-inject infinite-scrolling-trigger">Loading…</a>
 	
 </div>
+
+
 
 
     </div>
@@ -328,37 +328,37 @@
 				index-logged-in.html
 			</h2>
 	    
-	    <!-- <a href="/new-session.html#document-content" id="button-new-session-quick" data-pat-modal="class: large" class="no-label pat-modal iconified icon-plus" title="Start a new assessment">New</a> -->
+	    <!-- <a href="/feedback/panel-new-assessment.html#document-content" id="button-new-session-quick" data-pat-modal="class: large" class="no-label pat-modal iconified icon-plus" title="Start a new assessment">New</a> -->
         <div
         	class="pat-collapsible pat-context-menu closed align-right"
         	data-pat-collapsible="close-trigger: *:not(#more-menu)"
         	id="more-menu">
             <strong
-            	class="context-menu-label iconified more-menu-trigger"></strong>
+            	class="context-menu-label iconified more-menu-trigger">Vairāk…</strong>
             <ul
             	class="menu">
             	<li>
                     <a
-                    	href="/new-session.html#document-content"
+                    	href="/feedback/panel-new-assessment.html#document-content"
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title=""></a>
+                        title="Sākt jaunu riska novērtējumu">Jauns riska novērtējums</a>
                 </li>
                 <li>
-                    <label class="pat-checklist"><input type="checkbox" name="archived" /> </label>
+                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Rādīt arhivētos riska novērtējumus</label>
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
-                        <label><input type="radio" value="all" name="ass-type" checked /> </label>
-                        <label><input type="radio" value="regular" name="ass-type" /> </label>
-                        <label><input type="radio" value="contractor" name="ass-type" /> </label>
+                        <label><input type="radio" value="all" name="ass-type" checked /> Visu veidu riska novērtējumi</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Tikai parastie riska novērtējumi</label>
+                        <label><input type="radio" value="contractor" name="ass-type" /> Tikai darbuzņēmēju riska novērtējumi</label>
                 	</fieldset>
                 </li>
             </ul>
         </div>
 	
-    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title=""></button>
+    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title="Izvērst sānjoslu">Izvērst sānjoslu</button>
 </form>
 
 		<a href="/feedback/osh.html#osh-ra-browser" id="osh-target-ra-browser" class="onscreen-help pat-tooltip" data-pat-tooltip="trigger: click; source: ajax; class: rich info;">Help</a>
@@ -384,7 +384,7 @@
 				type="search" 
 				value="" 
 				class="quick-search pat-autofocus" 
-				placeholder="" />
+				placeholder="Meklēt" />
             <button type="submit" name="standard" value="main" class="search-button-main assistive">Meklēt</button>
         </label>
 
@@ -408,7 +408,7 @@
             <select 
                 name="search-rule.data-field:records">
                 <option 
-                    value="SearchableText"></option>
+                    value="SearchableText"><!-- i18n: label_any_text_field -->Jebkurš teksta lauks</option>
                 <optgroup 
                     label="Metadata">
                     <option value="Title">Title</option>
@@ -433,9 +433,9 @@
                 class="pat-select">
                 <select 
                     name="search-rule.lemma-operator:records">
-                <option value="contains"></option>
-                <option value="contains-not"></option>
-                <option value="equals"></option>
+                <option value="contains"><!-- i18n: label_contains -->Satur</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Nesatur</option>
+                <option value="equals"><!-- i18n: label_equals -->Vienāds ar</option>
                 </select>
             </label>
             <input 
@@ -467,8 +467,8 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals"></option>
-                    <option value="equals-not"></option>
+                    <option value="equals">Vienāds ar</option>
+                    <option value="equals-not">Nav vienāds ar</option>
                 </select>
             </label>
             <select 
@@ -488,8 +488,8 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals"></option>
-                    <option value="equals-not"></option>
+                    <option value="equals">Vienāds ar</option>
+                    <option value="equals-not">Nav vienāds ar</option>
                 </select>
             </label>
             <select 
@@ -515,10 +515,10 @@
     class="button-bar">
     <button 
         type="submit" 
-        class="pat-button default icon-search">Meklēt</button>
+        class="pat-button default icon-search"><!-- i18n: action_search -->Meklēt</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle"></button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Pievienot citu meklēšanas noteikumu</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/lv/illustrations/index-logged-in#listing" 
@@ -539,9 +539,9 @@
         <select 
             name="search-rule.and-or:records">
             <option 
-                value="and"></option>
+                value="and"><!-- i18n: label_and -->Un…</option>
             <option 
-                value="or"></option>
+                value="or"><!-- i18n: label_or -->Vai…</option>
         </select>
     </label>
     <label 
@@ -549,7 +549,7 @@
         <select 
             name="search-rule.data-field:records">
             <option 
-                value="SearchableText"></option>
+                value="SearchableText"><!-- i18n: label_any_text_field -->Jebkurš teksta lauks</option>
             <optgroup 
                 label="Metadata">
                 <option value="Title">Title</option>
@@ -571,9 +571,9 @@
             class="pat-select">
             <select 
                 name="search-rule.lemma-operator:records">
-                <option value="contains"></option>
-                <option value="contains-not"></option>
-                <option value="equals"></option>
+                <option value="contains"><!-- i18n: label_contains -->Satur</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Nesatur</option>
+                <option value="equals"><!-- i18n: label_equals -->Vienāds ar</option>
             </select>
         </label>
         <input 
@@ -606,9 +606,9 @@
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals"></option>
+                    value="equals">Vienāds ar</option>
                 <option 
-                value="equals-not"></option>
+                value="equals-not">Nav vienāds ar</option>
             </select>
         </label>
         <select 
@@ -629,9 +629,9 @@
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals"></option>
+                    value="equals">Vienāds ar</option>
                 <option 
-                    value="equals-not"></option>
+                    value="equals-not">Nav vienāds ar</option>
             </select>
         </label>
         <select 
@@ -652,7 +652,7 @@
     </span>
     <button 
         type="button" 
-        class="remove-clone">Noņemt</button>
+        class="remove-clone"><!-- i18n: remove -->Noņemt</button>
   </p>
 </template>
 
@@ -666,7 +666,7 @@
 			        	type="radio" 
 			        	name="search-mode" 
 			        	value="standard" 
-			        	checked> 
+			        	checked> Standarta meklēšana
 			    </label>
 			    <label 
 			    	class="pat-switch toggle-advanced"
@@ -674,7 +674,7 @@
 			        <input 
 			        	type="radio" 
 			        	name="search-mode" 
-			        	value="advanced"> 
+			        	value="advanced"> Paplašināta meklēšana
 			    </label>
 			</fieldset>
 	    </fieldset>
