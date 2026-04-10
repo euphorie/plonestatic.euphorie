@@ -6,6 +6,7 @@ recursive-include src *.css
 recursive-include src *.eot
 recursive-include src *.gif
 recursive-include src *.html
+recursive-include src *.jpg
 recursive-include src *.json
 recursive-include src *.map
 recursive-include src *.png
