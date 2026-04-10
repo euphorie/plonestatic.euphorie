@@ -1,4 +1,5 @@
 .DEFAULT_GOAL := help
+TWINE_REPOSITORY ?= pypi
 
 
 all: ## Update proto, compile it and install the resources
@@ -65,6 +66,17 @@ resources-install:  ## Install the resources from the prototype folder to the pl
 .PHONY: clean-proto
 clean-proto: var/prototype  ## Clean the prototype
 	cd var/prototype && make clean
+
+
+.PHONY: release
+release:  ## Release the package to PyPI using zest-releaser
+	@echo "Releasing to repository: $(TWINE_REPOSITORY)"
+	@echo "To release to a different repository, run \`make release TWINE_REPOSITORY=<repository>\`"
+	TWINE_REPOSITORY="$(TWINE_REPOSITORY)" uvx \
+		--from zest-releaser \
+		--with zest-releaser\[recommended\] \
+		--with zestreleaser-towncrier \
+		fullrelease
 
 help:
 	@echo "Usage: make [target]"
