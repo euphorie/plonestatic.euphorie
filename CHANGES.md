@@ -9,6 +9,15 @@ https://github.com/plone/plone.releaser/blob/master/ADD-A-NEWS-ITEM.rst
 
 <!-- towncrier release notes start -->
 
+## 1.0.2 (2026-04-10)
+
+### Bug fixes:
+
+- Update the resources, increase the size of the package.
+  Fix an issue with a missing css resource triggering an error in the backend.
+  @ale-rt (Issue [#3642](https://github.com/syslabcom/scrum/issues/3642))
+
+
 ## 1.0.1 (2025-12-09)
 
 ### Bug fixes:
