@@ -17,6 +17,11 @@ RESOURCES_DIR = Path("src/plonestatic/euphorie/resources")
 # Regexp to match the links to the resources
 resources_pattern = re.compile(r'(/(?:media|style|feedback)/[^\'"\s:\)\?#]+)')
 
+# Rewrite only bare /assets/ and /media/ links, and skip links that were
+# already rewritten in a previous run.
+assets_url_pattern = re.compile(r"(?<!\+\+resource\+\+euphorie\.resources)/assets/")
+media_url_pattern = re.compile(r"(?<!\+\+resource\+\+euphorie\.resources)/media/")
+
 # Regexp to match the font filenames in the fontello.css
 font_pattern = re.compile(r"url\(['\"]?.*/([^/?#]+)")
 
@@ -83,12 +88,13 @@ def run():
             # does not require extracting the resources
             required_resources.update(extract_resources(text))
 
-        text = text.replace(
-            "/assets/",
+        text = assets_url_pattern.sub(
             "/++resource++euphorie.resources/assets/",
-        ).replace(
-            "/media/",
+            text,
+        )
+        text = media_url_pattern.sub(
             "++resource++euphorie.resources/media/",
+            text,
         )
         # write the text back to the file
         filepath.write_text(text)
