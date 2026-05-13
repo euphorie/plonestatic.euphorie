@@ -9,6 +9,13 @@ https://github.com/plone/plone.releaser/blob/master/ADD-A-NEWS-ITEM.rst
 
 <!-- towncrier release notes start -->
 
+## 1.0.3 (2026-05-13)
+
+### Bug fixes:
+
+- Remove stale help file created only for testing (Issue [#4822](https://github.com/syslabcom/scrum/issues/4822))
+
+
 ## 1.0.2 (2026-04-10)
 
 ### Bug fixes:
