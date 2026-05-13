@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup(
     name="plonestatic.euphorie",
-    version="1.0.3",
+    version="1.0.4.dev0",
     description="Euphorie Risk Assessment tool static resources",
     long_description="\n".join(
         [
