@@ -13,10 +13,10 @@
 		<link
 			id="all-styles"
 			rel="stylesheet"
-			href="/++resource++euphorie.resources/assets/oira/style/all.css"
+			href="/assets/oira/style/all.css"
 			type="text/css">
 
-		<script src="/++resource++patternslib/bundle.min.js"></script>
+		<script src="/assets/oira/script/bundle.min.js"></script>
 
 		<!-- Following line is ONLY for the prototype. -->
 		<meta
@@ -37,18 +37,18 @@
 			content="A seconda dell’approccio adottato dal partner OiRA/dallo sviluppatore dello strumento nazionale, può essere possibile ottenere un certificato per la tua valutazione dei rischi. Per informazioni dettagliate sui vantaggi di tali certificati contatta il tuo partner OiRA nazionale." />
 		<meta
 			property="og:url"
-			content="//++resource++euphorie.resources/assets/oira/help/it/pages/certificates" />
+			content="//assets/oira/help/it/pages/certificates" />
 		<meta
 			property="og:image"
-			content="/++resource++euphorie.resources/assets/oira/style/oira-tile.png" />
+			content="/assets/oira/style/oira-tile.png" />
 
 		<link 
 			rel="icon" 
 			type="image/png" 
-			href="/++resource++euphorie.resources/assets/oira/favicon/apple-touch-icon.png" />
+			href="/assets/oira/favicon/apple-touch-icon.png" />
 
 		<link rel="manifest" 
-			  href="/++resource++euphorie.resources/assets/oira/manifest/manifest.json">
+			  href="/assets/oira/manifest/manifest.json">
 	</head>
 	<body
 		id="body"
@@ -111,9 +111,9 @@
 						class="
 							avatar
 							pat-avatar"
-						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
+						src="/media/avatars/yvette-lefevre.jpg" 
 						alt="">
-				<!-- i18n: label_menu -->Menù</a>
+				<!-- i18n: label_menu --></a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -123,7 +123,7 @@
 	        </a> 
 			
 			<a 
-                href="/++resource++euphorie.resources/assets/oira/help/en-roadmap/index" 
+                href="/assets/oira/help/en-roadmap/index" 
                 data-pat-inject="
                     history: record;
                     scroll: top;
@@ -191,7 +191,7 @@
 <p>OiRA registra i tuoi progressi nell’esecuzione della valutazione dei rischi. Dopo che avrai valutato una serie di rischi, lo strumento ti comunicherà la possibilità di ottenere un certificato una volta ultimata la valutazione dei rischi completa. Ciascun partner OiRA/sviluppatore dello strumento nazionale fissa la soglia (percentuali) richiesta per poter definire «completa» una valutazione dei rischi. Il certificato è accessibile mediante il pulsante «Stato» nel menù sul lato sinistro della schermata.</p>
 
 <figure class="screenshot">
-  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/it/illustrations/status-certificate.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/assets/oira/help/it/illustrations/status-certificate.html" scrolling="no">
   </object>
   <figcaption>La pagina dello stato mostra che è disponibile un certificato.</figcaption>
 </figure>
@@ -201,7 +201,7 @@
 <p>Quando fai clic sul pulsante «Visualizza certificato» ti verrà chiesto di inserire la ragione o denominazione sociale dell’impresa che dovrebbe figurare sul certificato. A seconda delle impostazioni nazionali, ti può essere chiesto di inserire ulteriori dati per garantire che il certificato contenga tutte le informazioni che devi fornire.</p>
 
 <figure class="screenshot">
-  <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/it/illustrations/certificate-public.html" scrolling="no">
+  <object height="800" width="1280" class="pat-auto-scale" data="/assets/oira/help/it/illustrations/certificate-public.html" scrolling="no">
   </object>
   <figcaption>Inserire tutte le informazioni richieste per il certificato.</figcaption>
 </figure>
@@ -277,16 +277,16 @@ saranno resi pubblici soltanto i dati visualizzati su questa pagina. Questo link
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title="Inizia nuova valutazione del rischio">Nuova valutazione del rischio</a>
+                        title="Avvia una nuova valutazione del rischio">Nuova valutazione del rischio</a>
                 </li>
                 <li>
-                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Mostra valutazioni del rischio archiviate</label>
+                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Mostra le valutazioni del rischio archiviate</label>
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
                         <label><input type="radio" value="all" name="ass-type" checked /> Tutti i tipi di valutazioni del rischio</label>
                         <label><input type="radio" value="regular" name="ass-type" /> Solo valutazioni del rischio regolari</label>
-                        <label><input type="radio" value="contractor" name="ass-type" /> Solo valutazioni del rischio degli appaltatori</label>
+                        <label><input type="radio" value="contractor" name="ass-type" /> Solo valutazioni del rischio del contraente</label>
                 	</fieldset>
                 </li>
             </ul>
@@ -369,7 +369,7 @@ saranno resi pubblici soltanto i dati visualizzati su questa pagina. Questo link
                     name="search-rule.lemma-operator:records">
                 <option value="contains"><!-- i18n: label_contains -->Contiene</option>
                 <option value="contains-not"><!-- i18n: label_contains_not -->Non contiene</option>
-                <option value="equals"><!-- i18n: label_equals -->È uguale a</option>
+                <option value="equals"><!-- i18n: label_equals -->Uguale</option>
                 </select>
             </label>
             <input 
@@ -384,9 +384,9 @@ saranno resi pubblici soltanto i dati visualizzati su questa pagina. Questo link
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is"></option>
-                    <option value="is-before"></option>
-                    <option value="is-after"></option>
+                    <option value="is">È</option>
+                    <option value="is-before">È prima</option>
+                    <option value="is-after">È dopo</option>
                 </select>
             </label>
             <input 
@@ -401,8 +401,8 @@ saranno resi pubblici soltanto i dati visualizzati su questa pagina. Questo link
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">È uguale a</option>
-                    <option value="equals-not">Non è uguale a</option>
+                    <option value="equals">Uguale</option>
+                    <option value="equals-not">Non uguale</option>
                 </select>
             </label>
             <select 
@@ -422,8 +422,8 @@ saranno resi pubblici soltanto i dati visualizzati su questa pagina. Questo link
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">È uguale a</option>
-                    <option value="equals-not">Non è uguale a</option>
+                    <option value="equals">Uguale</option>
+                    <option value="equals-not">Non uguale</option>
                 </select>
             </label>
             <select 
@@ -455,12 +455,12 @@ saranno resi pubblici soltanto i dati visualizzati su questa pagina. Questo link
         class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Aggiungi un'altra regola di ricerca</button>
 
     <a 
-        href="/++resource++euphorie.resources/assets/oira/help/it/pages/certificates#listing" 
+        href="/assets/oira/help/it/pages/certificates#listing" 
         class="pat-inject float-after pat-button">Reset</a>
     
     <a 
         data-pat-inject="scroll: #assessments-screen; history: record"
-        href="/++resource++euphorie.resources/assets/oira/help/en-roadmap/pages/3-carrying-out-a-risk-assessment" 
+        href="/assets/oira/help/en-roadmap/pages/3-carrying-out-a-risk-assessment" 
         class="pat-inject pat-button no-label icon-help float-after">Help</a>
 </p>
 
@@ -475,7 +475,7 @@ saranno resi pubblici soltanto i dati visualizzati su questa pagina. Questo link
             <option 
                 value="and"><!-- i18n: label_and -->E…</option>
             <option 
-                value="or"><!-- i18n: label_or -->O…</option>
+                value="or"><!-- i18n: label_or -->Oppure…</option>
         </select>
     </label>
     <label 
@@ -507,7 +507,7 @@ saranno resi pubblici soltanto i dati visualizzati su questa pagina. Questo link
                 name="search-rule.lemma-operator:records">
                 <option value="contains"><!-- i18n: label_contains -->Contiene</option>
                 <option value="contains-not"><!-- i18n: label_contains_not -->Non contiene</option>
-                <option value="equals"><!-- i18n: label_equals -->È uguale a</option>
+                <option value="equals"><!-- i18n: label_equals -->Uguale</option>
             </select>
         </label>
         <input 
@@ -522,9 +522,9 @@ saranno resi pubblici soltanto i dati visualizzati su questa pagina. Questo link
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is"></option>
-                <option value="is-before"></option>
-                <option value="is-after"></option>
+                <option value="is">È</option>
+                <option value="is-before">È prima</option>
+                <option value="is-after">È dopo</option>
             </select>
         </label>
         <input 
@@ -540,9 +540,9 @@ saranno resi pubblici soltanto i dati visualizzati su questa pagina. Questo link
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">È uguale a</option>
+                    value="equals">Uguale</option>
                 <option 
-                value="equals-not">Non è uguale a</option>
+                value="equals-not">Non uguale</option>
             </select>
         </label>
         <select 
@@ -563,9 +563,9 @@ saranno resi pubblici soltanto i dati visualizzati su questa pagina. Questo link
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">È uguale a</option>
+                    value="equals">Uguale</option>
                 <option 
-                    value="equals-not">Non è uguale a</option>
+                    value="equals-not">Non uguale</option>
             </select>
         </label>
         <select 
