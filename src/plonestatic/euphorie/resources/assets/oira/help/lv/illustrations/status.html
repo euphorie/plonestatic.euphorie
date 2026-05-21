@@ -118,7 +118,7 @@
 							pat-avatar"
 						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
 						alt="">
-				<!-- i18n: label_menu -->Izvēlne</a>
+				<!-- i18n: label_menu --></a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -326,7 +326,7 @@
     data-pat-switch="
       selector: #main; 
       remove: sidebar-*; 
-      add: sidebar-off"><span class="label"><!-- i18n: label_report -->Ziņojums</span></a>
+      add: sidebar-off"><span class="label"><!-- i18n: label_report -->Pārskats</span></a>
 </li>
     
 <li 
@@ -556,7 +556,7 @@
                 
                 
                 <!-- <a 
-                    class="default pat-button"><!-- i18n: label_approve_risk_assessment --></a>  --> 
+                    class="default pat-button"><!-- i18n: label_approve_risk_assessment -->Apstiprināt riska novērtējumu</a>  --> 
             </div>
         </div>
     </div>
@@ -671,7 +671,7 @@
                                 <strong class="number">1</strong> <em class="label">Viss kārtībā</em>
                             </li>
                             <li class="risk-measure">
-                                <strong class="number">3</strong> <em class="label"></em>
+                                <strong class="number">3</strong> <em class="label">Risks ar pasākumiem</em>
                             </li>
                             <li class="risk">
                                 <strong class="number">2</strong> <em class="label">Uzmanību</em>
@@ -708,7 +708,7 @@
                             <strong class="number">7</strong> <em class="label">Neatbildēts</em>
                         </p>
                         <p class="range  risk-measure" style="width: 10%">
-                            <strong class="number">1</strong> <em class="label"></em>
+                            <strong class="number">1</strong> <em class="label">Risks ar pasākumiem</em>
                         </p>
                         <p class="range risk" style="width: 10%">
                             <strong class="number">1</strong> <em class="label">Uzmanību</em>
@@ -723,7 +723,7 @@
                                 <strong class="number">7</strong> <em class="label">Neatbildēts</em>
                             </li>
                             <li class="risk-measure">
-                                <strong class="number">1</strong> <em class="label"></em>
+                                <strong class="number">1</strong> <em class="label">Risks ar pasākumiem</em>
                             </li>
                             <li class="risk">
                                 <strong class="number">1</strong> <em class="label">Uzmanību</em>
@@ -827,9 +827,9 @@
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
-                        <label><input type="radio" value="all" name="ass-type" checked /> Visu veidu riska novērtējumi</label>
-                        <label><input type="radio" value="regular" name="ass-type" /> Tikai parastie riska novērtējumi</label>
-                        <label><input type="radio" value="contractor" name="ass-type" /> Tikai darbuzņēmēju riska novērtējumi</label>
+                        <label><input type="radio" value="all" name="ass-type" checked /> Visi riska novērtējumu veidi</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Tikai regulārie riska novērtējumi</label>
+                        <label><input type="radio" value="contractor" name="ass-type" /> Tikai darbuzņēmēja riska novērtējumi</label>
                 	</fieldset>
                 </li>
             </ul>
@@ -912,7 +912,7 @@
                     name="search-rule.lemma-operator:records">
                 <option value="contains"><!-- i18n: label_contains -->Satur</option>
                 <option value="contains-not"><!-- i18n: label_contains_not -->Nesatur</option>
-                <option value="equals"><!-- i18n: label_equals -->Vienāds ar</option>
+                <option value="equals"><!-- i18n: label_equals -->Vienāds</option>
                 </select>
             </label>
             <input 
@@ -927,9 +927,9 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is"></option>
-                    <option value="is-before"></option>
-                    <option value="is-after"></option>
+                    <option value="is">Ir</option>
+                    <option value="is-before">Ir pirms</option>
+                    <option value="is-after">Ir pēc</option>
                 </select>
             </label>
             <input 
@@ -944,8 +944,8 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">Vienāds ar</option>
-                    <option value="equals-not">Nav vienāds ar</option>
+                    <option value="equals">Vienāds</option>
+                    <option value="equals-not">Nav vienāds</option>
                 </select>
             </label>
             <select 
@@ -965,8 +965,8 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">Vienāds ar</option>
-                    <option value="equals-not">Nav vienāds ar</option>
+                    <option value="equals">Vienāds</option>
+                    <option value="equals-not">Nav vienāds</option>
                 </select>
             </label>
             <select 
@@ -995,7 +995,7 @@
         class="pat-button default icon-search"><!-- i18n: action_search -->Meklēt</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Pievienot citu meklēšanas noteikumu</button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Pievienot vēl vienu meklēšanas kārtulu</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/lv/illustrations/status#listing" 
@@ -1050,7 +1050,7 @@
                 name="search-rule.lemma-operator:records">
                 <option value="contains"><!-- i18n: label_contains -->Satur</option>
                 <option value="contains-not"><!-- i18n: label_contains_not -->Nesatur</option>
-                <option value="equals"><!-- i18n: label_equals -->Vienāds ar</option>
+                <option value="equals"><!-- i18n: label_equals -->Vienāds</option>
             </select>
         </label>
         <input 
@@ -1065,9 +1065,9 @@
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is"></option>
-                <option value="is-before"></option>
-                <option value="is-after"></option>
+                <option value="is">Ir</option>
+                <option value="is-before">Ir pirms</option>
+                <option value="is-after">Ir pēc</option>
             </select>
         </label>
         <input 
@@ -1083,9 +1083,9 @@
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">Vienāds ar</option>
+                    value="equals">Vienāds</option>
                 <option 
-                value="equals-not">Nav vienāds ar</option>
+                value="equals-not">Nav vienāds</option>
             </select>
         </label>
         <select 
@@ -1106,9 +1106,9 @@
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">Vienāds ar</option>
+                    value="equals">Vienāds</option>
                 <option 
-                    value="equals-not">Nav vienāds ar</option>
+                    value="equals-not">Nav vienāds</option>
             </select>
         </label>
         <select 
@@ -1151,7 +1151,7 @@
 			        <input 
 			        	type="radio" 
 			        	name="search-mode" 
-			        	value="advanced"> Paplašināta meklēšana
+			        	value="advanced"> Paplašinātā meklēšana
 			    </label>
 			</fieldset>
 	    </fieldset>

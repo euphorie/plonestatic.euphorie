@@ -113,7 +113,7 @@
 							pat-avatar"
 						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
 						alt="">
-				<!-- i18n: label_menu -->Meni</a>
+				<!-- i18n: label_menu --></a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -244,7 +244,7 @@
                 selector: #main; 
                 remove: sidebar-*; 
                 add: sidebar-off">
-              <span class="label"><!-- i18n: label_analysis -->Analiza</span></a>
+              <span class="label"><!-- i18n: label_analysis --></span></a>
       
         <div 
           class="topics" 
@@ -1435,7 +1435,7 @@
             <li class="unvisited">Neodgovorjeno</li>
             <li class="postponed">Preloženo</li>
             <li class="no-risk">Urejeno</li>
-            <li class="answered risk"></li>
+            <li class="answered risk">Neurejeno</li>
             
           </ul>
 
@@ -1873,7 +1873,7 @@
                 
                 
                 <!-- <a 
-                    class="default pat-button"><!-- i18n: label_approve_risk_assessment --></a>  --> 
+                    class="default pat-button"><!-- i18n: label_approve_risk_assessment -->Odobri oceno tveganja</a>  --> 
             </div>
         </div>
     </div>
@@ -1913,7 +1913,7 @@
 					type="radio" 
 					name="answer" 
 					value="no" 
-					checked="checked" />Ne
+					checked="checked" />
 				</label>
 				<label 
 					class="not-applicable">
@@ -2660,7 +2660,7 @@
     class="pat-rich pat-collapsible closed risk-module form-panel">
     <h3
         class="form-separation-header">
-        <!-- i18n: label_resources -->Viri
+        <!-- i18n: label_resources -->
     </h3>
     
     <section class="legal-references">
@@ -2948,7 +2948,7 @@
                         title="Začni novo oceno tveganja">Nova ocena tveganja</a>
                 </li>
                 <li>
-                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Pokaži arhivirane ocene tveganja</label>
+                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Prikaži arhivirane ocene tveganj</label>
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
@@ -3010,7 +3010,7 @@
             <select 
                 name="search-rule.data-field:records">
                 <option 
-                    value="SearchableText"><!-- i18n: label_any_text_field -->Katerokoli besedilno polje</option>
+                    value="SearchableText"><!-- i18n: label_any_text_field -->Katero koli besedilno polje</option>
                 <optgroup 
                     label="Metadata">
                     <option value="Title">Title</option>
@@ -3052,9 +3052,9 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is"></option>
-                    <option value="is-before"></option>
-                    <option value="is-after"></option>
+                    <option value="is">Je</option>
+                    <option value="is-before">Je pred</option>
+                    <option value="is-after">Je po</option>
                 </select>
             </label>
             <input 
@@ -3120,7 +3120,7 @@
         class="pat-button default icon-search"><!-- i18n: action_search -->Išči</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Dodaj drugo iskalno pravilo</button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Dodaj še eno iskalno pravilo</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/risk-integrated-action-plan#listing" 
@@ -3151,7 +3151,7 @@
         <select 
             name="search-rule.data-field:records">
             <option 
-                value="SearchableText"><!-- i18n: label_any_text_field -->Katerokoli besedilno polje</option>
+                value="SearchableText"><!-- i18n: label_any_text_field -->Katero koli besedilno polje</option>
             <optgroup 
                 label="Metadata">
                 <option value="Title">Title</option>
@@ -3190,9 +3190,9 @@
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is"></option>
-                <option value="is-before"></option>
-                <option value="is-after"></option>
+                <option value="is">Je</option>
+                <option value="is-before">Je pred</option>
+                <option value="is-after">Je po</option>
             </select>
         </label>
         <input 

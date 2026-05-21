@@ -113,7 +113,7 @@
 							pat-avatar"
 						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
 						alt="">
-				<!-- i18n: label_menu -->Meniu</a>
+				<!-- i18n: label_menu --></a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -208,7 +208,7 @@ Užrakintų rizikos vertinimų dublikatai automatiškai atrakinami.</p>
 
 <h2 id="rizikos-vertinimo-pradžia">Rizikos vertinimo pradžia</h2>
 
-<p>Pradėtą rizikos vertinimą visada rasite valdymo skyde po antrašte „Mano rizikos vertinimai“. Čia taip pat galite pradėti naują rizikos vertinimą.</p>
+<p>Pradėtą rizikos vertinimą visada rasite valdymo skyde po antrašte „Mano rizikos vertinimai“, spustelėję pradžios piktogramą viršutiniame dešiniajame kampe. Čia taip pat galite pradėti naują rizikos vertinimą.</p>
 
 <figure class="screenshot">
   <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/lt/illustrations/dashboard.html" scrolling="no">
@@ -247,11 +247,13 @@ Užrakintų rizikos vertinimų dublikatai automatiškai atrakinami.</p>
 
 <p>Spustelėjus mygtuką „Pradėti“, gali būti užduota papildomų klausimų, priklausomai nuo naudojamos priemonės. Šis parengiamasis langas su klausimais apie įmonės profilį rodomas tik tose priemonėse, kurios suteikia tokią galimybę.</p>
 
-<p>Čia galite:</p>
+<p>Profilio klausimai leidžia:</p>
 <ul>
   <li>Pasirinkti arba praleisti situaciją (-as) priklausomai nuo to, ar ji (jos) būdinga (-os) jūsų įmonei. Kur tinkama, pasirinkite „taip“.</li>
   <li>Išvardykite kelis įmonės padalinius, filialus ar parduotuves ir t. t. Susiję rizikos veiksniai bus pakartoti prie kiekvieno įrašo.</li>
 </ul>
+
+<p>Toliau pateiktas vaizdas rodo, kaip skyrius atrodytų, jei būtų aktyvuotas; paveikslėlyje pateikti klausimai yra tik iliustraciniai ir paimti iš europinės įrankio versijos.</p>
 
 <figure class="screenshot">
   <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/lt/illustrations/profiling.html" scrolling="no">
@@ -598,15 +600,15 @@ Kaip minėta anksčiau, veiksmų planas pateikiamas kaip atskiras etapas kairėj
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
-                        <label><input type="radio" value="all" name="ass-type" checked /> Visi rizikos vertinimo tipai</label>
-                        <label><input type="radio" value="regular" name="ass-type" /> Tik įprasti rizikos vertinimai</label>
+                        <label><input type="radio" value="all" name="ass-type" checked /> Visi rizikos vertinimų tipai</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Tik reguliarūs rizikos vertinimai</label>
                         <label><input type="radio" value="contractor" name="ass-type" /> Tik rangovų rizikos vertinimai</label>
                 	</fieldset>
                 </li>
             </ul>
         </div>
 	
-    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title="Išplėsti šoninę juostą">Išplėsti šoninę juostą</button>
+    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title="Išskleisti šoninę juostą">Išskleisti šoninę juostą</button>
 </form>
 
 		<a href="/feedback/osh.html#osh-ra-browser" id="osh-target-ra-browser" class="onscreen-help pat-tooltip" data-pat-tooltip="trigger: click; source: ajax; class: rich info;">Help</a>
@@ -632,7 +634,7 @@ Kaip minėta anksčiau, veiksmų planas pateikiamas kaip atskiras etapas kairėj
 				type="search" 
 				value="" 
 				class="quick-search pat-autofocus" 
-				placeholder="Paieška" />
+				placeholder="Ieškoti" />
             <button type="submit" name="standard" value="main" class="search-button-main assistive">Paieška</button>
         </label>
 
@@ -681,9 +683,9 @@ Kaip minėta anksčiau, veiksmų planas pateikiamas kaip atskiras etapas kairėj
                 class="pat-select">
                 <select 
                     name="search-rule.lemma-operator:records">
-                <option value="contains"><!-- i18n: label_contains -->Turi</option>
-                <option value="contains-not"><!-- i18n: label_contains_not -->Neturi</option>
-                <option value="equals"><!-- i18n: label_equals -->Lygus</option>
+                <option value="contains"><!-- i18n: label_contains -->Apima</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Neapima</option>
+                <option value="equals"><!-- i18n: label_equals -->Lygu</option>
                 </select>
             </label>
             <input 
@@ -698,9 +700,9 @@ Kaip minėta anksčiau, veiksmų planas pateikiamas kaip atskiras etapas kairėj
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is"></option>
-                    <option value="is-before"></option>
-                    <option value="is-after"></option>
+                    <option value="is">Yra</option>
+                    <option value="is-before">Yra prieš</option>
+                    <option value="is-after">Yra po</option>
                 </select>
             </label>
             <input 
@@ -715,8 +717,8 @@ Kaip minėta anksčiau, veiksmų planas pateikiamas kaip atskiras etapas kairėj
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">Lygus</option>
-                    <option value="equals-not">Nelygus</option>
+                    <option value="equals">Lygu</option>
+                    <option value="equals-not">Nelygu</option>
                 </select>
             </label>
             <select 
@@ -736,8 +738,8 @@ Kaip minėta anksčiau, veiksmų planas pateikiamas kaip atskiras etapas kairėj
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">Lygus</option>
-                    <option value="equals-not">Nelygus</option>
+                    <option value="equals">Lygu</option>
+                    <option value="equals-not">Nelygu</option>
                 </select>
             </label>
             <select 
@@ -819,9 +821,9 @@ Kaip minėta anksčiau, veiksmų planas pateikiamas kaip atskiras etapas kairėj
             class="pat-select">
             <select 
                 name="search-rule.lemma-operator:records">
-                <option value="contains"><!-- i18n: label_contains -->Turi</option>
-                <option value="contains-not"><!-- i18n: label_contains_not -->Neturi</option>
-                <option value="equals"><!-- i18n: label_equals -->Lygus</option>
+                <option value="contains"><!-- i18n: label_contains -->Apima</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Neapima</option>
+                <option value="equals"><!-- i18n: label_equals -->Lygu</option>
             </select>
         </label>
         <input 
@@ -836,9 +838,9 @@ Kaip minėta anksčiau, veiksmų planas pateikiamas kaip atskiras etapas kairėj
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is"></option>
-                <option value="is-before"></option>
-                <option value="is-after"></option>
+                <option value="is">Yra</option>
+                <option value="is-before">Yra prieš</option>
+                <option value="is-after">Yra po</option>
             </select>
         </label>
         <input 
@@ -854,9 +856,9 @@ Kaip minėta anksčiau, veiksmų planas pateikiamas kaip atskiras etapas kairėj
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">Lygus</option>
+                    value="equals">Lygu</option>
                 <option 
-                value="equals-not">Nelygus</option>
+                value="equals-not">Nelygu</option>
             </select>
         </label>
         <select 
@@ -877,9 +879,9 @@ Kaip minėta anksčiau, veiksmų planas pateikiamas kaip atskiras etapas kairėj
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">Lygus</option>
+                    value="equals">Lygu</option>
                 <option 
-                    value="equals-not">Nelygus</option>
+                    value="equals-not">Nelygu</option>
             </select>
         </label>
         <select 

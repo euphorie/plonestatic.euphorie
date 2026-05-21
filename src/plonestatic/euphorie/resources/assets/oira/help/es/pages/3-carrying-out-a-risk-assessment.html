@@ -113,7 +113,7 @@
 							pat-avatar"
 						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
 						alt="">
-				<!-- i18n: label_menu -->Menú</a>
+				<!-- i18n: label_menu --></a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -208,7 +208,7 @@ Las copias de las evaluaciones de riesgos bloqueadas se desbloquean por defecto.
 
 <h2 id="apertura-de-una-evaluación-de-riesgos">Apertura de una evaluación de riesgos</h2>
 
-<p>Una vez que haya iniciado una evaluación de riesgos, podrá recuperarla en cualquier momento mediante el tablero de control „Mis evaluaciones de riesgos“. Desde este mismo lugar, puede iniciar una nueva evaluación.</p>
+<p>Una vez que haya iniciado una evaluación de riesgos, podrá recuperarla en cualquier momento mediante el tablero de control „Mis evaluaciones de riesgos“, haciendo clic en el icono de inicio en la parte superior derecha. Desde este mismo lugar, puede iniciar una nueva evaluación.</p>
 
 <figure class="screenshot">
   <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/es/illustrations/dashboard.html" scrolling="no">
@@ -245,11 +245,13 @@ Las copias de las evaluaciones de riesgos bloqueadas se desbloquean por defecto.
 
 <p>Después de clicar el botón „Iniciar“, es posible que se le formulen algunas preguntas adicionales, dependiendo de la herramienta que esté utilizando. Esta página de preparación con „preguntas de perfil“ solo aparece en las herramientas que ofrecen esta opción.</p>
 
-<p>Aquí puede:</p>
+<p>as preguntas del perfil permiten:</p>
 <ul>
   <li>Seleccionar u omitir situaciones en función de si resultan aplicables a la actividad de su empresa. Elija „Sí“, si procede.</li>
   <li>Indique las múltiples unidades de negocio, sucursales o tiendas, etc. Los riesgos relacionados se repetirán para cada nombre que haya introducido.</li>
 </ul>
+
+<p>La siguiente imagen muestra cómo aparecería la sección si se activara; las preguntas que se muestran en la imagen son solo con fines ilustrativos y proceden de la versión europea de la herramienta.</p>
 
 <figure class="screenshot">
   <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/es/illustrations/profiling.html" scrolling="no">
@@ -582,15 +584,15 @@ Como se ha mencionado antes, el plan de acción se presenta como un paso separad
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title="Iniciar nueva evaluación de riesgos">Nueva evaluación de riesgos</a>
+                        title="Iniciar una nueva evaluación de riesgos">Nueva evaluación de riesgos</a>
                 </li>
                 <li>
-                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Mostrar evaluaciones de riesgo archivadas</label>
+                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Mostrar evaluaciones de riesgos archivadas</label>
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
-                        <label><input type="radio" value="all" name="ass-type" checked /> Todos los tipos de evaluaciones de riesgo</label>
-                        <label><input type="radio" value="regular" name="ass-type" /> Solo evaluaciones regulares de riesgo</label>
+                        <label><input type="radio" value="all" name="ass-type" checked /> Todos los tipos de evaluaciones de riesgos</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Solo evaluaciones de riesgo regulares</label>
                         <label><input type="radio" value="contractor" name="ass-type" /> Solo evaluaciones de riesgo de contratistas</label>
                 	</fieldset>
                 </li>
@@ -674,7 +676,7 @@ Como se ha mencionado antes, el plan de acción se presenta como un paso separad
                     name="search-rule.lemma-operator:records">
                 <option value="contains"><!-- i18n: label_contains -->Contiene</option>
                 <option value="contains-not"><!-- i18n: label_contains_not -->No contiene</option>
-                <option value="equals"><!-- i18n: label_equals -->Es igual a</option>
+                <option value="equals"><!-- i18n: label_equals -->Igual a</option>
                 </select>
             </label>
             <input 
@@ -689,9 +691,9 @@ Como se ha mencionado antes, el plan de acción se presenta como un paso separad
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is"></option>
-                    <option value="is-before"></option>
-                    <option value="is-after"></option>
+                    <option value="is">Es</option>
+                    <option value="is-before">Es antes de</option>
+                    <option value="is-after">Es después de</option>
                 </select>
             </label>
             <input 
@@ -706,7 +708,7 @@ Como se ha mencionado antes, el plan de acción se presenta como un paso separad
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">Es igual a</option>
+                    <option value="equals">Igual a</option>
                     <option value="equals-not">No es igual a</option>
                 </select>
             </label>
@@ -727,7 +729,7 @@ Como se ha mencionado antes, el plan de acción se presenta como un paso separad
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">Es igual a</option>
+                    <option value="equals">Igual a</option>
                     <option value="equals-not">No es igual a</option>
                 </select>
             </label>
@@ -812,7 +814,7 @@ Como se ha mencionado antes, el plan de acción se presenta como un paso separad
                 name="search-rule.lemma-operator:records">
                 <option value="contains"><!-- i18n: label_contains -->Contiene</option>
                 <option value="contains-not"><!-- i18n: label_contains_not -->No contiene</option>
-                <option value="equals"><!-- i18n: label_equals -->Es igual a</option>
+                <option value="equals"><!-- i18n: label_equals -->Igual a</option>
             </select>
         </label>
         <input 
@@ -827,9 +829,9 @@ Como se ha mencionado antes, el plan de acción se presenta como un paso separad
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is"></option>
-                <option value="is-before"></option>
-                <option value="is-after"></option>
+                <option value="is">Es</option>
+                <option value="is-before">Es antes de</option>
+                <option value="is-after">Es después de</option>
             </select>
         </label>
         <input 
@@ -845,7 +847,7 @@ Como se ha mencionado antes, el plan de acción se presenta como un paso separad
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">Es igual a</option>
+                    value="equals">Igual a</option>
                 <option 
                 value="equals-not">No es igual a</option>
             </select>
@@ -868,7 +870,7 @@ Como se ha mencionado antes, el plan de acción se presenta como un paso separad
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">Es igual a</option>
+                    value="equals">Igual a</option>
                 <option 
                     value="equals-not">No es igual a</option>
             </select>

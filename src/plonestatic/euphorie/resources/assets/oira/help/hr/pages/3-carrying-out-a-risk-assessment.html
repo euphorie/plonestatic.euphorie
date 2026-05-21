@@ -113,7 +113,7 @@
 							pat-avatar"
 						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
 						alt="">
-				<!-- i18n: label_menu -->Izbornik</a>
+				<!-- i18n: label_menu --></a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -208,7 +208,7 @@ Duplikati zaključanih procjena rizika automatski se otključavaju.</p>
 
 <h2 id="otvaranje-procjene-rizika">Otvaranje procjene rizika</h2>
 
-<p>Nakon što pokrenete procjenu rizika, u svakom je trenutku možete dohvatiti na nadzornoj ploči, u zaglavlju „Moje procjene rizika“. Ondje možete pokrenuti i novu procjenu rizika.</p>
+<p>Nakon što pokrenete procjenu rizika, u svakom je trenutku možete dohvatiti na nadzornoj ploči, u zaglavlju „Moje procjene rizika“, klikom na ikonu početne stranice u gornjem desnom kutu. Ondje možete pokrenuti i novu procjenu rizika.</p>
 
 <figure class="screenshot">
   <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/hr/illustrations/dashboard.html" scrolling="no">
@@ -247,11 +247,13 @@ Duplikati zaključanih procjena rizika automatski se otključavaju.</p>
 
 <p>Nakon što kliknete na opciju „Pokrenite“, možda ćete trebati odgovoriti na dodatna pitanja, ovisno o alatu koji upotrebljavate. Taj uvodni zaslon s pitanjima za profiliranje prikazuje se samo u alatima u kojima postoji ta opcija.</p>
 
-<p>Na njemu imate na raspolaganju sljedeće opcije:</p>
+<p>Pitanja u profilu omogućuju:</p>
 <ul>
   <li>Odaberite ili preskočite situacije ovisno o tome odnose li se na vašu poslovnu djelatnost. Prema potrebi odaberite opciju „Da“.</li>
   <li>Navedite više poslovnih jedinica, podružnica, trgovina itd. Povezani rizici ponovit će se za svaki unos.</li>
 </ul>
+
+<p>Sljedeća slika prikazuje kako bi odjeljak izgledao kada bi bio aktiviran; pitanja prikazana na slici služe samo u ilustrativne svrhe i preuzeta su iz europske verzije alata.</p>
 
 <figure class="screenshot">
   <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/hr/illustrations/profiling.html" scrolling="no">
@@ -592,7 +594,7 @@ Kao što je već navedeno, plan mjera prikazan je kao zaseban korak u izborniku 
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title="Pokreni novu procjenu rizika">Nova procjena rizika</a>
+                        title="Započni novu procjenu rizika">Nova procjena rizika</a>
                 </li>
                 <li>
                     <label class="pat-checklist"><input type="checkbox" name="archived" /> Prikaži arhivirane procjene rizika</label>
@@ -600,7 +602,7 @@ Kao što je već navedeno, plan mjera prikazan je kao zaseban korak u izborniku 
                 <li>
                 	<fieldset class="pat-checklist radio">
                         <label><input type="radio" value="all" name="ass-type" checked /> Sve vrste procjena rizika</label>
-                        <label><input type="radio" value="regular" name="ass-type" /> Samo redovite procjene rizika</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Samo redovne procjene rizika</label>
                         <label><input type="radio" value="contractor" name="ass-type" /> Samo procjene rizika izvođača</label>
                 	</fieldset>
                 </li>
@@ -657,7 +659,7 @@ Kao što je već navedeno, plan mjera prikazan je kao zaseban korak u izborniku 
             <select 
                 name="search-rule.data-field:records">
                 <option 
-                    value="SearchableText"><!-- i18n: label_any_text_field -->Bilo koje tekstno polje</option>
+                    value="SearchableText"><!-- i18n: label_any_text_field -->Bilo koje tekstualno polje</option>
                 <optgroup 
                     label="Metadata">
                     <option value="Title">Title</option>
@@ -684,7 +686,7 @@ Kao što je već navedeno, plan mjera prikazan je kao zaseban korak u izborniku 
                     name="search-rule.lemma-operator:records">
                 <option value="contains"><!-- i18n: label_contains -->Sadrži</option>
                 <option value="contains-not"><!-- i18n: label_contains_not -->Ne sadrži</option>
-                <option value="equals"><!-- i18n: label_equals -->Jednako je</option>
+                <option value="equals"><!-- i18n: label_equals -->Jednako</option>
                 </select>
             </label>
             <input 
@@ -699,9 +701,9 @@ Kao što je već navedeno, plan mjera prikazan je kao zaseban korak u izborniku 
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is"></option>
-                    <option value="is-before"></option>
-                    <option value="is-after"></option>
+                    <option value="is">Je</option>
+                    <option value="is-before">Je prije</option>
+                    <option value="is-after">Je nakon</option>
                 </select>
             </label>
             <input 
@@ -716,7 +718,7 @@ Kao što je već navedeno, plan mjera prikazan je kao zaseban korak u izborniku 
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">Jednako je</option>
+                    <option value="equals">Jednako</option>
                     <option value="equals-not">Nije jednako</option>
                 </select>
             </label>
@@ -737,7 +739,7 @@ Kao što je već navedeno, plan mjera prikazan je kao zaseban korak u izborniku 
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">Jednako je</option>
+                    <option value="equals">Jednako</option>
                     <option value="equals-not">Nije jednako</option>
                 </select>
             </label>
@@ -767,7 +769,7 @@ Kao što je već navedeno, plan mjera prikazan je kao zaseban korak u izborniku 
         class="pat-button default icon-search"><!-- i18n: action_search -->Traži</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Dodaj još jedno pravilo pretrage</button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Dodaj još jedno pravilo pretraživanja</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/hr/pages/3-carrying-out-a-risk-assessment#listing" 
@@ -798,7 +800,7 @@ Kao što je već navedeno, plan mjera prikazan je kao zaseban korak u izborniku 
         <select 
             name="search-rule.data-field:records">
             <option 
-                value="SearchableText"><!-- i18n: label_any_text_field -->Bilo koje tekstno polje</option>
+                value="SearchableText"><!-- i18n: label_any_text_field -->Bilo koje tekstualno polje</option>
             <optgroup 
                 label="Metadata">
                 <option value="Title">Title</option>
@@ -822,7 +824,7 @@ Kao što je već navedeno, plan mjera prikazan je kao zaseban korak u izborniku 
                 name="search-rule.lemma-operator:records">
                 <option value="contains"><!-- i18n: label_contains -->Sadrži</option>
                 <option value="contains-not"><!-- i18n: label_contains_not -->Ne sadrži</option>
-                <option value="equals"><!-- i18n: label_equals -->Jednako je</option>
+                <option value="equals"><!-- i18n: label_equals -->Jednako</option>
             </select>
         </label>
         <input 
@@ -837,9 +839,9 @@ Kao što je već navedeno, plan mjera prikazan je kao zaseban korak u izborniku 
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is"></option>
-                <option value="is-before"></option>
-                <option value="is-after"></option>
+                <option value="is">Je</option>
+                <option value="is-before">Je prije</option>
+                <option value="is-after">Je nakon</option>
             </select>
         </label>
         <input 
@@ -855,7 +857,7 @@ Kao što je već navedeno, plan mjera prikazan je kao zaseban korak u izborniku 
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">Jednako je</option>
+                    value="equals">Jednako</option>
                 <option 
                 value="equals-not">Nije jednako</option>
             </select>
@@ -878,7 +880,7 @@ Kao što je već navedeno, plan mjera prikazan je kao zaseban korak u izborniku 
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">Jednako je</option>
+                    value="equals">Jednako</option>
                 <option 
                     value="equals-not">Nije jednako</option>
             </select>

@@ -113,7 +113,7 @@
 							pat-avatar"
 						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
 						alt="">
-				<!-- i18n: label_menu -->Menú</a>
+				<!-- i18n: label_menu --></a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -185,7 +185,7 @@
         <article class="pat-rich">
             <h1>Ayuda</h1>
             <p 
-                class="summary"><!-- i18n: message_help_intro -->Selecciona uno de los temas a continuación para familiarizarte con el funcionamiento de OiRA.</p>
+                class="summary"><!-- i18n: message_help_intro --></p>
         </article>
         <nav 
             class="
@@ -223,6 +223,8 @@
                             history: record">
                         Registro
                     </a>
+                
+            
                 
             
                 
@@ -515,6 +517,18 @@
                 
             
                 
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
                     <a 
                         href="/++resource++euphorie.resources/assets/oira/help/es/pages/3-carrying-out-a-risk-assessment.html"
                         class="item icon-oira-tool pat-inject"
@@ -566,6 +580,8 @@
                 
             
                 
+            
+                
                     <a 
                         href="/++resource++euphorie.resources/assets/oira/help/es/pages/4-reports.html"
                         class="item icon-doc-inv pat-inject"
@@ -576,6 +592,30 @@
                             history: record">
                         Informes
                     </a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
                 
             
                 
@@ -1160,6 +1200,8 @@
                 
             
                 
+            
+                
                     <a 
                         href="/++resource++euphorie.resources/assets/oira/help/es/pages/configuring.html"
                         class="item icon-cog pat-inject"
@@ -1170,6 +1212,26 @@
                             history: record">
                         Configuración de OiRA
                     </a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
                 
             
                 
@@ -2433,6 +2495,34 @@
             
                 
             
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         </nav>
     </div>
 </div>
@@ -2480,15 +2570,15 @@
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title="Iniciar nueva evaluación de riesgos">Nueva evaluación de riesgos</a>
+                        title="Iniciar una nueva evaluación de riesgos">Nueva evaluación de riesgos</a>
                 </li>
                 <li>
-                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Mostrar evaluaciones de riesgo archivadas</label>
+                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Mostrar evaluaciones de riesgos archivadas</label>
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
-                        <label><input type="radio" value="all" name="ass-type" checked /> Todos los tipos de evaluaciones de riesgo</label>
-                        <label><input type="radio" value="regular" name="ass-type" /> Solo evaluaciones regulares de riesgo</label>
+                        <label><input type="radio" value="all" name="ass-type" checked /> Todos los tipos de evaluaciones de riesgos</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Solo evaluaciones de riesgo regulares</label>
                         <label><input type="radio" value="contractor" name="ass-type" /> Solo evaluaciones de riesgo de contratistas</label>
                 	</fieldset>
                 </li>
@@ -2572,7 +2662,7 @@
                     name="search-rule.lemma-operator:records">
                 <option value="contains"><!-- i18n: label_contains -->Contiene</option>
                 <option value="contains-not"><!-- i18n: label_contains_not -->No contiene</option>
-                <option value="equals"><!-- i18n: label_equals -->Es igual a</option>
+                <option value="equals"><!-- i18n: label_equals -->Igual a</option>
                 </select>
             </label>
             <input 
@@ -2587,9 +2677,9 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is"></option>
-                    <option value="is-before"></option>
-                    <option value="is-after"></option>
+                    <option value="is">Es</option>
+                    <option value="is-before">Es antes de</option>
+                    <option value="is-after">Es después de</option>
                 </select>
             </label>
             <input 
@@ -2604,7 +2694,7 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">Es igual a</option>
+                    <option value="equals">Igual a</option>
                     <option value="equals-not">No es igual a</option>
                 </select>
             </label>
@@ -2625,7 +2715,7 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">Es igual a</option>
+                    <option value="equals">Igual a</option>
                     <option value="equals-not">No es igual a</option>
                 </select>
             </label>
@@ -2710,7 +2800,7 @@
                 name="search-rule.lemma-operator:records">
                 <option value="contains"><!-- i18n: label_contains -->Contiene</option>
                 <option value="contains-not"><!-- i18n: label_contains_not -->No contiene</option>
-                <option value="equals"><!-- i18n: label_equals -->Es igual a</option>
+                <option value="equals"><!-- i18n: label_equals -->Igual a</option>
             </select>
         </label>
         <input 
@@ -2725,9 +2815,9 @@
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is"></option>
-                <option value="is-before"></option>
-                <option value="is-after"></option>
+                <option value="is">Es</option>
+                <option value="is-before">Es antes de</option>
+                <option value="is-after">Es después de</option>
             </select>
         </label>
         <input 
@@ -2743,7 +2833,7 @@
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">Es igual a</option>
+                    value="equals">Igual a</option>
                 <option 
                 value="equals-not">No es igual a</option>
             </select>
@@ -2766,7 +2856,7 @@
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">Es igual a</option>
+                    value="equals">Igual a</option>
                 <option 
                     value="equals-not">No es igual a</option>
             </select>

@@ -538,7 +538,7 @@
                 
                 
                 <!-- <a 
-                    class="default pat-button"><!-- i18n: label_approve_risk_assessment --></a>  --> 
+                    class="default pat-button"><!-- i18n: label_approve_risk_assessment -->Aprova l'avaluació de riscos</a>  --> 
             </div>
         </div>
     </div>
@@ -579,7 +579,7 @@
                 class="
                     pat-modal 
                     pat-button 
-                    default"><!-- i18n: label_validate_this_risk_assessment_imp -->Valida aquesta avaluació de riscos</a>
+                    default"><!-- i18n: label_validate_this_risk_assessment_imp -->Valideu aquesta avaluació de riscos</a>
         </div>
     
 <!-- </oira-validation-message> -->
@@ -653,22 +653,22 @@
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title="Iniciar nova avaluació de riscos">Nova avaluació de riscos</a>
+                        title="Inicia una nova avaluació de riscos">Nova avaluació de riscos</a>
                 </li>
                 <li>
-                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Mostra avaluacions de riscos arxivades</label>
+                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Mostra les avaluacions de riscos arxivades</label>
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
-                        <label><input type="radio" value="all" name="ass-type" checked /> Tots els tipus d'avaluacions de risc</label>
-                        <label><input type="radio" value="regular" name="ass-type" /> Només avaluacions regulars de riscos</label>
+                        <label><input type="radio" value="all" name="ass-type" checked /> Tots els tipus d'avaluacions de riscos</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Només avaluacions de riscos regulars</label>
                         <label><input type="radio" value="contractor" name="ass-type" /> Només avaluacions de riscos de contractistes</label>
                 	</fieldset>
                 </li>
             </ul>
         </div>
 	
-    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title="Expandir barra lateral">Expandir barra lateral</button>
+    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title="Expandeix la barra lateral">Expandeix la barra lateral</button>
 </form>
 
 		<a href="/feedback/osh.html#osh-ra-browser" id="osh-target-ra-browser" class="onscreen-help pat-tooltip" data-pat-tooltip="trigger: click; source: ajax; class: rich info;">Help</a>
@@ -694,7 +694,7 @@
 				type="search" 
 				value="" 
 				class="quick-search pat-autofocus" 
-				placeholder="Cercar" />
+				placeholder="Cerca" />
             <button type="submit" name="standard" value="main" class="search-button-main assistive">Cercar</button>
         </label>
 
@@ -745,7 +745,7 @@
                     name="search-rule.lemma-operator:records">
                 <option value="contains"><!-- i18n: label_contains -->Conté</option>
                 <option value="contains-not"><!-- i18n: label_contains_not -->No conté</option>
-                <option value="equals"><!-- i18n: label_equals -->És igual a</option>
+                <option value="equals"><!-- i18n: label_equals -->Igual a</option>
                 </select>
             </label>
             <input 
@@ -760,9 +760,9 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is"></option>
-                    <option value="is-before"></option>
-                    <option value="is-after"></option>
+                    <option value="is">És</option>
+                    <option value="is-before">És anterior a</option>
+                    <option value="is-after">És posterior a</option>
                 </select>
             </label>
             <input 
@@ -777,7 +777,7 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">És igual a</option>
+                    <option value="equals">Igual a</option>
                     <option value="equals-not">No és igual a</option>
                 </select>
             </label>
@@ -798,7 +798,7 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">És igual a</option>
+                    <option value="equals">Igual a</option>
                     <option value="equals-not">No és igual a</option>
                 </select>
             </label>
@@ -828,7 +828,7 @@
         class="pat-button default icon-search"><!-- i18n: action_search -->Cercar</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Afegir una altra regla de cerca</button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Afegeix una altra regla de cerca</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/ca/illustrations/consultancy-requested#listing" 
@@ -851,7 +851,7 @@
             <option 
                 value="and"><!-- i18n: label_and -->I…</option>
             <option 
-                value="or"><!-- i18n: label_or -->O…</option>
+                value="or"><!-- i18n: label_or -->O bé…</option>
         </select>
     </label>
     <label 
@@ -883,7 +883,7 @@
                 name="search-rule.lemma-operator:records">
                 <option value="contains"><!-- i18n: label_contains -->Conté</option>
                 <option value="contains-not"><!-- i18n: label_contains_not -->No conté</option>
-                <option value="equals"><!-- i18n: label_equals -->És igual a</option>
+                <option value="equals"><!-- i18n: label_equals -->Igual a</option>
             </select>
         </label>
         <input 
@@ -898,9 +898,9 @@
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is"></option>
-                <option value="is-before"></option>
-                <option value="is-after"></option>
+                <option value="is">És</option>
+                <option value="is-before">És anterior a</option>
+                <option value="is-after">És posterior a</option>
             </select>
         </label>
         <input 
@@ -916,7 +916,7 @@
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">És igual a</option>
+                    value="equals">Igual a</option>
                 <option 
                 value="equals-not">No és igual a</option>
             </select>
@@ -939,7 +939,7 @@
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">És igual a</option>
+                    value="equals">Igual a</option>
                 <option 
                     value="equals-not">No és igual a</option>
             </select>

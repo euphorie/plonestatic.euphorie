@@ -113,7 +113,7 @@
 							pat-avatar"
 						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
 						alt="">
-				<!-- i18n: label_menu -->Menu</a>
+				<!-- i18n: label_menu --></a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -208,7 +208,7 @@ Duplicaten van vergrendelde risicobeoordelingen zijn standaard ontgrendeld.</p>
 
 <h2 id="een-risicobeoordeling-openen">Een risicobeoordeling openen</h2>
 
-<p>Een eerder begonnen risicobeoordeling kunt u wanneer u maar wilt opvragen via de rubriek „Mijn risicobeoordelingen“ op het dashboard. Hier kunt u ook een nieuwe risicobeoordeling beginnen.</p>
+<p>Een eerder begonnen risicobeoordeling kunt u wanneer u maar wilt opvragen via de rubriek „Mijn risicobeoordelingen“ op het dashboard, door te klikken op het startpictogram rechtsboven. Hier kunt u ook een nieuwe risicobeoordeling beginnen.</p>
 
 <figure class="screenshot">
   <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/nl/illustrations/dashboard.html" scrolling="no">
@@ -247,11 +247,13 @@ Duplicaten van vergrendelde risicobeoordelingen zijn standaard ontgrendeld.</p>
 
 <p>Nadat u op „Start“ hebt geklikt, worden er mogelijk nog een aantal aanvullende vragen gesteld. Dit is afhankelijk van de tool die u gebruikt. Dit voorbereidende scherm met „profielvragen“ verschijnt alleen bij tools die zijn uitgerust met deze functie.</p>
 
-<p>Hier kunt u:</p>
+<p>De profielvragen maken het mogelijk om:</p>
 <ul>
   <li>Situaties selecteren of overslaan naargelang deze van toepassing zijn op de activiteiten van uw bedrijf. Kies „ja“ indien van toepassing.</li>
   <li>Meerdere bedrijfsafdelingen, filialen, winkels enz. vermelden. De gerelateerde risico’s worden voor elke vermelding herhaald.</li>
 </ul>
+
+<p>De volgende afbeelding laat zien hoe de sectie eruit zou zien als deze geactiveerd is; de vragen die in de afbeelding worden getoond zijn uitsluitend ter illustratie en zijn afkomstig uit de Europese versie van de tool.</p>
 
 <figure class="screenshot">
   <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/nl/illustrations/profiling.html" scrolling="no">
@@ -633,16 +635,16 @@ U kunt een externe dienst toegang geven tot je risicoanalyses door de externe di
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title="Nieuwe RI&E starten">Nieuwe risicobeoordeling</a>
+                        title="Een nieuwe risicoanalyse starten">Nieuwe risicobeoordeling</a>
                 </li>
                 <li>
-                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Toon gearchiveerde risicobeoordelingen</label>
+                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Gearchiveerde risicobeoordelingen weergeven</label>
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
                         <label><input type="radio" value="all" name="ass-type" checked /> Alle soorten risicobeoordelingen</label>
                         <label><input type="radio" value="regular" name="ass-type" /> Alleen reguliere risicobeoordelingen</label>
-                        <label><input type="radio" value="contractor" name="ass-type" /> Alleen aannemers risicobeoordelingen</label>
+                        <label><input type="radio" value="contractor" name="ass-type" /> Alleen risicobeoordelingen van aannemers</label>
                 	</fieldset>
                 </li>
             </ul>
@@ -740,9 +742,9 @@ U kunt een externe dienst toegang geven tot je risicoanalyses door de externe di
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is"></option>
-                    <option value="is-before"></option>
-                    <option value="is-after"></option>
+                    <option value="is">Is</option>
+                    <option value="is-before">Is voor</option>
+                    <option value="is-after">Is na</option>
                 </select>
             </label>
             <input 
@@ -808,7 +810,7 @@ U kunt een externe dienst toegang geven tot je risicoanalyses door de externe di
         class="pat-button default icon-search"><!-- i18n: action_search -->Zoek</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Voeg nog een zoekregel toe</button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Nog een zoekregel toevoegen</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/nl/pages/3-carrying-out-a-risk-assessment#listing" 
@@ -878,9 +880,9 @@ U kunt een externe dienst toegang geven tot je risicoanalyses door de externe di
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is"></option>
-                <option value="is-before"></option>
-                <option value="is-after"></option>
+                <option value="is">Is</option>
+                <option value="is-before">Is voor</option>
+                <option value="is-after">Is na</option>
             </select>
         </label>
         <input 
@@ -942,7 +944,7 @@ U kunt een externe dienst toegang geven tot je risicoanalyses door de externe di
     </span>
     <button 
         type="button" 
-        class="remove-clone"><!-- i18n: remove --></button>
+        class="remove-clone"><!-- i18n: remove -->Verwijderen</button>
   </p>
 </template>
 

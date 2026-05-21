@@ -118,7 +118,7 @@
 							pat-avatar"
 						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
 						alt="">
-				<!-- i18n: label_menu -->Меню</a>
+				<!-- i18n: label_menu --></a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -249,7 +249,7 @@
                 selector: #main; 
                 remove: sidebar-*; 
                 add: sidebar-off">
-              <span class="label"><!-- i18n: label_analysis -->Анализ</span></a>
+              <span class="label"><!-- i18n: label_analysis --></span></a>
       
 
     </li>
@@ -279,7 +279,7 @@
     data-pat-switch="
       selector: #main; 
       remove: sidebar-*; 
-      add: sidebar-off"><span class="label"><!-- i18n: label_consultancy -->Консултации</span></a>
+      add: sidebar-off"><span class="label"><!-- i18n: label_consultancy -->Консултация</span></a>
 </li>
     
 <li 
@@ -471,7 +471,7 @@
                                     pat-message 
                                     warning">
                                 <p>
-                                    <!-- i18n: message_you_are_requested_to_validate_assessment -->Молят ви да прегледате и валидирате тази оценка на риска.
+                                    <!-- i18n: message_you_are_requested_to_validate_assessment -->Молим ви да прегледате и валидирате тази оценка на риска.
                                 </p>
                             </div>
                         
@@ -538,7 +538,7 @@
                 
                 
                 <!-- <a 
-                    class="default pat-button"><!-- i18n: label_approve_risk_assessment --></a>  --> 
+                    class="default pat-button"><!-- i18n: label_approve_risk_assessment -->Одобряване на оценката на риска</a>  --> 
             </div>
         </div>
     </div>
@@ -551,7 +551,7 @@
         class="
             pat-message 
             notice"
-        ><!-- i18n: message_you_are_requested_to_validate_assessment -->Молят ви да прегледате и валидирате тази оценка на риска.</p>
+        ><!-- i18n: message_you_are_requested_to_validate_assessment -->Молим ви да прегледате и валидирате тази оценка на риска.</p>
 <!-- </pat-message> -->
         <!-- <oira-history-well> -->
     <div 
@@ -564,7 +564,7 @@
             load-content: /feedback/panel-history-timeline#object-history;">
         <h2
             class="
-                well-header"><!-- i18n: label_editing_history -->История на редакциите</h2>
+                well-header"><!-- i18n: label_editing_history --></h2>
 
     </div>
 <!-- </oira-history-well> -->
@@ -579,7 +579,7 @@
                 class="
                     pat-modal 
                     pat-button 
-                    default"><!-- i18n: label_validate_this_risk_assessment_imp -->Валидирай тази оценка на риска</a>
+                    default"><!-- i18n: label_validate_this_risk_assessment_imp -->Валидирайте тази оценка на риска</a>
         </div>
     
 <!-- </oira-validation-message> -->
@@ -644,7 +644,7 @@
         	data-pat-collapsible="close-trigger: *:not(#more-menu)"
         	id="more-menu">
             <strong
-            	class="context-menu-label iconified more-menu-trigger">Повече…</strong>
+            	class="context-menu-label iconified more-menu-trigger">Още…</strong>
             <ul
             	class="menu">
             	<li>
@@ -653,22 +653,22 @@
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title="Започнете нова оценка на риска">Нова оценка на риска</a>
+                        title="Започване на нова оценка на риска">Нова оценка на риска</a>
                 </li>
                 <li>
-                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Покажи архивирани оценки на риска</label>
+                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Показване на архивирани оценки на риска</label>
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
-                        <label><input type="radio" value="all" name="ass-type" checked /> Всички типове оценки на риска</label>
-                        <label><input type="radio" value="regular" name="ass-type" /> Само обикновени оценки на риска</label>
+                        <label><input type="radio" value="all" name="ass-type" checked /> Всички видове оценки на риска</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Само редовни оценки на риска</label>
                         <label><input type="radio" value="contractor" name="ass-type" /> Само оценки на риска на изпълнители</label>
                 	</fieldset>
                 </li>
             </ul>
         </div>
 	
-    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title="Разгънете страничната лента">Разгънете страничната лента</button>
+    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title="Разгъни страничната лента">Разгъни страничната лента</button>
 </form>
 
 		<a href="/feedback/osh.html#osh-ra-browser" id="osh-target-ra-browser" class="onscreen-help pat-tooltip" data-pat-tooltip="trigger: click; source: ajax; class: rich info;">Help</a>
@@ -760,9 +760,9 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is"></option>
-                    <option value="is-before"></option>
-                    <option value="is-after"></option>
+                    <option value="is">Е</option>
+                    <option value="is-before">Е преди</option>
+                    <option value="is-after">Е след</option>
                 </select>
             </label>
             <input 
@@ -828,7 +828,7 @@
         class="pat-button default icon-search"><!-- i18n: action_search -->Търсене</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Добавяне на ново правило за търсене</button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Добави още едно правило за търсене</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/bg/illustrations/consultancy-requested#listing" 
@@ -898,9 +898,9 @@
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is"></option>
-                <option value="is-before"></option>
-                <option value="is-after"></option>
+                <option value="is">Е</option>
+                <option value="is-before">Е преди</option>
+                <option value="is-after">Е след</option>
             </select>
         </label>
         <input 

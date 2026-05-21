@@ -113,7 +113,7 @@
 							pat-avatar"
 						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
 						alt="">
-				<!-- i18n: label_menu -->Meni</a>
+				<!-- i18n: label_menu --></a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -185,12 +185,14 @@
         <article class="pat-rich">
             <h1>Pomoč</h1>
             <p 
-                class="summary"><!-- i18n: message_help_intro -->Izberite eno od spodnjih tem, da se seznanite z delovanjem OiRA.</p>
+                class="summary"><!-- i18n: message_help_intro --></p>
         </article>
         <nav 
             class="
                 pat-nav-tiles 
                 pat-navigation">
+            
+                
             
                 
             
@@ -243,6 +245,8 @@
                             history: record">
                         Registracija
                     </a>
+                
+            
                 
             
                 
@@ -535,6 +539,18 @@
                 
             
                 
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
                     <a 
                         href="/++resource++euphorie.resources/assets/oira/help/sl/pages/3-carrying-out-a-risk-assessment.html"
                         class="item icon-oira-tool pat-inject"
@@ -586,6 +602,8 @@
                 
             
                 
+            
+                
                     <a 
                         href="/++resource++euphorie.resources/assets/oira/help/sl/pages/4-reports.html"
                         class="item icon-doc-inv pat-inject"
@@ -596,6 +614,30 @@
                             history: record">
                         Poročila
                     </a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
                 
             
                 
@@ -1180,6 +1222,8 @@
                 
             
                 
+            
+                
                     <a 
                         href="/++resource++euphorie.resources/assets/oira/help/sl/pages/configuring.html"
                         class="item icon-cog pat-inject"
@@ -1190,6 +1234,26 @@
                             history: record">
                         Konfiguriranje orodja OiRA
                     </a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
                 
             
                 
@@ -2433,6 +2497,32 @@
             
                 
             
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         </nav>
     </div>
 </div>
@@ -2483,7 +2573,7 @@
                         title="Začni novo oceno tveganja">Nova ocena tveganja</a>
                 </li>
                 <li>
-                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Pokaži arhivirane ocene tveganja</label>
+                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Prikaži arhivirane ocene tveganj</label>
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
@@ -2545,7 +2635,7 @@
             <select 
                 name="search-rule.data-field:records">
                 <option 
-                    value="SearchableText"><!-- i18n: label_any_text_field -->Katerokoli besedilno polje</option>
+                    value="SearchableText"><!-- i18n: label_any_text_field -->Katero koli besedilno polje</option>
                 <optgroup 
                     label="Metadata">
                     <option value="Title">Title</option>
@@ -2587,9 +2677,9 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is"></option>
-                    <option value="is-before"></option>
-                    <option value="is-after"></option>
+                    <option value="is">Je</option>
+                    <option value="is-before">Je pred</option>
+                    <option value="is-after">Je po</option>
                 </select>
             </label>
             <input 
@@ -2655,7 +2745,7 @@
         class="pat-button default icon-search"><!-- i18n: action_search -->Išči</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Dodaj drugo iskalno pravilo</button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Dodaj še eno iskalno pravilo</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/sl/#listing" 
@@ -2686,7 +2776,7 @@
         <select 
             name="search-rule.data-field:records">
             <option 
-                value="SearchableText"><!-- i18n: label_any_text_field -->Katerokoli besedilno polje</option>
+                value="SearchableText"><!-- i18n: label_any_text_field -->Katero koli besedilno polje</option>
             <optgroup 
                 label="Metadata">
                 <option value="Title">Title</option>
@@ -2725,9 +2815,9 @@
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is"></option>
-                <option value="is-before"></option>
-                <option value="is-after"></option>
+                <option value="is">Je</option>
+                <option value="is-before">Je pred</option>
+                <option value="is-after">Je po</option>
             </select>
         </label>
         <input 
