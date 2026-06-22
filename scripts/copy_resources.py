@@ -40,8 +40,8 @@ known_bogus_resources = {
 # 1. we don't miss anything
 # 2. we don't check in too many files
 #
-MINIMUM_EXPECTED_SIZE = 30  # MB
-MAXIMUM_EXPECTED_SIZE = 55  # MB
+MINIMUM_EXPECTED_SIZE = 45  # MB
+MAXIMUM_EXPECTED_SIZE = 60  # MB
 
 
 def extract_resources(text):
