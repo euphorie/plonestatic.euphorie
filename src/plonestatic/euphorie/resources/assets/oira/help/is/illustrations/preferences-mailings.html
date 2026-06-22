@@ -242,12 +242,12 @@
         pat-tooltip"
     data-pat-tooltip="class: info; trigger: click; source: content; position-list: tl">
     
-    <!-- i18n: message_help_system_language --></dfn>
+    <!-- i18n: message_help_system_language -->Tungumál kerfisins er tungumál takka, valmynda og annarra stýringa. Tungumál efnis þíns eða verkfæranna sem þú notar breytist ekki með þessari stillingu.</dfn>
             
             <div 
                 class="pat-checklist">
                 
-                    <label>
+                    <label>Sjálfvirkt (byggt á tungumáli vafra)
                         
                         <input
                             
@@ -346,7 +346,7 @@
 		
 		
 		>
-		<!-- i18n: label_preferred_content_language -->
+		<!-- i18n: label_preferred_content_language -->Ákjósanlegt tungumál efnis
 		<select 
 			name="">
 			
@@ -358,7 +358,7 @@
 					class="" 
 					> 
 					
-						<!-- i18n: label_based_on_system_language -->
+						<!-- i18n: label_based_on_system_language -->Byggt á tungumáli kerfisins
 					
 				</option>
 			
@@ -495,7 +495,7 @@ class=""
         
         
 	<em class="pat-message info">
-		<!-- i18n: message_name_is_used_for -->
+		<!-- i18n: message_name_is_used_for -->Að fylla út nöfnin þín skapar persónulegra notendaupplifun fyrir þig og vinnufélaga þína. Nafnið þitt mun birtast í sjálfvirkum tölvupóstum og á ýmsum skjáum í gegnum forritið.
 	</em>	
 
     </label>
@@ -527,7 +527,7 @@ class=""
 			 
 			form-separation-header" 
 			>
-		<!-- i18n: label_mailings -->
+		<!-- i18n: label_mailings -->Póstsendingar
 	</h3>	
 	
 	
@@ -543,7 +543,7 @@ class=""
             
             " 
         >
-            <legend><!-- i18n: label_subscriptions --></legend>
+            <legend><!-- i18n: label_subscriptions -->Áskriftir</legend>
             
                 <dfn 
     tabindex="0"
@@ -553,7 +553,7 @@ class=""
         pat-tooltip"
     data-pat-tooltip="class: info; trigger: click; source: content; position-list: tl">
     
-    <!-- i18n: message_help_subscriptions --></dfn>
+    <!-- i18n: message_help_subscriptions -->Fréttabréfin eru sérhannaðanleg í samræmi við óskir þínar, þau verkfæri sem fyrirtækið þitt notar, iðnaðarsvið þitt og landsstig þitt.</dfn>
             
             <div 
                 class="pat-checklist">
@@ -694,22 +694,22 @@ class=""
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title=""></a>
+                        title="Hefja nýtt áhættumat">Nýtt áhættumat</a>
                 </li>
                 <li>
-                    <label class="pat-checklist"><input type="checkbox" name="archived" /> </label>
+                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Sýna safngeymdar áhættumat</label>
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
-                        <label><input type="radio" value="all" name="ass-type" checked /> </label>
-                        <label><input type="radio" value="regular" name="ass-type" /> </label>
-                        <label><input type="radio" value="contractor" name="ass-type" /> </label>
+                        <label><input type="radio" value="all" name="ass-type" checked /> Allar tegundir áhættumats</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Aðeins reglulegt áhættumat</label>
+                        <label><input type="radio" value="contractor" name="ass-type" /> Aðeins áhættumat verktaka</label>
                 	</fieldset>
                 </li>
             </ul>
         </div>
 	
-    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title=""></button>
+    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title="Stækka hliðarslá">Stækka hliðarslá</button>
 </form>
 
 		<a href="/feedback/osh.html#osh-ra-browser" id="osh-target-ra-browser" class="onscreen-help pat-tooltip" data-pat-tooltip="trigger: click; source: ajax; class: rich info;">Help</a>
@@ -735,7 +735,7 @@ class=""
 				type="search" 
 				value="" 
 				class="quick-search pat-autofocus" 
-				placeholder="" />
+				placeholder="Leita" />
             <button type="submit" name="standard" value="main" class="search-button-main assistive">Leit</button>
         </label>
 
@@ -759,7 +759,7 @@ class=""
             <select 
                 name="search-rule.data-field:records">
                 <option 
-                    value="SearchableText"><!-- i18n: label_any_text_field --></option>
+                    value="SearchableText"><!-- i18n: label_any_text_field -->Hvaða textareitur sem er</option>
                 <optgroup 
                     label="Metadata">
                     <option value="Title">Title</option>
@@ -784,9 +784,9 @@ class=""
                 class="pat-select">
                 <select 
                     name="search-rule.lemma-operator:records">
-                <option value="contains"><!-- i18n: label_contains --></option>
-                <option value="contains-not"><!-- i18n: label_contains_not --></option>
-                <option value="equals"><!-- i18n: label_equals --></option>
+                <option value="contains"><!-- i18n: label_contains -->Inniheldur</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Inniheldur ekki</option>
+                <option value="equals"><!-- i18n: label_equals -->Jafnt og</option>
                 </select>
             </label>
             <input 
@@ -801,9 +801,9 @@ class=""
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is"></option>
-                    <option value="is-before"></option>
-                    <option value="is-after"></option>
+                    <option value="is">Er</option>
+                    <option value="is-before">Er fyrir</option>
+                    <option value="is-after">Er eftir</option>
                 </select>
             </label>
             <input 
@@ -818,8 +818,8 @@ class=""
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals"></option>
-                    <option value="equals-not"></option>
+                    <option value="equals">Jafnt og</option>
+                    <option value="equals-not">Er ekki jafnt og</option>
                 </select>
             </label>
             <select 
@@ -839,8 +839,8 @@ class=""
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals"></option>
-                    <option value="equals-not"></option>
+                    <option value="equals">Jafnt og</option>
+                    <option value="equals-not">Er ekki jafnt og</option>
                 </select>
             </label>
             <select 
@@ -869,7 +869,7 @@ class=""
         class="pat-button default icon-search"><!-- i18n: action_search -->Leit</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule --></button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Bæta við öðru leitarreglu</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/is/illustrations/preferences-mailings#listing" 
@@ -890,9 +890,9 @@ class=""
         <select 
             name="search-rule.and-or:records">
             <option 
-                value="and"><!-- i18n: label_and --></option>
+                value="and"><!-- i18n: label_and -->Og…</option>
             <option 
-                value="or"><!-- i18n: label_or --></option>
+                value="or"><!-- i18n: label_or -->Eða…</option>
         </select>
     </label>
     <label 
@@ -900,7 +900,7 @@ class=""
         <select 
             name="search-rule.data-field:records">
             <option 
-                value="SearchableText"><!-- i18n: label_any_text_field --></option>
+                value="SearchableText"><!-- i18n: label_any_text_field -->Hvaða textareitur sem er</option>
             <optgroup 
                 label="Metadata">
                 <option value="Title">Title</option>
@@ -922,9 +922,9 @@ class=""
             class="pat-select">
             <select 
                 name="search-rule.lemma-operator:records">
-                <option value="contains"><!-- i18n: label_contains --></option>
-                <option value="contains-not"><!-- i18n: label_contains_not --></option>
-                <option value="equals"><!-- i18n: label_equals --></option>
+                <option value="contains"><!-- i18n: label_contains -->Inniheldur</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Inniheldur ekki</option>
+                <option value="equals"><!-- i18n: label_equals -->Jafnt og</option>
             </select>
         </label>
         <input 
@@ -939,9 +939,9 @@ class=""
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is"></option>
-                <option value="is-before"></option>
-                <option value="is-after"></option>
+                <option value="is">Er</option>
+                <option value="is-before">Er fyrir</option>
+                <option value="is-after">Er eftir</option>
             </select>
         </label>
         <input 
@@ -957,9 +957,9 @@ class=""
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals"></option>
+                    value="equals">Jafnt og</option>
                 <option 
-                value="equals-not"></option>
+                value="equals-not">Er ekki jafnt og</option>
             </select>
         </label>
         <select 
@@ -980,9 +980,9 @@ class=""
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals"></option>
+                    value="equals">Jafnt og</option>
                 <option 
-                    value="equals-not"></option>
+                    value="equals-not">Er ekki jafnt og</option>
             </select>
         </label>
         <select 
@@ -1017,7 +1017,7 @@ class=""
 			        	type="radio" 
 			        	name="search-mode" 
 			        	value="standard" 
-			        	checked> 
+			        	checked> Staðlægt leit
 			    </label>
 			    <label 
 			    	class="pat-switch toggle-advanced"
@@ -1025,7 +1025,7 @@ class=""
 			        <input 
 			        	type="radio" 
 			        	name="search-mode" 
-			        	value="advanced"> 
+			        	value="advanced"> Ítarleg leit
 			    </label>
 			</fieldset>
 	    </fieldset>

@@ -118,7 +118,7 @@
 							pat-avatar"
 						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
 						alt="">
-				<!-- i18n: label_menu -->Nabídka</a>
+				<!-- i18n: label_menu --></a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -249,7 +249,7 @@
                 selector: #main; 
                 remove: sidebar-*; 
                 add: sidebar-off">
-              <span class="label"><!-- i18n: label_analysis -->Analýza</span></a>
+              <span class="label"><!-- i18n: label_analysis --></span></a>
       
 
     </li>
@@ -279,7 +279,7 @@
     data-pat-switch="
       selector: #main; 
       remove: sidebar-*; 
-      add: sidebar-off"><span class="label"><!-- i18n: label_consultancy -->Konzultace</span></a>
+      add: sidebar-off"><span class="label"><!-- i18n: label_consultancy -->Poradenství</span></a>
 </li>
     
 <li 
@@ -358,7 +358,7 @@
     data-pat-switch="
       selector: #main; 
       remove: sidebar-*; 
-      add: sidebar-off"><span class="label"><!-- i18n: label_status -->Status</span></a>
+      add: sidebar-off"><span class="label"><!-- i18n: label_status -->Stav</span></a>
 </li>
     
 
@@ -395,7 +395,7 @@
             data-pat-inject="history: record"
             class="home pat-switch pat-inject"
             data-pat-switch="selector: #main; remove: sidebar-*; add: sidebar-off">
-            <span class="label"><!-- i18n: label_exit -->Odejít</span></a>
+            <span class="label"><!-- i18n: label_exit -->Ukončit</span></a>
     </li>
 
     
@@ -531,7 +531,7 @@
                 
                 
                 <!-- <a 
-                    class="default pat-button"><!-- i18n: label_approve_risk_assessment --></a>  --> 
+                    class="default pat-button"><!-- i18n: label_approve_risk_assessment -->Schválit hodnocení rizik</a>  --> 
             </div>
         </div>
     </div>
@@ -545,7 +545,7 @@
 		class="
 			pat-message
 			info">
-		<p><!-- i18n: message_report_downloads_intro -->Vyberte si z několika formátů pro zobrazení nebo stažení zprávy o hodnocení rizik.</p>
+		<p><!-- i18n: message_report_downloads_intro -->Uložte zprávu do svého počítače a vytiskněte ji. Můžete ji také upravit nebo přidat další informace. Vezměte prosím na vědomí, že změny provedené na vašem počítači NEBUDOU uloženy v hodnocení rizik OiRA.</p>
 	</div>
 
 	<div 
@@ -567,9 +567,9 @@
 						class="current"
 						href="report"><!-- i18n: label_action_plan -->Akční plán</a>
 					<a 
-						href="report-compact"><!-- i18n: label_compact -->Kompaktní</a>
+						href="report-compact"><!-- i18n: label_compact --></a>
 					<a 
-						href="report-full"><!-- i18n: label_full -->Plný</a>
+						href="report-full"><!-- i18n: label_full --></a>
 				</nav>				
 			</div>
 		</div>
@@ -768,7 +768,7 @@
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title="Spustit nové hodnocení rizik">Nové hodnocení rizik</a>
+                        title="Zahájit nové hodnocení rizik">Nové hodnocení rizik</a>
                 </li>
                 <li>
                     <label class="pat-checklist"><input type="checkbox" name="archived" /> Zobrazit archivovaná hodnocení rizik</label>
@@ -776,7 +776,7 @@
                 <li>
                 	<fieldset class="pat-checklist radio">
                         <label><input type="radio" value="all" name="ass-type" checked /> Všechny typy hodnocení rizik</label>
-                        <label><input type="radio" value="regular" name="ass-type" /> Pouze běžná hodnocení rizik</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Pouze pravidelná hodnocení rizik</label>
                         <label><input type="radio" value="contractor" name="ass-type" /> Pouze hodnocení rizik dodavatelů</label>
                 	</fieldset>
                 </li>
@@ -875,9 +875,9 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is"></option>
-                    <option value="is-before"></option>
-                    <option value="is-after"></option>
+                    <option value="is">Je</option>
+                    <option value="is-before">Je před</option>
+                    <option value="is-after">Je po</option>
                 </select>
             </label>
             <input 
@@ -943,7 +943,7 @@
         class="pat-button default icon-search"><!-- i18n: action_search -->Vyhledat</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Přidat další vyhledávací pravidlo</button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Přidat další pravidlo vyhledávání</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/cs/illustrations/report#listing" 
@@ -1013,9 +1013,9 @@
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is"></option>
-                <option value="is-before"></option>
-                <option value="is-after"></option>
+                <option value="is">Je</option>
+                <option value="is-before">Je před</option>
+                <option value="is-after">Je po</option>
             </select>
         </label>
         <input 

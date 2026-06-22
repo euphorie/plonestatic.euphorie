@@ -113,7 +113,7 @@
 							pat-avatar"
 						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
 						alt="">
-				<!-- i18n: label_menu -->Valikko</a>
+				<!-- i18n: label_menu --></a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -208,7 +208,7 @@ Lukittujen riskinarviointien kaksoiskappaleet ovat oletusarvoisesti lukitsematto
 
 <h2 id="riskinarvioinnin-avaaminen">Riskinarvioinnin avaaminen</h2>
 
-<p>Kun olet aloittanut riskinarvioinnin, voit hakea sen milloin tahansa koontinäytöltä otsikon „Omat riskiarvioinnit“ alta. Sieltä voit myös aloittaa uuden riskinarvioinnin.</p>
+<p>Kun olet aloittanut riskinarvioinnin, voit hakea sen milloin tahansa koontinäytöltä otsikon „Omat riskiarvioinnit“ alta, klikkaamalla oikeassa yläkulmassa olevaa kotikuvaketta. Sieltä voit myös aloittaa uuden riskinarvioinnin.</p>
 
 <figure class="screenshot">
   <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/dashboard.html" scrolling="no">
@@ -247,11 +247,13 @@ Lukittujen riskinarviointien kaksoiskappaleet ovat oletusarvoisesti lukitsematto
 
 <p>Kun olet napsauttanut „Aloita“, työkalussa saatetaan esittää joitakin lisäkysymyksiä sen mukaan, mitä työkalua käytät. Tämä valmistautumisnäkymä profiiliin liittyvine kysymyksineen tulee näkyviin vain työkaluissa, joiden osaksi se on määritetty.</p>
 
-<p>Tässä vaiheessa voit</p>
+<p>Profiilikysymykset mahdollistavat:</p>
 <ul>
   <li>valita tai ohittaa tilanteita sen mukaan, koskevatko ne liiketoimintaasi. Vastaa asianmukaisissa kohdissa „Kyllä“.</li>
   <li>luetella useita liiketoimintayksikköjä, haaraliikkeitä tai toimipaikkoja jne. Asiaan liittyvät riskit toistetaan jokaisessa kohdassa.</li>
 </ul>
+
+<p>Seuraava kuva näyttää, miltä osio näyttäisi, jos se olisi aktivoitu; kuvassa esitetyt kysymykset ovat vain havainnollistavia ja ne on otettu työkalun eurooppalaisesta versiosta.</p>
 
 <figure class="screenshot">
   <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/fi/illustrations/profiling.html" scrolling="no">
@@ -592,16 +594,16 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title="Aloita uusi riskinarviointi">Uusi riskiarviointi</a>
+                        title="Aloita uusi riskiarviointi">Uusi riskiarviointi</a>
                 </li>
                 <li>
-                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Näytä arkistoidut riskinarviointeja</label>
+                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Näytä arkistoidut riskiarvioinnit</label>
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
-                        <label><input type="radio" value="all" name="ass-type" checked /> Kaikki riskinarviointityypit</label>
-                        <label><input type="radio" value="regular" name="ass-type" /> Vain säännölliset riskinarviointeja</label>
-                        <label><input type="radio" value="contractor" name="ass-type" /> Vain urakoitsijoiden riskinarviointeja</label>
+                        <label><input type="radio" value="all" name="ass-type" checked /> Kaikki riskiarviotyypit</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Vain säännölliset riskinarvioinnit</label>
+                        <label><input type="radio" value="contractor" name="ass-type" /> Vain urakoitsijoiden riskinarvioinnit</label>
                 	</fieldset>
                 </li>
             </ul>
@@ -633,7 +635,7 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
 				type="search" 
 				value="" 
 				class="quick-search pat-autofocus" 
-				placeholder="Haku" />
+				placeholder="Hae" />
             <button type="submit" name="standard" value="main" class="search-button-main assistive">Haku</button>
         </label>
 
@@ -684,7 +686,7 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
                     name="search-rule.lemma-operator:records">
                 <option value="contains"><!-- i18n: label_contains -->Sisältää</option>
                 <option value="contains-not"><!-- i18n: label_contains_not -->Ei sisällä</option>
-                <option value="equals"><!-- i18n: label_equals -->On yhtä suuri kuin</option>
+                <option value="equals"><!-- i18n: label_equals -->Yhtä suuri kuin</option>
                 </select>
             </label>
             <input 
@@ -699,9 +701,9 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is"></option>
-                    <option value="is-before"></option>
-                    <option value="is-after"></option>
+                    <option value="is">On</option>
+                    <option value="is-before">On ennen</option>
+                    <option value="is-after">On jälkeen</option>
                 </select>
             </label>
             <input 
@@ -716,7 +718,7 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">On yhtä suuri kuin</option>
+                    <option value="equals">Yhtä suuri kuin</option>
                     <option value="equals-not">Ei ole yhtä suuri kuin</option>
                 </select>
             </label>
@@ -737,7 +739,7 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">On yhtä suuri kuin</option>
+                    <option value="equals">Yhtä suuri kuin</option>
                     <option value="equals-not">Ei ole yhtä suuri kuin</option>
                 </select>
             </label>
@@ -822,7 +824,7 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
                 name="search-rule.lemma-operator:records">
                 <option value="contains"><!-- i18n: label_contains -->Sisältää</option>
                 <option value="contains-not"><!-- i18n: label_contains_not -->Ei sisällä</option>
-                <option value="equals"><!-- i18n: label_equals -->On yhtä suuri kuin</option>
+                <option value="equals"><!-- i18n: label_equals -->Yhtä suuri kuin</option>
             </select>
         </label>
         <input 
@@ -837,9 +839,9 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is"></option>
-                <option value="is-before"></option>
-                <option value="is-after"></option>
+                <option value="is">On</option>
+                <option value="is-before">On ennen</option>
+                <option value="is-after">On jälkeen</option>
             </select>
         </label>
         <input 
@@ -855,7 +857,7 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">On yhtä suuri kuin</option>
+                    value="equals">Yhtä suuri kuin</option>
                 <option 
                 value="equals-not">Ei ole yhtä suuri kuin</option>
             </select>
@@ -878,7 +880,7 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">On yhtä suuri kuin</option>
+                    value="equals">Yhtä suuri kuin</option>
                 <option 
                     value="equals-not">Ei ole yhtä suuri kuin</option>
             </select>
@@ -915,7 +917,7 @@ Kuten edellä on mainittu, toimintasuunnitelma esitetään erillisenä vaiheena 
 			        	type="radio" 
 			        	name="search-mode" 
 			        	value="standard" 
-			        	checked> Tavallinen haku
+			        	checked> Vakiohaku
 			    </label>
 			    <label 
 			    	class="pat-switch toggle-advanced"

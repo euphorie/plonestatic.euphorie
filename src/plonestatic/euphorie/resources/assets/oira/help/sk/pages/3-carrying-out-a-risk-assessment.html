@@ -113,7 +113,7 @@
 							pat-avatar"
 						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
 						alt="">
-				<!-- i18n: label_menu -->Ponuka</a>
+				<!-- i18n: label_menu --></a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -208,7 +208,7 @@ Duplikáty uzamknutých hodnotení rizík sú štandardne odomknuté.</p>
 
 <h2 id="opening-a-risk-assessment">Opening a risk assessment</h2>
 
-<p>Once you have started a risk assessment, you can retrieve it at any time through the dashboard under the heading ‘My risk assessments’. Form here you can also start a new risk assessment.</p>
+<p>Once you have started a risk assessment, you can retrieve it at any time via the dashboard under the heading ‘My risk assessments’ by clicking the home icon in the top right. From here you can also start a new risk assessment.</p>
 
 <figure class="screenshot">
   <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sk/illustrations/dashboard.html" scrolling="no">
@@ -247,11 +247,13 @@ Duplikáty uzamknutých hodnotení rizík sú štandardne odomknuté.</p>
 
 <p>After clicking ‘Start’, some additional questions may be asked, depending on the tool you are using. This preparatory screen with ‘profile questions’ appears only with tools that offer this option.</p>
 
-<p>Here you can:</p>
+<p>The profile questions make it possible to:</p>
 <ul>
   <li>Select or skip situation(s) depending on whether they apply to your business activity. Choose ‘yes’ where appropriate.</li>
   <li>List multiple business units, branches or stores, and so on. The related risks will be repeated for each entry.</li>
 </ul>
+
+<p>The following image shows how the section would appear if activated; the questions shown in the image are for illustrative purposes only and are taken from the European version of the tool.</p>
 
 <figure class="screenshot">
   <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sk/illustrations/profiling.html" scrolling="no">
@@ -599,9 +601,9 @@ As mentioned above, the action plan is presented as a separate step in the menu 
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
-                        <label><input type="radio" value="all" name="ass-type" checked /> Všetky typy hodnotení rizík</label>
-                        <label><input type="radio" value="regular" name="ass-type" /> Len pravidelné hodnotenia rizík</label>
-                        <label><input type="radio" value="contractor" name="ass-type" /> Len hodnotenia rizík dodávateľov</label>
+                        <label><input type="radio" value="all" name="ass-type" checked /> Všetky typy hodnotení rizika</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Iba bežné hodnotenia rizík</label>
+                        <label><input type="radio" value="contractor" name="ass-type" /> Iba hodnotenia rizík dodávateľov</label>
                 	</fieldset>
                 </li>
             </ul>
@@ -699,9 +701,9 @@ As mentioned above, the action plan is presented as a separate step in the menu 
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is"></option>
-                    <option value="is-before"></option>
-                    <option value="is-after"></option>
+                    <option value="is">Je</option>
+                    <option value="is-before">Je pred</option>
+                    <option value="is-after">Je po</option>
                 </select>
             </label>
             <input 
@@ -837,9 +839,9 @@ As mentioned above, the action plan is presented as a separate step in the menu 
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is"></option>
-                <option value="is-before"></option>
-                <option value="is-after"></option>
+                <option value="is">Je</option>
+                <option value="is-before">Je pred</option>
+                <option value="is-after">Je po</option>
             </select>
         </label>
         <input 
@@ -923,7 +925,7 @@ As mentioned above, the action plan is presented as a separate step in the menu 
 			        <input 
 			        	type="radio" 
 			        	name="search-mode" 
-			        	value="advanced"> Pokročilé vyhľadávanie
+			        	value="advanced"> Rozšírené vyhľadávanie
 			    </label>
 			</fieldset>
 	    </fieldset>

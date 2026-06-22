@@ -224,7 +224,7 @@
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title="Pokreni novu procjenu rizika">Nova procjena rizika</a>
+                        title="Započni novu procjenu rizika">Nova procjena rizika</a>
                 </li>
                 <li>
                     <label class="pat-checklist"><input type="checkbox" name="archived" /> Prikaži arhivirane procjene rizika</label>
@@ -232,7 +232,7 @@
                 <li>
                 	<fieldset class="pat-checklist radio">
                         <label><input type="radio" value="all" name="ass-type" checked /> Sve vrste procjena rizika</label>
-                        <label><input type="radio" value="regular" name="ass-type" /> Samo redovite procjene rizika</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Samo redovne procjene rizika</label>
                         <label><input type="radio" value="contractor" name="ass-type" /> Samo procjene rizika izvođača</label>
                 	</fieldset>
                 </li>
@@ -289,7 +289,7 @@
             <select 
                 name="search-rule.data-field:records">
                 <option 
-                    value="SearchableText"><!-- i18n: label_any_text_field -->Bilo koje tekstno polje</option>
+                    value="SearchableText"><!-- i18n: label_any_text_field -->Bilo koje tekstualno polje</option>
                 <optgroup 
                     label="Metadata">
                     <option value="Title">Title</option>
@@ -316,7 +316,7 @@
                     name="search-rule.lemma-operator:records">
                 <option value="contains"><!-- i18n: label_contains -->Sadrži</option>
                 <option value="contains-not"><!-- i18n: label_contains_not -->Ne sadrži</option>
-                <option value="equals"><!-- i18n: label_equals -->Jednako je</option>
+                <option value="equals"><!-- i18n: label_equals -->Jednako</option>
                 </select>
             </label>
             <input 
@@ -331,9 +331,9 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is"></option>
-                    <option value="is-before"></option>
-                    <option value="is-after"></option>
+                    <option value="is">Je</option>
+                    <option value="is-before">Je prije</option>
+                    <option value="is-after">Je nakon</option>
                 </select>
             </label>
             <input 
@@ -348,7 +348,7 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">Jednako je</option>
+                    <option value="equals">Jednako</option>
                     <option value="equals-not">Nije jednako</option>
                 </select>
             </label>
@@ -369,7 +369,7 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">Jednako je</option>
+                    <option value="equals">Jednako</option>
                     <option value="equals-not">Nije jednako</option>
                 </select>
             </label>
@@ -399,7 +399,7 @@
         class="pat-button default icon-search"><!-- i18n: action_search -->Traži</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Dodaj još jedno pravilo pretrage</button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Dodaj još jedno pravilo pretraživanja</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/hr/illustrations/login#listing" 
@@ -430,7 +430,7 @@
         <select 
             name="search-rule.data-field:records">
             <option 
-                value="SearchableText"><!-- i18n: label_any_text_field -->Bilo koje tekstno polje</option>
+                value="SearchableText"><!-- i18n: label_any_text_field -->Bilo koje tekstualno polje</option>
             <optgroup 
                 label="Metadata">
                 <option value="Title">Title</option>
@@ -454,7 +454,7 @@
                 name="search-rule.lemma-operator:records">
                 <option value="contains"><!-- i18n: label_contains -->Sadrži</option>
                 <option value="contains-not"><!-- i18n: label_contains_not -->Ne sadrži</option>
-                <option value="equals"><!-- i18n: label_equals -->Jednako je</option>
+                <option value="equals"><!-- i18n: label_equals -->Jednako</option>
             </select>
         </label>
         <input 
@@ -469,9 +469,9 @@
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is"></option>
-                <option value="is-before"></option>
-                <option value="is-after"></option>
+                <option value="is">Je</option>
+                <option value="is-before">Je prije</option>
+                <option value="is-after">Je nakon</option>
             </select>
         </label>
         <input 
@@ -487,7 +487,7 @@
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">Jednako je</option>
+                    value="equals">Jednako</option>
                 <option 
                 value="equals-not">Nije jednako</option>
             </select>
@@ -510,7 +510,7 @@
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">Jednako je</option>
+                    value="equals">Jednako</option>
                 <option 
                     value="equals-not">Nije jednako</option>
             </select>

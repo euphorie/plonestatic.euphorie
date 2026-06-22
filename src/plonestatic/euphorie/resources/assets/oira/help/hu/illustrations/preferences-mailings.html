@@ -113,7 +113,7 @@
 							pat-avatar"
 						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
 						alt="">
-				<!-- i18n: label_menu -->Menü</a>
+				<!-- i18n: label_menu --></a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -242,12 +242,12 @@
         pat-tooltip"
     data-pat-tooltip="class: info; trigger: click; source: content; position-list: tl">
     
-    <!-- i18n: message_help_system_language -->A rendszer nyelve a gombok, menük és egyéb vezérlők nyelve. A tartalom vagy az eszközök nyelve, amelyeket használ, nem változik ezzel a beállítással.</dfn>
+    <!-- i18n: message_help_system_language -->A rendszer nyelve a gombok, menük és egyéb vezérlők nyelve. A tartalom nyelve vagy az Ön által használt eszközök nyelve ezzel a beállítással nem változik.</dfn>
             
             <div 
                 class="pat-checklist">
                 
-                    <label>Automatikus (A böngésző nyelvén alapul)
+                    <label>Automatikus (böngésző nyelve alapján)
                         
                         <input
                             
@@ -346,7 +346,7 @@
 		
 		
 		>
-		<!-- i18n: label_preferred_content_language -->Előnyben részesített tartalmi nyelv
+		<!-- i18n: label_preferred_content_language -->Preferált tartalom nyelve
 		<select 
 			name="">
 			
@@ -358,7 +358,7 @@
 					class="" 
 					> 
 					
-						<!-- i18n: label_based_on_system_language -->Rendszer nyelvén alapul
+						<!-- i18n: label_based_on_system_language -->Rendszer nyelve alapján
 					
 				</option>
 			
@@ -495,7 +495,7 @@ class=""
         
         
 	<em class="pat-message info">
-		<!-- i18n: message_name_is_used_for -->A neveik kitöltése személyesebb felhasználói élményt biztosít önnek és munkatársainak. A neve megjelenik az automatikus e-mailekben és az alkalmazás különböző képernyőin.
+		<!-- i18n: message_name_is_used_for -->A nevek megadása személyre szabottabb felhasználói élményt nyújt Önnek és munkatársainak. Az Ön neve megjelenik az automatikus e-mailekben és az alkalmazás különböző képernyőin.
 	</em>	
 
     </label>
@@ -527,7 +527,7 @@ class=""
 			 
 			form-separation-header" 
 			>
-		<!-- i18n: label_mailings -->
+		<!-- i18n: label_mailings -->Levelezések
 	</h3>	
 	
 	
@@ -543,7 +543,7 @@ class=""
             
             " 
         >
-            <legend><!-- i18n: label_subscriptions -->Előfizetések</legend>
+            <legend><!-- i18n: label_subscriptions -->Feliratkozások</legend>
             
                 <dfn 
     tabindex="0"
@@ -553,7 +553,7 @@ class=""
         pat-tooltip"
     data-pat-tooltip="class: info; trigger: click; source: content; position-list: tl">
     
-    <!-- i18n: message_help_subscriptions -->A hírlevelek testreszabhatók az Ön preferenciái, szervezete által használt eszközök, ipari szektora és országszintje szerint.</dfn>
+    <!-- i18n: message_help_subscriptions -->A hírlevelek testreszabhatók az Ön preferenciái, a szervezete által használt eszközök, az iparági szektor és az ország szintje szerint.</dfn>
             
             <div 
                 class="pat-checklist">
@@ -694,16 +694,16 @@ class=""
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title="Új kockázatértékelés kezdése">Új kockázatértékelés</a>
+                        title="Új kockázatértékelés indítása">Új kockázatértékelés</a>
                 </li>
                 <li>
-                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Archivált kockázatértékelések megjelenítése</label>
+                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Archivált kockázatbecslések megjelenítése</label>
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
-                        <label><input type="radio" value="all" name="ass-type" checked /> Minden típusú kockázatértékelés</label>
-                        <label><input type="radio" value="regular" name="ass-type" /> Csak szokásos kockázatértékelések</label>
-                        <label><input type="radio" value="contractor" name="ass-type" /> Csak alvállalkozói kockázatértékelések</label>
+                        <label><input type="radio" value="all" name="ass-type" checked /> A kockázatértékelések minden típusa</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Csak rendszeres kockázatértékelések</label>
+                        <label><input type="radio" value="contractor" name="ass-type" /> Csak vállalkozói kockázatértékelések</label>
                 	</fieldset>
                 </li>
             </ul>
@@ -801,9 +801,9 @@ class=""
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is"></option>
-                    <option value="is-before"></option>
-                    <option value="is-after"></option>
+                    <option value="is">Az</option>
+                    <option value="is-before">Előtte</option>
+                    <option value="is-after">Utána</option>
                 </select>
             </label>
             <input 
@@ -939,9 +939,9 @@ class=""
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is"></option>
-                <option value="is-before"></option>
-                <option value="is-after"></option>
+                <option value="is">Az</option>
+                <option value="is-before">Előtte</option>
+                <option value="is-after">Utána</option>
             </select>
         </label>
         <input 
@@ -1017,7 +1017,7 @@ class=""
 			        	type="radio" 
 			        	name="search-mode" 
 			        	value="standard" 
-			        	checked> Szokásos keresés
+			        	checked> Szabványos keresés
 			    </label>
 			    <label 
 			    	class="pat-switch toggle-advanced"
@@ -1025,7 +1025,7 @@ class=""
 			        <input 
 			        	type="radio" 
 			        	name="search-mode" 
-			        	value="advanced"> Részletes keresés
+			        	value="advanced"> Speciális keresés
 			    </label>
 			</fieldset>
 	    </fieldset>

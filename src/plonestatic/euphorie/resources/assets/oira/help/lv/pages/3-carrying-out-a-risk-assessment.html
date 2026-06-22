@@ -113,7 +113,7 @@
 							pat-avatar"
 						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
 						alt="">
-				<!-- i18n: label_menu -->Izvēlne</a>
+				<!-- i18n: label_menu --></a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -208,7 +208,7 @@ Bloķēto riska novērtējumu dublikāti pēc noklusējuma ir atbloķēti</p>
 
 <h2 id="riska-novērtējuma-atvēršana">Riska novērtējuma atvēršana</h2>
 
-<p>Kad esat sācis riska novērtējumu, jūs jebkurā laikā varat izgūt to no infopaneļa sadaļā „Mani riska novērtējumi“. Šeit jūs varat arī sākt jaunu riska novērtējumu.</p>
+<p>Kad esat sācis riska novērtējumu, jūs jebkurā laikā varat izgūt to no infopaneļa sadaļā „Mani riska novērtējumi“, noklikšķinot uz sākuma ikonas augšējā labajā stūrī. Šeit jūs varat arī sākt jaunu riska novērtējumu.</p>
 
 <figure class="screenshot">
   <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/lv/illustrations/dashboard.html" scrolling="no">
@@ -247,11 +247,13 @@ Bloķēto riska novērtējumu dublikāti pēc noklusējuma ir atbloķēti</p>
 
 <p>Noklikšķinot uz „Sākt“, atkarībā no izmantotā rīka var tikt uzdoti daži papildu jautājumi. Šis sagatavošanas ekrāns ar „profila jautājumiem“ parādās tikai tajos rīkos, kas piedāvā šo iespēju.</p>
 
-<p>Šeit jūs varat:</p>
+<p>Profila jautājumi ļauj:</p>
 <ul>
   <li>atlasīt vai izlaist situāciju(-as) atkarībā no tā, vai tā(-s) attiecas uz jūsu uzņēmējdarbību. Attiecīgā gadījumā izvēlieties „jā“;</li>
   <li>uzskaitīt vairākas uzņēmējdarbības vienības, filiāles vai veikalus utt. Saistītie riski tiks atkārtoti katram ierakstam.</li>
 </ul>
+
+<p>Nākamais attēls parāda, kā sadaļa izskatītos, ja tā tiktu aktivizēta; attēlā redzamie jautājumi ir tikai ilustratīvi un ir ņemti no rīka Eiropas versijas.</p>
 
 <figure class="screenshot">
   <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/lv/illustrations/profiling.html" scrolling="no">
@@ -599,9 +601,9 @@ Kā minēts iepriekš, rīcības plāns ir parādīts kā atsevišķs posms izv�
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
-                        <label><input type="radio" value="all" name="ass-type" checked /> Visu veidu riska novērtējumi</label>
-                        <label><input type="radio" value="regular" name="ass-type" /> Tikai parastie riska novērtējumi</label>
-                        <label><input type="radio" value="contractor" name="ass-type" /> Tikai darbuzņēmēju riska novērtējumi</label>
+                        <label><input type="radio" value="all" name="ass-type" checked /> Visi riska novērtējumu veidi</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Tikai regulārie riska novērtējumi</label>
+                        <label><input type="radio" value="contractor" name="ass-type" /> Tikai darbuzņēmēja riska novērtējumi</label>
                 	</fieldset>
                 </li>
             </ul>
@@ -684,7 +686,7 @@ Kā minēts iepriekš, rīcības plāns ir parādīts kā atsevišķs posms izv�
                     name="search-rule.lemma-operator:records">
                 <option value="contains"><!-- i18n: label_contains -->Satur</option>
                 <option value="contains-not"><!-- i18n: label_contains_not -->Nesatur</option>
-                <option value="equals"><!-- i18n: label_equals -->Vienāds ar</option>
+                <option value="equals"><!-- i18n: label_equals -->Vienāds</option>
                 </select>
             </label>
             <input 
@@ -699,9 +701,9 @@ Kā minēts iepriekš, rīcības plāns ir parādīts kā atsevišķs posms izv�
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is"></option>
-                    <option value="is-before"></option>
-                    <option value="is-after"></option>
+                    <option value="is">Ir</option>
+                    <option value="is-before">Ir pirms</option>
+                    <option value="is-after">Ir pēc</option>
                 </select>
             </label>
             <input 
@@ -716,8 +718,8 @@ Kā minēts iepriekš, rīcības plāns ir parādīts kā atsevišķs posms izv�
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">Vienāds ar</option>
-                    <option value="equals-not">Nav vienāds ar</option>
+                    <option value="equals">Vienāds</option>
+                    <option value="equals-not">Nav vienāds</option>
                 </select>
             </label>
             <select 
@@ -737,8 +739,8 @@ Kā minēts iepriekš, rīcības plāns ir parādīts kā atsevišķs posms izv�
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">Vienāds ar</option>
-                    <option value="equals-not">Nav vienāds ar</option>
+                    <option value="equals">Vienāds</option>
+                    <option value="equals-not">Nav vienāds</option>
                 </select>
             </label>
             <select 
@@ -767,7 +769,7 @@ Kā minēts iepriekš, rīcības plāns ir parādīts kā atsevišķs posms izv�
         class="pat-button default icon-search"><!-- i18n: action_search -->Meklēt</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Pievienot citu meklēšanas noteikumu</button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Pievienot vēl vienu meklēšanas kārtulu</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/lv/pages/3-carrying-out-a-risk-assessment#listing" 
@@ -822,7 +824,7 @@ Kā minēts iepriekš, rīcības plāns ir parādīts kā atsevišķs posms izv�
                 name="search-rule.lemma-operator:records">
                 <option value="contains"><!-- i18n: label_contains -->Satur</option>
                 <option value="contains-not"><!-- i18n: label_contains_not -->Nesatur</option>
-                <option value="equals"><!-- i18n: label_equals -->Vienāds ar</option>
+                <option value="equals"><!-- i18n: label_equals -->Vienāds</option>
             </select>
         </label>
         <input 
@@ -837,9 +839,9 @@ Kā minēts iepriekš, rīcības plāns ir parādīts kā atsevišķs posms izv�
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is"></option>
-                <option value="is-before"></option>
-                <option value="is-after"></option>
+                <option value="is">Ir</option>
+                <option value="is-before">Ir pirms</option>
+                <option value="is-after">Ir pēc</option>
             </select>
         </label>
         <input 
@@ -855,9 +857,9 @@ Kā minēts iepriekš, rīcības plāns ir parādīts kā atsevišķs posms izv�
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">Vienāds ar</option>
+                    value="equals">Vienāds</option>
                 <option 
-                value="equals-not">Nav vienāds ar</option>
+                value="equals-not">Nav vienāds</option>
             </select>
         </label>
         <select 
@@ -878,9 +880,9 @@ Kā minēts iepriekš, rīcības plāns ir parādīts kā atsevišķs posms izv�
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">Vienāds ar</option>
+                    value="equals">Vienāds</option>
                 <option 
-                    value="equals-not">Nav vienāds ar</option>
+                    value="equals-not">Nav vienāds</option>
             </select>
         </label>
         <select 
@@ -923,7 +925,7 @@ Kā minēts iepriekš, rīcības plāns ir parādīts kā atsevišķs posms izv�
 			        <input 
 			        	type="radio" 
 			        	name="search-mode" 
-			        	value="advanced"> Paplašināta meklēšana
+			        	value="advanced"> Paplašinātā meklēšana
 			    </label>
 			</fieldset>
 	    </fieldset>

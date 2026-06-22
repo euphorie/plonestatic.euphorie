@@ -113,7 +113,7 @@
 							pat-avatar"
 						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
 						alt="">
-				<!-- i18n: label_menu -->Menu</a>
+				<!-- i18n: label_menu --></a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -208,7 +208,7 @@ Id-duplikati tal-valutazzjonijiet tar-riskju llokkjati b’mod awtomatiku ma jib
 
 <h2 id="il-ftuħ-ta-valutazzjoni-tar-riskji">Il-ftuħ ta’ valutazzjoni tar-riskji</h2>
 
-<p>Ladarba tkun bdejt valutazzjoni tar-riskji, tista’ tirkupraha fi kwalunkwe ħin permezz tad-daxxbord taħt l-intestatura „Il-valutazzjonijiet tar-riskji tiegħi“. Minn hawn tista’ wkoll tibda valutazzjoni tar-riskji ġdida.</p>
+<p>Ladarba tkun bdejt valutazzjoni tar-riskji, tista’ tirkupraha fi kwalunkwe ħin permezz tad-daxxbord taħt l-intestatura „Il-valutazzjonijiet tar-riskji tiegħi“, billi tikklikkja fuq l-ikona tad-dar fin-naħa ta’ fuq tal-lemin. Minn hawn tista’ wkoll tibda valutazzjoni tar-riskji ġdida.</p>
 
 <figure class="screenshot">
   <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/mt/illustrations/dashboard.html" scrolling="no">
@@ -247,11 +247,13 @@ Id-duplikati tal-valutazzjonijiet tar-riskju llokkjati b’mod awtomatiku ma jib
 
 <p>Wara li tikklikkja „Ibda“, jistgħu jsiru xi mistoqsijiet addizzjonali, skont l-għodda li tkun qed tuża. Dan l-iskrin ta’ preparazzjoni b’„mistoqsijiet dwar il-profil“ jidher biss b’għodod li joffru din l-għażla.</p>
 
-<p>Hawnhekk, inti tista’:</p>
+<p>Il-mistoqsijiet tal-profil jagħmluha possibbli li:</p>
 <ul>
   <li>Tagħżel jew taqbeż is-sitwazzjoni(jiet) skont jekk japplikawx għall-attività kummerċjali tiegħek. Agħżel „iva“ fejn xieraq.</li>
   <li>Telenka diversi unitajiet tan-negozju, fergħat jew ħwienet, eċċ. Ir-riskji relatati se jiġu ripetuti għal kull entrata.</li>
 </ul>
+
+<p>L-immaġni li ġejja turi kif is-sezzjoni tidher jekk tiġi attivata; il-mistoqsijiet murija fl-immaġni huma għal skopijiet illustrattivi biss u huma meħuda mill-verżjoni Ewropea tal-għodda.</p>
 
 <figure class="screenshot">
   <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/mt/illustrations/profiling.html" scrolling="no">
@@ -592,22 +594,22 @@ Kif imsemmi hawn fuq, il-pjan ta’ azzjoni jiġi ppreżentat bħala stadju sepa
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title="Ibda valutazzjoni tar-riskju ġdida">Valutazzjoni tar-riskju ġdida</a>
+                        title="Ibda valutazzjoni tar-riskju ġdida">Valutazzjoni ġdida tar-riskju</a>
                 </li>
                 <li>
-                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Uri l-evalwazzjonijiet tar-riskju arkivjati</label>
+                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Uri l-valutazzjonijiet tar-riskju arkivjati</label>
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
-                        <label><input type="radio" value="all" name="ass-type" checked /> Kull tip ta' evalwazzjoni tar-riskju</label>
-                        <label><input type="radio" value="regular" name="ass-type" /> Evalwazzjonijiet tar-riskju regolari biss</label>
-                        <label><input type="radio" value="contractor" name="ass-type" /> Evalwazzjonijiet tar-riskju tal-kuntratturi biss</label>
+                        <label><input type="radio" value="all" name="ass-type" checked /> Il-tipi kollha ta' valutazzjonijiet tar-riskju</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Biss valutazzjonijiet tar-riskju regolari</label>
+                        <label><input type="radio" value="contractor" name="ass-type" /> Biss valutazzjonijiet tar-riskju tal-kuntrattur</label>
                 	</fieldset>
                 </li>
             </ul>
         </div>
 	
-    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title="Espandi l-sidebar">Espandi l-sidebar</button>
+    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title="Espandi l-barra laterali">Espandi l-barra laterali</button>
 </form>
 
 		<a href="/feedback/osh.html#osh-ra-browser" id="osh-target-ra-browser" class="onscreen-help pat-tooltip" data-pat-tooltip="trigger: click; source: ajax; class: rich info;">Help</a>
@@ -682,9 +684,9 @@ Kif imsemmi hawn fuq, il-pjan ta’ azzjoni jiġi ppreżentat bħala stadju sepa
                 class="pat-select">
                 <select 
                     name="search-rule.lemma-operator:records">
-                <option value="contains"><!-- i18n: label_contains -->Fiha</option>
-                <option value="contains-not"><!-- i18n: label_contains_not -->Ma fihiex</option>
-                <option value="equals"><!-- i18n: label_equals -->Daqs</option>
+                <option value="contains"><!-- i18n: label_contains -->Fih</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Ma fihx</option>
+                <option value="equals"><!-- i18n: label_equals -->Ugwali</option>
                 </select>
             </label>
             <input 
@@ -699,9 +701,9 @@ Kif imsemmi hawn fuq, il-pjan ta’ azzjoni jiġi ppreżentat bħala stadju sepa
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is"></option>
-                    <option value="is-before"></option>
-                    <option value="is-after"></option>
+                    <option value="is">Huwa</option>
+                    <option value="is-before">Huwa qabel</option>
+                    <option value="is-after">Huwa wara</option>
                 </select>
             </label>
             <input 
@@ -716,8 +718,8 @@ Kif imsemmi hawn fuq, il-pjan ta’ azzjoni jiġi ppreżentat bħala stadju sepa
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">Daqs</option>
-                    <option value="equals-not">Mhux daqs</option>
+                    <option value="equals">Ugwali</option>
+                    <option value="equals-not">Mhux ugwali</option>
                 </select>
             </label>
             <select 
@@ -737,8 +739,8 @@ Kif imsemmi hawn fuq, il-pjan ta’ azzjoni jiġi ppreżentat bħala stadju sepa
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">Daqs</option>
-                    <option value="equals-not">Mhux daqs</option>
+                    <option value="equals">Ugwali</option>
+                    <option value="equals-not">Mhux ugwali</option>
                 </select>
             </label>
             <select 
@@ -820,9 +822,9 @@ Kif imsemmi hawn fuq, il-pjan ta’ azzjoni jiġi ppreżentat bħala stadju sepa
             class="pat-select">
             <select 
                 name="search-rule.lemma-operator:records">
-                <option value="contains"><!-- i18n: label_contains -->Fiha</option>
-                <option value="contains-not"><!-- i18n: label_contains_not -->Ma fihiex</option>
-                <option value="equals"><!-- i18n: label_equals -->Daqs</option>
+                <option value="contains"><!-- i18n: label_contains -->Fih</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Ma fihx</option>
+                <option value="equals"><!-- i18n: label_equals -->Ugwali</option>
             </select>
         </label>
         <input 
@@ -837,9 +839,9 @@ Kif imsemmi hawn fuq, il-pjan ta’ azzjoni jiġi ppreżentat bħala stadju sepa
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is"></option>
-                <option value="is-before"></option>
-                <option value="is-after"></option>
+                <option value="is">Huwa</option>
+                <option value="is-before">Huwa qabel</option>
+                <option value="is-after">Huwa wara</option>
             </select>
         </label>
         <input 
@@ -855,9 +857,9 @@ Kif imsemmi hawn fuq, il-pjan ta’ azzjoni jiġi ppreżentat bħala stadju sepa
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">Daqs</option>
+                    value="equals">Ugwali</option>
                 <option 
-                value="equals-not">Mhux daqs</option>
+                value="equals-not">Mhux ugwali</option>
             </select>
         </label>
         <select 
@@ -878,9 +880,9 @@ Kif imsemmi hawn fuq, il-pjan ta’ azzjoni jiġi ppreżentat bħala stadju sepa
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">Daqs</option>
+                    value="equals">Ugwali</option>
                 <option 
-                    value="equals-not">Mhux daqs</option>
+                    value="equals-not">Mhux ugwali</option>
             </select>
         </label>
         <select 
@@ -923,7 +925,7 @@ Kif imsemmi hawn fuq, il-pjan ta’ azzjoni jiġi ppreżentat bħala stadju sepa
 			        <input 
 			        	type="radio" 
 			        	name="search-mode" 
-			        	value="advanced"> Tfittxija avvanzata
+			        	value="advanced"> Tfittxija avanzata
 			    </label>
 			</fieldset>
 	    </fieldset>

@@ -118,7 +118,7 @@
 							pat-avatar"
 						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
 						alt="">
-				<!-- i18n: label_menu -->Valikko</a>
+				<!-- i18n: label_menu --></a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -249,7 +249,7 @@
                 selector: #main; 
                 remove: sidebar-*; 
                 add: sidebar-off">
-              <span class="label"><!-- i18n: label_analysis -->Analyysi</span></a>
+              <span class="label"><!-- i18n: label_analysis --></span></a>
       
 
     </li>
@@ -279,7 +279,7 @@
     data-pat-switch="
       selector: #main; 
       remove: sidebar-*; 
-      add: sidebar-off"><span class="label"><!-- i18n: label_consultancy -->Konsultointi</span></a>
+      add: sidebar-off"><span class="label"><!-- i18n: label_consultancy -->Neuvontapalvelut</span></a>
 </li>
     
 <li 
@@ -534,7 +534,7 @@
                 
                 
                 <!-- <a 
-                    class="default pat-button"><!-- i18n: label_approve_risk_assessment --></a>  --> 
+                    class="default pat-button"><!-- i18n: label_approve_risk_assessment -->Hyväksy riskiarviointi</a>  --> 
             </div>
         </div>
     </div>
@@ -1021,7 +1021,7 @@
                                 <strong class="number">1</strong> <em class="label">OK</em>
                             </li>
                             <li class="risk-measure">
-                                <strong class="number">3</strong> <em class="label"></em>
+                                <strong class="number">3</strong> <em class="label">Riski toimenpiteineen</em>
                             </li>
                             <li class="risk">
                                 <strong class="number">2</strong> <em class="label">kehitettävää</em>
@@ -1058,7 +1058,7 @@
                             <strong class="number">7</strong> <em class="label">vastaus puuttuu</em>
                         </p>
                         <p class="range  risk-measure" style="width: 10%">
-                            <strong class="number">1</strong> <em class="label"></em>
+                            <strong class="number">1</strong> <em class="label">Riski toimenpiteineen</em>
                         </p>
                         <p class="range risk" style="width: 10%">
                             <strong class="number">1</strong> <em class="label">kehitettävää</em>
@@ -1073,7 +1073,7 @@
                                 <strong class="number">7</strong> <em class="label">vastaus puuttuu</em>
                             </li>
                             <li class="risk-measure">
-                                <strong class="number">1</strong> <em class="label"></em>
+                                <strong class="number">1</strong> <em class="label">Riski toimenpiteineen</em>
                             </li>
                             <li class="risk">
                                 <strong class="number">1</strong> <em class="label">kehitettävää</em>
@@ -1170,16 +1170,16 @@
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title="Aloita uusi riskinarviointi">Uusi riskiarviointi</a>
+                        title="Aloita uusi riskiarviointi">Uusi riskiarviointi</a>
                 </li>
                 <li>
-                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Näytä arkistoidut riskinarviointeja</label>
+                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Näytä arkistoidut riskiarvioinnit</label>
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
-                        <label><input type="radio" value="all" name="ass-type" checked /> Kaikki riskinarviointityypit</label>
-                        <label><input type="radio" value="regular" name="ass-type" /> Vain säännölliset riskinarviointeja</label>
-                        <label><input type="radio" value="contractor" name="ass-type" /> Vain urakoitsijoiden riskinarviointeja</label>
+                        <label><input type="radio" value="all" name="ass-type" checked /> Kaikki riskiarviotyypit</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Vain säännölliset riskinarvioinnit</label>
+                        <label><input type="radio" value="contractor" name="ass-type" /> Vain urakoitsijoiden riskinarvioinnit</label>
                 	</fieldset>
                 </li>
             </ul>
@@ -1211,7 +1211,7 @@
 				type="search" 
 				value="" 
 				class="quick-search pat-autofocus" 
-				placeholder="Haku" />
+				placeholder="Hae" />
             <button type="submit" name="standard" value="main" class="search-button-main assistive">Haku</button>
         </label>
 
@@ -1262,7 +1262,7 @@
                     name="search-rule.lemma-operator:records">
                 <option value="contains"><!-- i18n: label_contains -->Sisältää</option>
                 <option value="contains-not"><!-- i18n: label_contains_not -->Ei sisällä</option>
-                <option value="equals"><!-- i18n: label_equals -->On yhtä suuri kuin</option>
+                <option value="equals"><!-- i18n: label_equals -->Yhtä suuri kuin</option>
                 </select>
             </label>
             <input 
@@ -1277,9 +1277,9 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is"></option>
-                    <option value="is-before"></option>
-                    <option value="is-after"></option>
+                    <option value="is">On</option>
+                    <option value="is-before">On ennen</option>
+                    <option value="is-after">On jälkeen</option>
                 </select>
             </label>
             <input 
@@ -1294,7 +1294,7 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">On yhtä suuri kuin</option>
+                    <option value="equals">Yhtä suuri kuin</option>
                     <option value="equals-not">Ei ole yhtä suuri kuin</option>
                 </select>
             </label>
@@ -1315,7 +1315,7 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">On yhtä suuri kuin</option>
+                    <option value="equals">Yhtä suuri kuin</option>
                     <option value="equals-not">Ei ole yhtä suuri kuin</option>
                 </select>
             </label>
@@ -1400,7 +1400,7 @@
                 name="search-rule.lemma-operator:records">
                 <option value="contains"><!-- i18n: label_contains -->Sisältää</option>
                 <option value="contains-not"><!-- i18n: label_contains_not -->Ei sisällä</option>
-                <option value="equals"><!-- i18n: label_equals -->On yhtä suuri kuin</option>
+                <option value="equals"><!-- i18n: label_equals -->Yhtä suuri kuin</option>
             </select>
         </label>
         <input 
@@ -1415,9 +1415,9 @@
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is"></option>
-                <option value="is-before"></option>
-                <option value="is-after"></option>
+                <option value="is">On</option>
+                <option value="is-before">On ennen</option>
+                <option value="is-after">On jälkeen</option>
             </select>
         </label>
         <input 
@@ -1433,7 +1433,7 @@
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">On yhtä suuri kuin</option>
+                    value="equals">Yhtä suuri kuin</option>
                 <option 
                 value="equals-not">Ei ole yhtä suuri kuin</option>
             </select>
@@ -1456,7 +1456,7 @@
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">On yhtä suuri kuin</option>
+                    value="equals">Yhtä suuri kuin</option>
                 <option 
                     value="equals-not">Ei ole yhtä suuri kuin</option>
             </select>
@@ -1493,7 +1493,7 @@
 			        	type="radio" 
 			        	name="search-mode" 
 			        	value="standard" 
-			        	checked> Tavallinen haku
+			        	checked> Vakiohaku
 			    </label>
 			    <label 
 			    	class="pat-switch toggle-advanced"

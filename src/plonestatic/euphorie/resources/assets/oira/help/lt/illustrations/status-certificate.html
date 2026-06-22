@@ -118,7 +118,7 @@
 							pat-avatar"
 						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
 						alt="">
-				<!-- i18n: label_menu -->Meniu</a>
+				<!-- i18n: label_menu --></a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -249,7 +249,7 @@
                 selector: #main; 
                 remove: sidebar-*; 
                 add: sidebar-off">
-              <span class="label"><!-- i18n: label_analysis -->Analizė</span></a>
+              <span class="label"><!-- i18n: label_analysis --></span></a>
       
 
     </li>
@@ -279,7 +279,7 @@
     data-pat-switch="
       selector: #main; 
       remove: sidebar-*; 
-      add: sidebar-off"><span class="label"><!-- i18n: label_consultancy -->Konsultacijos</span></a>
+      add: sidebar-off"><span class="label"><!-- i18n: label_consultancy -->Konsultavimas</span></a>
 </li>
     
 <li 
@@ -329,7 +329,7 @@
     data-pat-switch="
       selector: #main; 
       remove: sidebar-*; 
-      add: sidebar-off"><span class="label"><!-- i18n: label_training -->Mokymas</span></a>
+      add: sidebar-off"><span class="label"><!-- i18n: label_training -->Mokymai</span></a>
 </li>
 
   
@@ -534,7 +534,7 @@
                 
                 
                 <!-- <a 
-                    class="default pat-button"><!-- i18n: label_approve_risk_assessment --></a>  --> 
+                    class="default pat-button"><!-- i18n: label_approve_risk_assessment -->Patvirtinti rizikos vertinimą</a>  --> 
             </div>
         </div>
     </div>
@@ -1021,7 +1021,7 @@
                                 <strong class="number">1</strong> <em class="label">GERAI</em>
                             </li>
                             <li class="risk-measure">
-                                <strong class="number">3</strong> <em class="label"></em>
+                                <strong class="number">3</strong> <em class="label">Rizika su priemonėmis</em>
                             </li>
                             <li class="risk">
                                 <strong class="number">2</strong> <em class="label">Dėmesio</em>
@@ -1058,7 +1058,7 @@
                             <strong class="number">7</strong> <em class="label">Neatsakyta</em>
                         </p>
                         <p class="range  risk-measure" style="width: 10%">
-                            <strong class="number">1</strong> <em class="label"></em>
+                            <strong class="number">1</strong> <em class="label">Rizika su priemonėmis</em>
                         </p>
                         <p class="range risk" style="width: 10%">
                             <strong class="number">1</strong> <em class="label">Dėmesio</em>
@@ -1073,7 +1073,7 @@
                                 <strong class="number">7</strong> <em class="label">Neatsakyta</em>
                             </li>
                             <li class="risk-measure">
-                                <strong class="number">1</strong> <em class="label"></em>
+                                <strong class="number">1</strong> <em class="label">Rizika su priemonėmis</em>
                             </li>
                             <li class="risk">
                                 <strong class="number">1</strong> <em class="label">Dėmesio</em>
@@ -1177,15 +1177,15 @@
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
-                        <label><input type="radio" value="all" name="ass-type" checked /> Visi rizikos vertinimo tipai</label>
-                        <label><input type="radio" value="regular" name="ass-type" /> Tik įprasti rizikos vertinimai</label>
+                        <label><input type="radio" value="all" name="ass-type" checked /> Visi rizikos vertinimų tipai</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Tik reguliarūs rizikos vertinimai</label>
                         <label><input type="radio" value="contractor" name="ass-type" /> Tik rangovų rizikos vertinimai</label>
                 	</fieldset>
                 </li>
             </ul>
         </div>
 	
-    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title="Išplėsti šoninę juostą">Išplėsti šoninę juostą</button>
+    <button id="button-osc-expand" class="no-label iconified icon-resize-full pat-toggle" data-pat-toggle="selector: body; value: osc-size-full osc-size-normal" title="Išskleisti šoninę juostą">Išskleisti šoninę juostą</button>
 </form>
 
 		<a href="/feedback/osh.html#osh-ra-browser" id="osh-target-ra-browser" class="onscreen-help pat-tooltip" data-pat-tooltip="trigger: click; source: ajax; class: rich info;">Help</a>
@@ -1211,7 +1211,7 @@
 				type="search" 
 				value="" 
 				class="quick-search pat-autofocus" 
-				placeholder="Paieška" />
+				placeholder="Ieškoti" />
             <button type="submit" name="standard" value="main" class="search-button-main assistive">Paieška</button>
         </label>
 
@@ -1260,9 +1260,9 @@
                 class="pat-select">
                 <select 
                     name="search-rule.lemma-operator:records">
-                <option value="contains"><!-- i18n: label_contains -->Turi</option>
-                <option value="contains-not"><!-- i18n: label_contains_not -->Neturi</option>
-                <option value="equals"><!-- i18n: label_equals -->Lygus</option>
+                <option value="contains"><!-- i18n: label_contains -->Apima</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Neapima</option>
+                <option value="equals"><!-- i18n: label_equals -->Lygu</option>
                 </select>
             </label>
             <input 
@@ -1277,9 +1277,9 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is"></option>
-                    <option value="is-before"></option>
-                    <option value="is-after"></option>
+                    <option value="is">Yra</option>
+                    <option value="is-before">Yra prieš</option>
+                    <option value="is-after">Yra po</option>
                 </select>
             </label>
             <input 
@@ -1294,8 +1294,8 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">Lygus</option>
-                    <option value="equals-not">Nelygus</option>
+                    <option value="equals">Lygu</option>
+                    <option value="equals-not">Nelygu</option>
                 </select>
             </label>
             <select 
@@ -1315,8 +1315,8 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="equals">Lygus</option>
-                    <option value="equals-not">Nelygus</option>
+                    <option value="equals">Lygu</option>
+                    <option value="equals-not">Nelygu</option>
                 </select>
             </label>
             <select 
@@ -1398,9 +1398,9 @@
             class="pat-select">
             <select 
                 name="search-rule.lemma-operator:records">
-                <option value="contains"><!-- i18n: label_contains -->Turi</option>
-                <option value="contains-not"><!-- i18n: label_contains_not -->Neturi</option>
-                <option value="equals"><!-- i18n: label_equals -->Lygus</option>
+                <option value="contains"><!-- i18n: label_contains -->Apima</option>
+                <option value="contains-not"><!-- i18n: label_contains_not -->Neapima</option>
+                <option value="equals"><!-- i18n: label_equals -->Lygu</option>
             </select>
         </label>
         <input 
@@ -1415,9 +1415,9 @@
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is"></option>
-                <option value="is-before"></option>
-                <option value="is-after"></option>
+                <option value="is">Yra</option>
+                <option value="is-before">Yra prieš</option>
+                <option value="is-after">Yra po</option>
             </select>
         </label>
         <input 
@@ -1433,9 +1433,9 @@
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">Lygus</option>
+                    value="equals">Lygu</option>
                 <option 
-                value="equals-not">Nelygus</option>
+                value="equals-not">Nelygu</option>
             </select>
         </label>
         <select 
@@ -1456,9 +1456,9 @@
             <select 
                 name="search-rule.date-operator:records">
                 <option 
-                    value="equals">Lygus</option>
+                    value="equals">Lygu</option>
                 <option 
-                    value="equals-not">Nelygus</option>
+                    value="equals-not">Nelygu</option>
             </select>
         </label>
         <select 

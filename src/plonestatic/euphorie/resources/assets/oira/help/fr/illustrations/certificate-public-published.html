@@ -113,7 +113,7 @@
 							pat-avatar"
 						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
 						alt="">
-				<!-- i18n: label_menu -->Menu</a>
+				<!-- i18n: label_menu --></a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -331,7 +331,7 @@
                         data-pat-modal="class: medium panel"
                         class="no-label pat-modal icon-plus pat-switch"
                         data-pat-switch="body osc-s-* osc-s-off"
-                        title="Commencer nouvelle évaluation">Nouvelle évaluation des risques</a>
+                        title="Démarrer une nouvelle évaluation des risques">Nouvelle évaluation des risques</a>
                 </li>
                 <li>
                     <label class="pat-checklist"><input type="checkbox" name="archived" /> Afficher les évaluations des risques archivées</label>
@@ -339,8 +339,8 @@
                 <li>
                 	<fieldset class="pat-checklist radio">
                         <label><input type="radio" value="all" name="ass-type" checked /> Tous les types d'évaluations des risques</label>
-                        <label><input type="radio" value="regular" name="ass-type" /> Seulement les évaluations de risques régulières</label>
-                        <label><input type="radio" value="contractor" name="ass-type" /> Seulement les évaluations des risques des entrepreneurs</label>
+                        <label><input type="radio" value="regular" name="ass-type" /> Évaluations des risques régulières uniquement</label>
+                        <label><input type="radio" value="contractor" name="ass-type" /> Évaluations des risques des sous-traitants uniquement</label>
                 	</fieldset>
                 </li>
             </ul>
@@ -372,7 +372,7 @@
 				type="search" 
 				value="" 
 				class="quick-search pat-autofocus" 
-				placeholder="Rechercher" />
+				placeholder="Recherche" />
             <button type="submit" name="standard" value="main" class="search-button-main assistive">Rechercher</button>
         </label>
 
@@ -438,9 +438,9 @@
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is"></option>
-                    <option value="is-before"></option>
-                    <option value="is-after"></option>
+                    <option value="is">Est</option>
+                    <option value="is-before">Est avant</option>
+                    <option value="is-after">Est après</option>
                 </select>
             </label>
             <input 
@@ -576,9 +576,9 @@
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is"></option>
-                <option value="is-before"></option>
-                <option value="is-after"></option>
+                <option value="is">Est</option>
+                <option value="is-before">Est avant</option>
+                <option value="is-after">Est après</option>
             </select>
         </label>
         <input 

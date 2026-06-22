@@ -113,7 +113,7 @@
 							pat-avatar"
 						src="++resource++euphorie.resources/media/avatars/yvette-lefevre.jpg" 
 						alt="">
-				<!-- i18n: label_menu -->Meni</a>
+				<!-- i18n: label_menu --></a>
 			<a 
 	            href="/feedback/messages-unread#menu-content" 
 	            id="messages-menu" 
@@ -208,7 +208,7 @@ Dvojniki zaklenjenih ocen tveganja so privzeto odklenjeni.</p>
 
 <h2 id="odpiranje-ocene-tveganja">Odpiranje ocene tveganja</h2>
 
-<p>Ko začnete postopek izvedbe ocene tveganja, jo lahko kadar koli znova odprete v oddelku ,Moje ocene tveganja‘ na strani s pregledom. V tem oddelku lahko tudi začnete novo oceno tveganja.</p>
+<p>Ko začnete postopek izvedbe ocene tveganja, jo lahko kadar koli znova odprete v oddelku ,Moje ocene tveganja‘ na strani s pregledom, s klikom na ikono začetne strani zgoraj desno. V tem oddelku lahko tudi začnete novo oceno tveganja.</p>
 
 <figure class="screenshot">
   <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/dashboard.html" scrolling="no">
@@ -247,11 +247,13 @@ Dvojniki zaklenjenih ocen tveganja so privzeto odklenjeni.</p>
 
 <p>Ko kliknete gumb ,Začni‘, vam bodo morda zastavljena nekatera dodatna vprašanja, odvisno od orodja, ki ga uporabljate. Ta zaslon z ,vprašanji o profilu‘ v koraku priprave se prikaže samo v orodjih, ki ponujajo to možnost.</p>
 
-<p>Na tem zaslonu lahko:</p>
+<p>Vprašanja v profilu omogočajo:</p>
 <ul>
   <li>izberete ali preskočite okoliščine, glede na to, ali se nanašajo na vašo poslovno dejavnost. Kadar je to ustrezno, izberite ,da‘;</li>
   <li>navedete več poslovnih enot, podružnic ali trgovin in podobno. Ob vsakem vnosu se tveganja ponovno prikažejo.</li>
 </ul>
+
+<p>Naslednja slika prikazuje, kako bi bil razdelek videti, če bi bil aktiviran; vprašanja, prikazana na sliki, so zgolj ilustrativna in so vzeta iz evropske različice orodja.</p>
 
 <figure class="screenshot">
   <object height="800" width="1280" class="pat-auto-scale" data="/++resource++euphorie.resources/assets/oira/help/sl/illustrations/profiling.html" scrolling="no">
@@ -593,7 +595,7 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
                         title="Začni novo oceno tveganja">Nova ocena tveganja</a>
                 </li>
                 <li>
-                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Pokaži arhivirane ocene tveganja</label>
+                    <label class="pat-checklist"><input type="checkbox" name="archived" /> Prikaži arhivirane ocene tveganj</label>
                 </li>
                 <li>
                 	<fieldset class="pat-checklist radio">
@@ -655,7 +657,7 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
             <select 
                 name="search-rule.data-field:records">
                 <option 
-                    value="SearchableText"><!-- i18n: label_any_text_field -->Katerokoli besedilno polje</option>
+                    value="SearchableText"><!-- i18n: label_any_text_field -->Katero koli besedilno polje</option>
                 <optgroup 
                     label="Metadata">
                     <option value="Title">Title</option>
@@ -697,9 +699,9 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
                 class="pat-select">
                 <select 
                     name="search-rule.date-operator:records">
-                    <option value="is"></option>
-                    <option value="is-before"></option>
-                    <option value="is-after"></option>
+                    <option value="is">Je</option>
+                    <option value="is-before">Je pred</option>
+                    <option value="is-after">Je po</option>
                 </select>
             </label>
             <input 
@@ -765,7 +767,7 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
         class="pat-button default icon-search"><!-- i18n: action_search -->Išči</button>
     <button 
         type="button" 
-        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Dodaj drugo iskalno pravilo</button>
+        class="pat-button add-clone add-clone-rule icon-plus-circle"><!-- i18n: label_new_search_rule -->Dodaj še eno iskalno pravilo</button>
 
     <a 
         href="/++resource++euphorie.resources/assets/oira/help/sl/pages/3-carrying-out-a-risk-assessment#listing" 
@@ -796,7 +798,7 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
         <select 
             name="search-rule.data-field:records">
             <option 
-                value="SearchableText"><!-- i18n: label_any_text_field -->Katerokoli besedilno polje</option>
+                value="SearchableText"><!-- i18n: label_any_text_field -->Katero koli besedilno polje</option>
             <optgroup 
                 label="Metadata">
                 <option value="Title">Title</option>
@@ -835,9 +837,9 @@ Kot je bilo navedeno zgoraj, je načrt ukrepov prikazan kot ločen korak v menij
             class="pat-select">
             <select 
                 name="search-rule.date-operator:records">
-                <option value="is"></option>
-                <option value="is-before"></option>
-                <option value="is-after"></option>
+                <option value="is">Je</option>
+                <option value="is-before">Je pred</option>
+                <option value="is-after">Je po</option>
             </select>
         </label>
         <input 
