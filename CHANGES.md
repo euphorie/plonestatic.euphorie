@@ -9,6 +9,20 @@ https://github.com/plone/plone.releaser/blob/master/ADD-A-NEWS-ITEM.rst
 
 <!-- towncrier release notes start -->
 
+## 1.1.0 (2026-06-23)
+
+### New features:
+
+- Update of the italian help, reflecting the wishes of the IT oira partner as requested. (Issue [#4797](https://github.com/syslabcom/scrum/issues/4797))
+- Update to the latest proto.
+  @ale-rt (Issue [#4797](https://github.com/syslabcom/scrum/issues/4797))
+
+### Internal:
+
+- The script that copies the resources now warns at 60MB.
+  @ale-rt (Issue [#4797](https://github.com/syslabcom/scrum/issues/4797))
+
+
 ## 1.0.3 (2026-05-13)
 
 ### Bug fixes:
