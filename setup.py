@@ -1,11 +1,10 @@
 from pathlib import Path
-from setuptools import find_packages
 from setuptools import setup
 
 
 setup(
     name="plonestatic.euphorie",
-    version="1.1.1.dev0",
+    version="2.0.0.dev0",
     description="Euphorie Risk Assessment tool static resources",
     long_description="\n".join(
         [
@@ -19,10 +18,9 @@ setup(
         "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
         "Framework :: Plone",
-        "Framework :: Plone :: 6.0",
+        "Framework :: Plone :: 6.2",
         "License :: OSI Approved :: GNU General Public License (GPL)",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
@@ -40,9 +38,6 @@ setup(
         "Issues": "https://github.com/euphorie/plonestatic.euphorie/issues",
     },
     license="GPL",
-    packages=find_packages("src"),
-    package_dir={"": "src"},
-    namespace_packages=["plonestatic"],
     include_package_data=True,
     zip_safe=False,
     python_requires=">= 3.9",
