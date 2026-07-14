@@ -9,6 +9,14 @@ https://github.com/plone/plone.releaser/blob/master/ADD-A-NEWS-ITEM.rst
 
 <!-- towncrier release notes start -->
 
+## 2.0.0 (2026-07-14)
+
+### Breaking changes:
+
+- Replace ``pkg_resources`` namespace with PEP 420 native namespace.
+  Support only Plone 6.2 and Python 3.10+. (Issue [#3928](https://github.com/syslabcom/scrum/issues/3928))
+
+
 ## 1.1.0 (2026-06-23)
 
 ### New features:
