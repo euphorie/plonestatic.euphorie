@@ -2,6 +2,7 @@
 /.ruby-version
 /.venv
 /etc
+/prototype
 /tmp
 /var
 __pycache__
