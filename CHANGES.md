@@ -9,6 +9,13 @@ https://github.com/plone/plone.releaser/blob/master/ADD-A-NEWS-ITEM.rst
 
 <!-- towncrier release notes start -->
 
+## 2.0.1 (2026-11-25)
+
+### Bug fixes:
+
+- Update to the latest proto
+
+
 ## 2.0.0 (2026-07-14)
 
 ### Breaking changes:
